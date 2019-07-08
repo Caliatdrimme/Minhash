@@ -11,8 +11,10 @@ So far:
 - robust to changes of number of elements, sets, hashes, and lenghts of hashes (provided length of hash <= number of elements)
 
 TODO: 
-- validate on a real data set (have data be read by a process and passed onto element and set processes through messages - unsure of format yet)
-- possibly implement a banding candidate pairs finding technique for larger datasets?
+- validate on a real data set
+- http://corpus-texmex.irisa.fr/ SIFT1B (92 GB dataset - 1 billion vectors)
+- https://nlp.stanford.edu/projects/glove/ Common crawl 840B tokens (2GB dataset - 2.2 million vocab) 
+- possibly implement a banding candidate pairs finding technique for larger datasets
 - refactor/improve readability and code effeciency/make it scalable to size
 
 
