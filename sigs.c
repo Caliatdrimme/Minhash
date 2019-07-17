@@ -252,13 +252,13 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 		int dest = data;
 		printf("Sending set %d to worker %d\n", rank, dest);
 		if (dest>size){break;}
-		for (int j =0; j <num_elements; j++){
+		for (int j =0; j <num_elem; j++){
 			data = st[j];
 			MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 		}//for 
 
 		//receive the signature back and store it 
-	} for
+	} //for
 
 	//send signature to manager
 
