@@ -316,7 +316,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 		MPI_Send(&rank, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 
 		// get set-hash pair from manager
-		MPI_Recv(&pair, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		MPI_Recv(&pair, 2, MPI_INT, size-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
 		//get the ordering from the hash
 		dest = pair[1];
