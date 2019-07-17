@@ -434,8 +434,8 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 
 	for (int i = 0; i < num_elem; i++) elem[i] = i;
 
-	hash[0] = size-2-rank;
-	elem[size-2-rank] = num_elem+1;
+	hash[0] = size-2-num_worker - rank;
+	elem[size-2-rank - num_worker] = num_elem+1;
 
 	// Random permutation the order
 	for (int i = 1; i < size_hash; i++) {
