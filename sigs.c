@@ -63,23 +63,54 @@ void print_array(int a[], int a_size, char prt[], int rank) {
 
 }//print
 
+//allocates hash-set pairs to workers
+
 //waits for all sets to finish
 //finds similar sets based on signatures
-void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int size){
+
+//sends quit command
+void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 
 	//threshold for overlaps
 	int t = 2;
 
 	int data;
+	int worker;
+	int pair[2];
 
 	int candidates = 0;
 
+	//figure out a way to stagger set-hash assigntment
+
+	for (int i = 0; i < num_hash; i++){
+		for (int j = 0; j < num_sets; j++){
+
+		//receive note that worker is free
+		//worker sends its rank to indicate that it is available
+		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		worker = data;
+
+		//assign this pair i j to worker
+		//send as tuple
+		pair[0]= num_elem + j; //set first
+		pair[1]= num_elem + num_sets + i; //hash second
+
+		printf("Assigning set %d with hash %d to worker %d\n", pair[0]. pair[1], worker);
+
+		MPI_Send(pair, 2, MPI_INT, worker, 0, MPI_COMM_WORLD);
+
+		}// for set
+
+	}//for hash
+
+
+	//receives message from sets that they are ready with signatures
 	for (int i = 0; i< num_sets; i++){
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 	
 	}//for
 
-
+/*
 	int st_set = num_sets*num_sets;
 
 	int *set1;
@@ -103,10 +134,6 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		count[i] = 0;
 	}
 
-
-
-
-
 	//malloc 1 array of size num_elem 
 	//elem keeps current hashes clashes - stores rank of set that has that hash
 
@@ -116,10 +143,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 	for (int i = 0; i <num_hash; i++){
 
-		//Node* minh[5];
-
 		Node ** minh = calloc(num_elem, sizeof(struct Node*));
-		//Node ** minh = (Node *)malloc(sizeof(struct Node)*num_elem);
 
 		for (int i = 0; i < num_elem; i++){
 			minh[i] = NULL;
@@ -137,8 +161,6 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 			if (data == num_elem+1){break;}//if empty set
 
-		
-			//clash found
 			Node *new_node = malloc( sizeof( struct Node ) );
 			new_node->data = dest;
 			new_node->next = minh[data];
@@ -163,7 +185,6 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 							break;
 						}
 
-
 						if ((set1[i]==0)&&(set2[i]==0)){
 							set1[i]=cur->data;
 							set2[i]=dest;
@@ -171,18 +192,10 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 							candidates++;
 							break;
 						}
-
 				}//for updating count
 			}//while clashes 
-			
 		}//for set
-	
-
 	}//for hash
-
-	//set1 = realloc(set1, candidates);
-	//set2 = realloc(set2, candidates);
-	//count = realloc(count, candidates);
 
 	for (int i = 0; i < st_set; i++){
 
@@ -190,13 +203,13 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 		printf("Candidate pair %d and %d with count %d\n\n", set1[i], set2[i], count[i]);}
 
-
-
 	}//for printing candidate pairs
-
 
 	data = size+1;
 
+*/
+	//sends quit command
+	printf("Shutting down...\n");
 	for (int i = 0; i<size-1; i++){
 		MPI_Send(&data, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
 	
@@ -207,12 +220,9 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 
 
-//represents a set of data
 //reads off and stores a set 
-//calls hash to get the order of elements to check
-//creates signature for that hash by visiting elements in the hash order
-//gives signature to manager when done
-void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int size){
+//sends off the set when prompted
+void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 	//change the following to read in a set
 	//set is a binary string - 1 if element of that index is present in the set
 	//size of set is num_elements
@@ -231,32 +241,85 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 		st[i] = rand() % 2;
 	}
 
-
 	char prt[] = "Set ";
 	print_array(st, num_elem, prt, rank);
 
-	//have num_hash possible hashes, each of size_hash (<= num_elem)
+
+	//send our set to whoever needs
+	for (int i = 0; i<num_hash; i++){
+
+		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		dest = data;
+		printf("Sending set %d to worker %d\n", rank, dest);
+		if (dest>size){break;}
+		for (int j =0; j <num_elements; j++){
+			data = st[j];
+			MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
+		}//for 
+
+		//receive the signature back and store it 
+	} for
+
+	//send signature to manager
+
+
+	//send message to manager that we are done
+	data = 1;
+	MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
+
+	free(st);
+
+}//set
+
+
+
+//calls manager with its rank to get assignment
+//receives set and hash to follow to create signature
+//calls set to get a copy of the set
+//calls hash to get the order of elements to check
+//creates signature for that hash-set pair by visiting elements in the hash order
+//gives signature to manager when done?
+void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
+	//change the following to read in a set
+	//set is a binary string - 1 if element of that index is present in the set
+	//size of set is num_elements
+
+	//printf("I am set %d\n", rank);
+
+	int data; 
+
+	int pair[2];
+
+	//malloc a set of size num_elem
+	int * st;
+	st = (int *)malloc(sizeof(int)*num_elem);
+
 	//malloc hash array
-	//int hash[size_hash] = {};
 
 	int *hash;
 	hash = (int *)malloc(sizeof(int)*size_hash);
 
-
-
 	//size of signature is num_hash
 	//malloc signature array
-	//int sig[num_hash] = {};
 
-	int *sig;
-	sig = (int *)malloc(sizeof(int)*num_hash);
+	//	int *sig;
+	//	sig = (int *)malloc(sizeof(int)*num_hash);
 
-	//go through all available hashes
-	for (int i=0; i<num_hash; i++){
+	int sig;
+
+	
+	while(1){
+
+		//call manager with our rank
+	
+		MPI_Send(&rank, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
+
+		// get set-hash pair from manager
+		MPI_Recv(&pair, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
 		//get the ordering from the hash
-		//call the hash node with index last_set+i
-		int dest = num_elem + num_sets +i;
-		//printf("Calling hash %d from set %d\n", dest, rank);
+		int dest = pair[1];
+		//printf("Calling hash %d from worker %d\n", dest, rank);
 		MPI_Send(&rank, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 
 		//printf("Message sent %d\n", rank);
@@ -265,40 +328,56 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 			hash[j]=data;
 		}//for
+		printf("Worker %d received hash %d: %d %d %d %d\n", rank, dest, hash[0], hash[1], hash[2], hash[3]); 
 
-		//printf("Set %d received hash %d: %d %d %d %d\n", rank, dest, hash[0], hash[1], hash[2], hash[3]); 
+
+		//get the set
+		int dest = pair[0];
+		//printf("Calling set %d from worker %d\n", dest, rank);
+		MPI_Send(&rank, 1, MPI_INT, s, 0, MPI_COMM_WORLD);
+
+		//printf("Message sent %d\n", rank);
+
+		for (int j =0; j <num_elem; j++){
+			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+			st[j]=data;
+		}//for
+
+		printf("Worker %d received set %d: %d %d %d %d\n", rank, dest, st[0], st[1], st[2], st[3]); 
 
 		for (int j =0; j <size_hash; j++){
 			dest = hash[j];
-			//printf("Set %d calling element %d\n", rank, dest);
+			//printf("Worker %d calling element %d\n", rank, dest);
 			MPI_Send(&rank, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-			//printf("Set %d checking presence of element %d: %d\n", rank, data, st[data]);
+			//printf("Set %d checking presence of element %d: %d\n", s, data, st[data]);
 
 			if (st[data]==1){
-				sig[i]=data;
-				//printf("Set %d found first 1\n", rank);
-				break;
+				sig=data;
+				//printf("Set %d found first 1\n", s);
+				continue;
 			} else if (j == size_hash-1) {
 
-				sig[i]=num_elem+1;
+				sig=num_elem+1;
 			}//else if
 
-		}//for
+			printf("Worker %d has signature %d for set %d and hash %d\n",rank, sig, pair[0], pair[1]);
+
+		}//for hash length
 		
 		
-	}//for
+	}//while
 
 	//printf("Set %d sending signature to manager\n", rank);
-
+/*
 	char str[] = "Signature for set ";
 	print_array(sig, num_hash, str, rank);
 
+	//dont need to let manager know we are done
 	data = 1;
 	MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
-
 	//int dest, data;
 
 	while(1){
@@ -307,22 +386,22 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 		data =sig[data];
 		MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 	}//while
-
+*/
 	free(st);
-	free(sig);
+	//free(sig);
 	free(hash);
 
-}//set
+}//worker
 
 
 //represents a possible element of data
 //reads and stores that element
 //when prompted gives the element 
 //stores index of set if that element is present in it
-void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int size){
+void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 	//the element is the index
 	//make it read an element
-	//printf("I am element %d\n", rank);
+	printf("I am element %d\n", rank);
 	
 	int element = rank;
 	int dest, data;
@@ -338,7 +417,7 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 //creates random ordering of elements
 //provides the ordering when prompted
-void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int size){
+void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 
 	//printf("I am hash %d\n", rank);
 
@@ -395,8 +474,8 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 int my_main(int argc, char ** argv){
 
 	int rank, size;
-	int num_elem, num_sets, size_hash;
-	int last_elem, last_set, num_hash;
+	int num_elem, num_sets, num_hash, size_hash;
+	int last_elem, last_set, last_hash, num_worker;
 
 	//initialize
 	MPI_Init(&argc, &argv);
@@ -406,20 +485,24 @@ int my_main(int argc, char ** argv){
 
 	num_elem = atoi(argv[1]);
 	num_sets = atoi(argv[2]);
-	size_hash = atoi(argv[3]);
+	num_hash = atoi(argv[3]);
+	size_hash = atoi(argv[4]);
+
 
 	last_elem = num_elem - 1;
 	last_set = num_elem + num_sets - 1;
-	num_hash = size - 2 - last_set;
+	last_hash = num_elem + num_sets + num_hash -1;
+	num_worker = size - 2 - last_hash;
 	
 
 	//printf("I am %d of %d\n", rank, size);
 
 	//assign roles
-	if (rank == size-1){manager_fn(rank, num_elem, num_sets, size_hash, num_hash, size);}
-	else if (rank <= last_elem){element_fn(rank, num_elem, num_sets, size_hash, num_hash, size);}
-	else if (rank <= last_set){set_fn(rank, num_elem, num_sets, size_hash, num_hash, size);}
-	else {hash_fn(rank, num_elem, num_sets, size_hash, num_hash, size);}
+	if (rank == size-1){manager_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
+	else if (rank <= last_elem){element_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
+	else if (rank <= last_set){set_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
+	else if (rank <= last_hash){hash_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
+	else {worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
 	
 	//clean up
 	printf("rank %d done\n", rank);
@@ -452,14 +535,11 @@ MPI_Recv(
 mpicc sigc.c -o sigs
 
 to run 
-mpiexec -n 13 ./sigs num_elem num_sets size_hash
+mpiexec -n  ./sigs num_elem num_sets num_hash size_hash (rest are workers)
 
-simple example mpi:
-mpiexec -n 13 ./sigs 4 4 4
+with fgmpi (2 workers):
+mpiexec -nfg 1 -n 18 ./sigs 4 4 4 4 
+OR
+mpiexec -nfg 18 -n 1 ./sigs 4 4 4 4
 
 */
-
-
-
-
-
