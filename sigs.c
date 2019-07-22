@@ -105,8 +105,8 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 
 	//receives message from sets that they are ready with signatures
-	for (int i = 0; i< num_sets; i++){
-		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+	//for (int i = 0; i< num_sets; i++){
+	//	MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 	
 	}//for
 
@@ -209,6 +209,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 */
 	//sends quit command
+	data = size+1;
 	printf("Shutting down...\n");
 	for (int i = 0; i<size-2; i++){
 		MPI_Send(&data, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
@@ -264,8 +265,8 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 
 
 	//send message to manager that we are done
-	data = 1;
-	MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
+	//data = 1;
+	//MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 
 	free(st);
 
