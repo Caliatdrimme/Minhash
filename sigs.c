@@ -95,7 +95,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		pair[0]= num_elem + j; //set first
 		pair[1]= num_elem + num_sets + i; //hash second
 
-		printf("Assigning set %d with hash %d to worker %d\n", pair[0], pair[1], worker);
+		//printf("Assigning set %d with hash %d to worker %d\n", pair[0], pair[1], worker);
 
 		MPI_Send(pair, 2, MPI_INT, worker, 0, MPI_COMM_WORLD);
 
@@ -262,7 +262,7 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		int dest = data;
-		printf("Sending set %d to worker %d\n", rank, dest);
+		//printf("Sending set %d to worker %d\n", rank, dest);
 		//if (dest>size){break;}
 		for (int j =0; j <num_elem; j++){
 			data = st[j];
@@ -296,7 +296,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 	//set is a binary string - 1 if element of that index is present in the set
 	//size of set is num_elements
 
-	//printf("I am set %d\n", rank);
+	printf("I am worker %d\n", rank);
 
 	int data; 
 	int dest;
