@@ -108,7 +108,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	//for (int i = 0; i< num_sets; i++){
 	//	MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 	
-	}//for
+	//}//for
 
 /*
 	int st_set = num_sets*num_sets;
