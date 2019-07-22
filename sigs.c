@@ -223,6 +223,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	//hashes	
 	for (int i = 0; i<num_hash; i++){
 		int dest = num_elem + num_sets - 1 +i;
+		printf("Shutting down hash %d", dest);
 		MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	
 	}//for
