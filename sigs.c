@@ -104,11 +104,14 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	}//for hash
 
 
-	//receives message from sets that they are ready with signatures
-	//for (int i = 0; i< num_sets; i++){
-	//	MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-	
-	//}//for
+	//receives message from workers that they are ready but shut them down instead
+	for (int i = 0; i< num_worker; i++){
+		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		pair[0]= size+1; 
+		pair[1]= size+1;
+		MPI_Send(&pair, 2, MPI_INT, data, 0, MPI_COMM_WORLD);
+			
+	}//for
 
 /*
 	int st_set = num_sets*num_sets;
@@ -211,8 +214,15 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	//sends quit command
 	data = size+1;
 	printf("Shutting down...\n");
-	for (int i = 0; i<size-2; i++){
+	
+	//elements
+	for (int i = 0; i<num_elem; i++){
 		MPI_Send(&data, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
+		
+	//hashes	
+	for (int i = 0; i<num_hash; i++){
+		int dest = num_elem + num_sets - 1 +i;
+		MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	
 	}//for
 
@@ -252,7 +262,7 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		int dest = data;
 		printf("Sending set %d to worker %d\n", rank, dest);
-		if (dest>size){break;}
+		//if (dest>size){break;}
 		for (int j =0; j <num_elem; j++){
 			data = st[j];
 			MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
@@ -321,6 +331,8 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 		//get the ordering from the hash
 		dest = pair[1];
+		
+		if (dest>size){break;}
 		//printf("Calling hash %d from worker %d\n", dest, rank);
 		MPI_Send(&rank, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 
@@ -330,7 +342,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 			hash[j]=data;
 		}//for
-		printf("Worker %d received hash %d: %d %d %d %d\n", rank, dest, hash[0], hash[1], hash[2], hash[3]); 
+		//printf("Worker %d received hash %d: %d %d %d %d\n", rank, dest, hash[0], hash[1], hash[2], hash[3]); 
 
 
 		//get the set
@@ -345,7 +357,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			st[j]=data;
 		}//for
 
-		printf("Worker %d received set %d: %d %d %d %d\n", rank, dest, st[0], st[1], st[2], st[3]); 
+		//printf("Worker %d received set %d: %d %d %d %d\n", rank, dest, st[0], st[1], st[2], st[3]); 
 
 		for (int j =0; j <size_hash; j++){
 			dest = hash[j];
