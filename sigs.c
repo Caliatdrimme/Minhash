@@ -210,7 +210,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 */
 	//sends quit command
 	printf("Shutting down...\n");
-	for (int i = 0; i<size-1; i++){
+	for (int i = 0; i<size-2; i++){
 		MPI_Send(&data, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
 	
 	}//for
