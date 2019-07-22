@@ -494,6 +494,8 @@ void reader_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 	st = (int *)malloc(sizeof(int)*num_elem);
 	int data;
 	//open file for reading
+	
+	printf("Want to open a file");
 	FILE *fp;
 	fp = fopen('example.txt', 'r');
 	
