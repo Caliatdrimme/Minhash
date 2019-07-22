@@ -492,7 +492,7 @@ void reader_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 	//malloc a set
 	int * st;
 	st = (int *)malloc(sizeof(int)*num_elem);
-
+	int data;
 	//open file for reading
 	FILE *fp;
 	fp = fopen('example.txt', 'r');
