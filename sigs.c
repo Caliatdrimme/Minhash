@@ -248,11 +248,11 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 	int * st;
 	st = (int *)malloc(sizeof(int)*num_elem);
 
-	srand(time(0)+rank);
-
 	for (int i=0; i<num_elem; i++){
-		st[i] = rand() % 2;
+		MPI_Recv(&data, 1, MPI_INT, size-2, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		st[i] = data;
 	}
+
 
 	char prt[] = "Set ";
 	print_array(st, num_elem, prt, rank);
@@ -486,6 +486,41 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 }//hash
 
 
+//reads in the file
+//sends the read in sets to the set nodes
+void reader_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
+	//malloc a set
+	int * st;
+	st = (int *)malloc(sizeof(int)*num_elem);
+
+	//open file for reading
+	FILE *fp;
+	fp = fopen('example.txt', 'r');
+
+	char ch;
+
+	for (int i=0; i<num_sets; i++){
+
+		ch = getc(fp);
+		while((ch!='/n')){
+			//send character to set node i
+
+			//turn character to int
+			data = atoi(ch);
+
+			MPI_Send(&data, 1, MPI_INT, num_elem+i, 0, MPI_COMM_WORLD);
+
+			//read in new character
+			ch = getc(fp);
+		}//while
+	}//for
+
+	fclose(fp);
+
+
+
+}//reader
+
 //main initializes and assigns roles
 int my_main(int argc, char ** argv){
 
@@ -517,6 +552,7 @@ int my_main(int argc, char ** argv){
 
 	//assign roles
 	if (rank == size-1){manager_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
+	else if (rank == size-2){reader_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
 	else if (rank <= last_elem){element_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
 	else if (rank <= last_set){set_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
 	else if (rank <= last_hash){hash_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
