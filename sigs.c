@@ -111,6 +111,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		pair[0]= size+1; 
 		pair[1]= size+1;
 		MPI_Send(&pair, 2, MPI_INT, data, 0, MPI_COMM_WORLD);
+		printf("messege sent");
 			
 	}//for
 	printf("Workers shut down");
