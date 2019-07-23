@@ -27,7 +27,7 @@
 			//turn character to int
 			int data = ch;
 
-			printf("read in new number %d\n", ch);
+			printf("read in new number %d\n", data);
 
 			//read in new character
 			ch = getc(fp);
