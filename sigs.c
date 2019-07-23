@@ -380,7 +380,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 			if (st[data]==1){
 				sig=data;
-				printf("Set %d found first 1\n", s);
+				printf("Set %d found first 1\n", sig);
 				continue;
 			} else if (j == size_hash-1) {
 
@@ -502,7 +502,7 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 
 //reads in the file
 //sends the read in sets to the set nodes
-void reader_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
+void reader_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 	//malloc a set
 	int * st;
 	st = (int *)malloc(sizeof(int)*num_elem);
