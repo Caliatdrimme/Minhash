@@ -222,11 +222,11 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	}//for
 		
 	//hashes	
-	for (int i = 0; i<num_hash; i++){
+	/*for (int i = 0; i<num_hash; i++){
 		int dest = num_elem + num_sets +i;
 		//printf("Shutting down hash %d\n", dest);
 		MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
-	
+	*/
 	}//for
 
 	//make the manager somehow find and report candidate pairs based on minhash signatures
@@ -476,7 +476,7 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 	char prt[] = "Hash ";
 	print_array(hash, size_hash, prt, rank);
 
-	while(1){
+	for(int i = 0; i<num_sets; i++){
 
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		dest = data;
