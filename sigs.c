@@ -105,6 +105,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 
 	//receives message from workers that they are ready but shut them down instead
+	printf("Shutting down workers\n");
 	for (int i = 0; i< num_worker; i++){
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		pair[0]= size+1; 
@@ -334,7 +335,10 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 		//get the ordering from the hash
 		dest = pair[1];
 		
-		if (dest>size){break;}
+		if (dest>size){
+			printf("Manager shut me down %d\n", rank);
+			break;
+		}
 		//printf("Calling hash %d from worker %d\n", dest, rank);
 		MPI_Send(&rank, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 
@@ -425,7 +429,10 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	while(1){
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		dest = data;
-		if (dest>size){break;}
+		if (dest>size){
+			printf("Manager shut me down %d\n", rank);
+			break;
+			      }
 		//printf("Sending element %d to set %d\n", rank, dest);
 		MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	}//while
@@ -474,7 +481,10 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		dest = data;
 		//printf("Sending hash %d to set %d\n", rank, dest);
-		if (dest>size){break;}
+		if (dest>size){
+			printf("Manager shut me down %d\n", rank);
+			break;
+		}
 		for (int j =0; j <size_hash; j++){
 			data = hash[j];
 			MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
