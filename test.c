@@ -23,6 +23,8 @@
 			
 			data = getc(fp);
 			//send character to set node i
+			
+			data = data - 48;
 
 			printf("read in new number %d\n", data);
 
