@@ -495,28 +495,25 @@ void reader_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 	int data;
 	//open file for reading
 	
-	printf("Want to open a file");
+
 	FILE *fp;
 	fp = fopen("example.txt", "r");
-	
-	printf("File opened");
 
-	char ch;
+	int data;
 
 	for (int i=0; i<num_sets; i++){
-
-		ch = getc(fp);
-		while((ch!='/n')){
+		for(int j = 0; j < num_elem; j++){
+			
+			data = getc(fp);
 			//send character to set node i
-
-			//turn character to int
-			data = atoi(ch);
+			
+			data = data - 48;
 
 			MPI_Send(&data, 1, MPI_INT, num_elem+i, 0, MPI_COMM_WORLD);
 
 			//read in new character
-			ch = getc(fp);
 		}//while
+		data = getc(fp);
 	}//for
 
 	fclose(fp);
