@@ -373,6 +373,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			dest = hash[j];
 			printf("Worker %d calling element %d\n", rank, dest);
 			MPI_Send(&rank, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
+			printf("Worker %d sent message to element %d\n", rank, dest);
 
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
@@ -381,13 +382,13 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			if (st[data]==1){
 				sig=data;
 				printf("Set %d found first 1\n", pair[0]);
+				printf("Worker %d has signature %d for set %d and hash %d\n",rank, sig, pair[0], pair[1]);
 				break;
 			} else if (j == size_hash-1) {
 
 				sig=num_elem+1;
+				printf("Set %d does not have signature for hash %d\n", pair[0], pair[1]);
 			}//else if
-
-			printf("Worker %d has signature %d for set %d and hash %d\n",rank, sig, pair[0], pair[1]);
 
 		}//for hash length
 		
@@ -433,11 +434,12 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	while(1){
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		dest = data;
+		printf("Element %d received message from worker %d\n", rank, dest);
 		if (dest>size){
 			printf("Manager shut me down %d\n", rank);
 			break;
 			      }
-		//printf("Sending element %d to set %d\n", rank, dest);
+		printf("Sending element %d to set %d\n", rank, dest);
 		MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	}//while
 }//element
