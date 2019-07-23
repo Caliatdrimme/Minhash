@@ -371,18 +371,18 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 		for (int j =0; j <size_hash; j++){
 			dest = hash[j];
-			printf("Worker %d calling element %d\n", rank, dest);
-			MPI_Send(&rank, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
-			printf("Worker %d sent message to element %d\n", rank, dest);
+			//printf("Worker %d calling element %d\n", rank, dest);
+			//MPI_Send(&rank, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
+			//printf("Worker %d sent message to element %d\n", rank, dest);
 
-			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+			//MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-			printf("Set %d checking presence of element %d: %d\n", pair[0], data, st[data]);
+			printf("Set %d checking presence of element %d: %d\n", pair[0], dest, st[dest]);
 
-			if (st[data]==1){
-				sig=data;
+			if (st[dest]==1){
+				sig=dest;
 				printf("Set %d found first 1\n", pair[0]);
-				printf("Worker %d has signature %d for set %d and hash %d\n",rank, sig, pair[0], pair[1]);
+				printf("Worker %d has signature %d for set %d and hash %d\n", rank, sig, pair[0], pair[1]);
 				break;
 			} else if (j == size_hash-1) {
 
