@@ -29,6 +29,7 @@
 			//read in new character
 		}//while
 		printf("\n");
+		data = getc(fp);
 	}//for
 
 	fclose(fp);
