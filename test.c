@@ -25,13 +25,14 @@
 			//send character to set node i
 
 			//turn character to int
-			int data = atoi(ch);
+			//int data = atoi(ch);
 
-			printf("read in new number %d:\n", data);
+			printf("read in new number %d:\n", ch);
 
 			//read in new character
 			ch = getc(fp);
 		}//while
+		printf("\n");
 	}//for
 
 	fclose(fp);
