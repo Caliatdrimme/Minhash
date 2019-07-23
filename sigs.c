@@ -352,7 +352,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 			hash[j]=data;
 		}//for
-		//printf("Worker %d received hash %d: %d %d %d %d\n", rank, dest, hash[0], hash[1], hash[2], hash[3]); 
+		printf("Worker %d received hash %d: %d %d %d %d\n", rank, dest, hash[0], hash[1], hash[2], hash[3]); 
 
 
 		//get the set
@@ -367,7 +367,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			st[j]=data;
 		}//for
 
-		//printf("Worker %d received set %d: %d %d %d %d\n", rank, dest, st[0], st[1], st[2], st[3]); 
+		printf("Worker %d received set %d: %d %d %d %d\n", rank, dest, st[0], st[1], st[2], st[3]); 
 
 		for (int j =0; j <size_hash; j++){
 			dest = hash[j];
@@ -380,7 +380,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 			if (st[data]==1){
 				sig=data;
-				//printf("Set %d found first 1\n", s);
+				printf("Set %d found first 1\n", s);
 				continue;
 			} else if (j == size_hash-1) {
 
@@ -558,7 +558,7 @@ int my_main(int argc, char ** argv){
 	last_hash = num_elem + num_sets + num_hash -1;
 	num_worker = size - 3 - last_hash;
 	
-	printf("We have %d workers", num_worker);
+	//printf("We have %d workers\n", num_worker);
 	
 
 	//printf("I am %d of %d\n", rank, size);
