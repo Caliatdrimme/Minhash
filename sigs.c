@@ -558,7 +558,7 @@ int my_main(int argc, char ** argv){
 	last_hash = num_elem + num_sets + num_hash -1;
 	num_worker = size - 3 - last_hash;
 	
-	//printf("We have %d workers", num_worker);
+	printf("We have %d workers", num_worker);
 	
 
 	//printf("I am %d of %d\n", rank, size);
