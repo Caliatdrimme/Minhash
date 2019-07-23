@@ -11,9 +11,10 @@
 	int * st;
 	st = (int *)malloc(sizeof(int)*num_elem);
 
+	const char filename[] = "example.txt";
 	//open file for reading
 	FILE *fp;
-	fp = fopen("example.txt", "r");
+	fp = fopen(filename, "r");
 
 	char ch;
 
