@@ -13,7 +13,7 @@
 
 	//open file for reading
 	FILE *fp;
-	fp = fopen('example.txt', 'r');
+	fp = fopen("example.txt", "r");
 
 	char ch;
 
