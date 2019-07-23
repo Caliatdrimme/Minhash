@@ -20,13 +20,13 @@
 	for (int i=0; i<num_sets; i++){
 
 		ch = getc(fp);
-		while((ch!='/n')){
+		while((ch!='\n')){
 			//send character to set node i
 
 			//turn character to int
 			data = atoi(ch);
 
-			MPI_Send(&data, 1, MPI_INT, num_elem+i, 0, MPI_COMM_WORLD);
+			printf("read in new number %d:\n", data);
 
 			//read in new character
 			ch = getc(fp);
