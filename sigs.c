@@ -227,7 +227,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		//printf("Shutting down hash %d\n", dest);
 		MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	*/
-	}//for
+	//}//for
 
 	//make the manager somehow find and report candidate pairs based on minhash signatures
 }//manager
