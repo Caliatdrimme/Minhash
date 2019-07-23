@@ -381,7 +381,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			if (st[data]==1){
 				sig=data;
 				printf("Set %d found first 1\n", pair[0]);
-				continue;
+				break;
 			} else if (j == size_hash-1) {
 
 				sig=num_elem+1;
