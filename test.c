@@ -16,21 +16,17 @@
 	FILE *fp;
 	fp = fopen("example.txt", "r");
 
-	char ch;
+	int data;
 
 	for (int i=0; i<num_sets; i++){
-
-		ch = getc(fp);
-		while((ch!='\n')){
+		for(int j = 0; j < num_elem; j++){
+			
+			data = getc(fp);
 			//send character to set node i
-
-			//turn character to int
-			int data = ch;
 
 			printf("read in new number %d\n", data);
 
 			//read in new character
-			ch = getc(fp);
 		}//while
 		printf("\n");
 	}//for
