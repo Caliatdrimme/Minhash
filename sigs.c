@@ -260,7 +260,7 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 
 
 	char prt[] = "Set ";
-	print_array(st, num_elem, prt, rank);
+	//print_array(st, num_elem, prt, rank);
 
 
 	//send our set to whoever needs
@@ -371,12 +371,12 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 		for (int j =0; j <size_hash; j++){
 			dest = hash[j];
-			//printf("Worker %d calling element %d\n", rank, dest);
+			printf("Worker %d calling element %d\n", rank, dest);
 			MPI_Send(&rank, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-			//printf("Set %d checking presence of element %d: %d\n", s, data, st[data]);
+			printf("Set %d checking presence of element %d: %d\n", s, data, st[data]);
 
 			if (st[data]==1){
 				sig=data;
@@ -425,7 +425,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 	//the element is the index
 	//make it read an element
-	printf("I am element %d\n", rank);
+	//printf("I am element %d\n", rank);
 	
 	int element = rank;
 	int dest, data;
@@ -478,7 +478,7 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 	}
 
 	char prt[] = "Hash ";
-	print_array(hash, size_hash, prt, rank);
+	//print_array(hash, size_hash, prt, rank);
 
 	for(int i = 0; i<num_sets; i++){
 
