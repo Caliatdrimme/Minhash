@@ -376,7 +376,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-			printf("Set %d checking presence of element %d: %d\n", s, data, st[data]);
+			printf("Set %d checking presence of element %d: %d\n", pair[0], data, st[data]);
 
 			if (st[data]==1){
 				sig=data;
