@@ -25,9 +25,9 @@
 			//send character to set node i
 
 			//turn character to int
-			//int data = atoi(ch);
+			int data = ch;
 
-			printf("read in new number %d:\n", ch);
+			printf("read in new number %d\n", ch);
 
 			//read in new character
 			ch = getc(fp);
