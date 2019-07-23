@@ -107,11 +107,13 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	//receives message from workers that they are ready but shut them down instead
 	printf("Shutting down workers\n");
 	for (int i = 0; i< num_worker; i++){
+		printf("i is %d\n", i);
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		printf("worker %d\n", data);
 		pair[0]= size+1; 
 		pair[1]= size+1;
 		MPI_Send(&pair, 2, MPI_INT, data, 0, MPI_COMM_WORLD);
-		printf("messege sent");
+		printf("messege sent\n");
 			
 	}//for
 	printf("Workers shut down");
