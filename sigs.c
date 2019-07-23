@@ -95,7 +95,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		pair[0]= num_elem + j; //set first
 		pair[1]= num_elem + num_sets + i; //hash second
 
-		//printf("Assigning set %d with hash %d to worker %d\n", pair[0], pair[1], worker);
+		printf("Assigning set %d with hash %d to worker %d\n", pair[0], pair[1], worker);
 
 		MPI_Send(pair, 2, MPI_INT, worker, 0, MPI_COMM_WORLD);
 
@@ -380,7 +380,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 			if (st[data]==1){
 				sig=data;
-				printf("Set %d found first 1\n", sig);
+				printf("Set %d found first 1\n", pair[0]);
 				continue;
 			} else if (j == size_hash-1) {
 
