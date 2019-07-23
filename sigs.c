@@ -497,7 +497,7 @@ void reader_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 	
 	printf("Want to open a file");
 	FILE *fp;
-	fp = fopen('example.txt', 'r');
+	fp = fopen("example.txt", "r");
 	
 	printf("File opened");
 
