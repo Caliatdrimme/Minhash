@@ -11,10 +11,10 @@
 	int * st;
 	st = (int *)malloc(sizeof(int)*num_elem);
 
-	const char filename[] = "example.txt";
+	//const char filename[] = "example.txt";
 	//open file for reading
 	FILE *fp;
-	fp = fopen(filename, "r");
+	fp = fopen("example.txt", "r");
 
 	char ch;
 
@@ -25,7 +25,7 @@
 			//send character to set node i
 
 			//turn character to int
-			data = atoi(ch);
+			int data = atoi(ch);
 
 			printf("read in new number %d:\n", data);
 
