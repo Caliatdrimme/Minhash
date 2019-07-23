@@ -499,8 +499,6 @@ void reader_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 	FILE *fp;
 	fp = fopen("example.txt", "r");
 
-	int data;
-
 	for (int i=0; i<num_sets; i++){
 		for(int j = 0; j < num_elem; j++){
 			
