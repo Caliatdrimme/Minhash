@@ -216,16 +216,35 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	data = size+1;
 
 */
-	//sends quit command
+	//sends ready to collect clashes command
 	int cmd[2];
 	cmd[0] = size+1;
 	cmd[1] = size+1;
 	printf("Starting similarity calculation...\n");
 	
+	int * clash;
+	clash = (int *)calloc(sizeof(int)*num_sets-1);
+	
 	//elements
 	for (int i = 0; i<num_elem; i++){
 		MPI_Send(cmd, 2, MPI_INT, i, 1, MPI_COMM_WORLD);
 	}//for
+	
+	int count = 0;
+	int set;
+	
+	while(count < num_hash){
+		MPI_Recv(&set, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		if (set>size){
+			count++;
+		}else {
+			clash[data]++;
+		}//else
+	
+	}//while
+	
+	char prt[] = "Clashes ";
+	print_array(clash, num_sets-1, prt, rank);
 		
 	//hashes	
 	/*for (int i = 0; i<num_hash; i++){
@@ -454,8 +473,12 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	for (int i = 0; i < num_sets-1; i++){
 		if(sign[i]==sign[num_sets-1]){
 		printf("Query set clashes with set %d on hash %d\n", i, rank);
+		//send to manager
+		MPI_Send(&i, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 		}//if
-	
+	//send done command to manager
+	int done = size+1;
+	MPI_Send(&done, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 	
 	}//for
 	
