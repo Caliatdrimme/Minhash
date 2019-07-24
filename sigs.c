@@ -238,7 +238,8 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		if (set>size){
 			count++;
 		}else {
-			clash[data]++;
+			clash[set] = clash[set]+1;
+			printf("Collected new clash");
 		}//else
 	
 	}//while
