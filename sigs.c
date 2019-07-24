@@ -95,7 +95,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		pair[0]= num_elem + j; //set first
 		pair[1]= num_elem + num_sets + i; //hash second
 
-		printf("Assigning set %d with hash %d to worker %d\n", pair[0], pair[1], worker);
+		//printf("Assigning set %d with hash %d to worker %d\n", pair[0], pair[1], worker);
 
 		MPI_Send(pair, 2, MPI_INT, worker, 0, MPI_COMM_WORLD);
 
@@ -283,7 +283,7 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 
 
 	char prt[] = "Set ";
-	print_array(st, num_elem, prt, rank);
+	//print_array(st, num_elem, prt, rank);
 
 
 	//send our set to whoever needs
@@ -405,7 +405,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			if (st[dest]==1){
 				sig=dest;
 				//printf("Set %d found first 1\n", pair[0]);
-				printf("Worker %d has signature %d for set %d and hash %d\n", rank, sig, pair[0], pair[1]);
+				//printf("Worker %d has signature %d for set %d and hash %d\n", rank, sig, pair[0], pair[1]);
 				int sign[2];
 				sign[0] = pair[0];
 				sign[1] = sig;
@@ -463,7 +463,7 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 			break;
 			      }
 		sign[data[0]-num_elem] = data[1];
-		printf("Hash %d received signature %d for set %d\n", rank, data[1], data[0]);
+		//printf("Hash %d received signature %d for set %d\n", rank, data[1], data[0]);
 		
 
 		//MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
@@ -526,7 +526,7 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 	}
 
 	char prt[] = "Hash ";
-	print_array(hash, size_hash, prt, rank);
+	//print_array(hash, size_hash, prt, rank);
 
 	for(int i = 0; i<num_sets; i++){
 
