@@ -220,7 +220,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	int cmd[2];
 	cmd[0] = size+1;
 	cmd[1] = size+1;
-	printf("Shutting down...\n");
+	printf("Starting similarity calculation...\n");
 	
 	//elements
 	for (int i = 0; i<num_elem; i++){
@@ -450,6 +450,15 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	char prt[] = "Signature for hash ";
 	print_array(sign, num_sets, prt, rank);
+	
+	for (int i = 0; i < num_sets-1; i++){
+		if(sign[i]==sign[num_sets-1]){
+		printf("Query set clashes with set %d on hash %d\n", i, rank);
+		}//if
+	
+	
+	}//for
+	
 	free(sign);
 }//element
 
