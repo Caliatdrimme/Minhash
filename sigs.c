@@ -226,7 +226,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	clash = (int *)calloc(num_sets-1, sizeof(int));
 	
 	//elements
-	for (int i = 0; i<num_elem; i++){
+	for (int i = 0; i<num_hash; i++){
 		MPI_Send(cmd, 2, MPI_INT, i, 1, MPI_COMM_WORLD);
 	}//for
 	
@@ -237,10 +237,10 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		MPI_Recv(&set, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		if (set>size){
 			count++;
-			printf("New signature is done %d\n", count);
+			//printf("New signature is done %d\n", count);
 		}else {
 			clash[set] = clash[set]+1;
-			printf("Collected new clash\n");
+			//printf("Collected new clash\n");
 		}//else
 	
 	}//while
@@ -283,7 +283,7 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 
 
 	char prt[] = "Set ";
-	//print_array(st, num_elem, prt, rank);
+	print_array(st, num_elem, prt, rank);
 
 
 	//send our set to whoever needs
@@ -448,7 +448,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 
 //stores signature for a specific hash
-void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
+void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 	
 	int *sign;
 	sign = (int *)malloc(sizeof(int)*num_sets);
@@ -474,20 +474,20 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	for (int i = 0; i < num_sets-1; i++){
 		if(sign[i]==sign[num_sets-1]){
-		printf("Query set clashes with set %d on hash %d\n", i, rank);
+		//printf("Query set clashes with set %d on hash %d\n", i, rank);
 		//send to manager
 		MPI_Send(&i, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 		}//if
 	}//for
 	//send done command to manager
 	int done = size+1;
-	printf("Signature %d is done\n", rank);
+	//printf("Signature %d is done\n", rank);
 	MPI_Send(&done, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 	
 	
 	
 	free(sign);
-}//element
+}//signature
 
 //creates random ordering of elements
 //provides the ordering when prompted
@@ -527,7 +527,7 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 	}
 
 	char prt[] = "Hash ";
-	//print_array(hash, size_hash, prt, rank);
+	print_array(hash, size_hash, prt, rank);
 
 	for(int i = 0; i<num_sets; i++){
 
@@ -602,9 +602,9 @@ int my_main(int argc, char ** argv){
 	size_hash = atoi(argv[4]);
 
 
-	last_elem = num_elem - 1;
-	last_set = num_elem + num_sets - 1;
-	last_hash = num_elem + num_sets + num_hash -1;
+	last_elem = num_hash - 1;
+	last_set = num_hash + num_sets - 1;
+	last_hash = num_hash + num_sets + num_hash -1;
 	num_worker = size - 3 - last_hash;
 	
 	//printf("We have %d workers\n", num_worker);
@@ -615,7 +615,7 @@ int my_main(int argc, char ** argv){
 	//assign roles
 	if (rank == size-1){manager_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
 	else if (rank == size-2){reader_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
-	else if (rank <= last_elem){element_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
+	else if (rank <= last_elem){signature_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
 	else if (rank <= last_set){set_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
 	else if (rank <= last_hash){hash_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
 	else {worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
