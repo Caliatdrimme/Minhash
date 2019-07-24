@@ -340,7 +340,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 		dest = pair[1];
 		
 		if (dest>size){
-			printf("Manager shut me down %d\n", rank);
+			//printf("Manager shut me down %d\n", rank);
 			break;
 		}
 		//printf("Calling hash %d from worker %d\n", dest, rank);
