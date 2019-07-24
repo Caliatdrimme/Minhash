@@ -474,7 +474,7 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 			//printf("Manager shut me down %d\n", rank);
 			break;
 			      }
-		sign[data[0]-num_elem] = data[1];
+		sign[data[0]-num_hash] = data[1];
 		//printf("Hash %d received signature %d for set %d\n", rank, data[1], data[0]);
 		
 
