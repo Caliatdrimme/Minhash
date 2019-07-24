@@ -448,6 +448,8 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		//MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	}//while
 	
+	char prt[] = "Signature ";
+	print_array(sign, num_sets, prt, rank);
 	free(sign);
 }//element
 
