@@ -105,18 +105,18 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 
 	//receives message from workers that they are ready but shut them down instead
-	printf("Shutting down workers\n");
+	//printf("Shutting down workers\n");
 	for (int i = 0; i< num_worker; i++){
-		printf("i is %d\n", i);
+		//printf("i is %d\n", i);
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		printf("worker %d\n", data);
+		//printf("worker %d\n", data);
 		pair[0]= size+1; 
 		pair[1]= size+1;
 		MPI_Send(&pair, 2, MPI_INT, data, 0, MPI_COMM_WORLD);
-		printf("messege sent\n");
+		//printf("messege sent\n");
 			
 	}//for
-	printf("Workers shut down");
+	//printf("Workers shut down");
 
 /*
 	int st_set = num_sets*num_sets;
@@ -260,7 +260,7 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 
 
 	char prt[] = "Set ";
-	//print_array(st, num_elem, prt, rank);
+	print_array(st, num_elem, prt, rank);
 
 
 	//send our set to whoever needs
@@ -302,7 +302,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 	//set is a binary string - 1 if element of that index is present in the set
 	//size of set is num_elements
 
-	printf("I am worker %d\n", rank);
+	//printf("I am worker %d\n", rank);
 
 	int data; 
 	int dest;
@@ -352,7 +352,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 			hash[j]=data;
 		}//for
-		printf("Worker %d received hash %d: %d %d %d %d\n", rank, dest, hash[0], hash[1], hash[2], hash[3]); 
+		//printf("Worker %d received hash %d: %d %d %d %d\n", rank, dest, hash[0], hash[1], hash[2], hash[3]); 
 
 
 		//get the set
@@ -367,7 +367,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			st[j]=data;
 		}//for
 
-		printf("Worker %d received set %d: %d %d %d %d\n", rank, dest, st[0], st[1], st[2], st[3]); 
+		//printf("Worker %d received set %d: %d %d %d %d\n", rank, dest, st[0], st[1], st[2], st[3]); 
 
 		for (int j =0; j <size_hash; j++){
 			dest = hash[j];
@@ -377,11 +377,11 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 			//MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-			printf("Set %d checking presence of element %d: %d\n", pair[0], dest, st[dest]);
+			//printf("Set %d checking presence of element %d: %d\n", pair[0], dest, st[dest]);
 
 			if (st[dest]==1){
 				sig=dest;
-				printf("Set %d found first 1\n", pair[0]);
+				//printf("Set %d found first 1\n", pair[0]);
 				printf("Worker %d has signature %d for set %d and hash %d\n", rank, sig, pair[0], pair[1]);
 				break;
 			} else if (j == size_hash-1) {
@@ -436,10 +436,10 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		dest = data;
 		printf("Element %d received message from worker %d\n", rank, dest);
 		if (dest>size){
-			printf("Manager shut me down %d\n", rank);
+			//printf("Manager shut me down %d\n", rank);
 			break;
 			      }
-		printf("Sending element %d to set %d\n", rank, dest);
+		//printf("Sending element %d to set %d\n", rank, dest);
 		MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	}//while
 }//element
@@ -480,7 +480,7 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 	}
 
 	char prt[] = "Hash ";
-	//print_array(hash, size_hash, prt, rank);
+	print_array(hash, size_hash, prt, rank);
 
 	for(int i = 0; i<num_sets; i++){
 
@@ -488,7 +488,7 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 		dest = data;
 		//printf("Sending hash %d to set %d\n", rank, dest);
 		if (dest>size){
-			printf("Manager shut me down %d\n", rank);
+			//printf("Manager shut me down %d\n", rank);
 			break;
 		}
 		for (int j =0; j <size_hash; j++){
