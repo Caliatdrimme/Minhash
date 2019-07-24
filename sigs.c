@@ -223,7 +223,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	printf("Starting similarity calculation...\n");
 	
 	int * clash;
-	clash = (int *)calloc(sizeof(int)*num_sets-1);
+	clash = (int *)calloc(num_sets-1, sizeof(int));
 	
 	//elements
 	for (int i = 0; i<num_elem; i++){
