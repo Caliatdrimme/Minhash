@@ -434,13 +434,13 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	while(1){
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		dest = data;
-		printf("Element %d received message from worker %d\n", rank, dest);
+		//printf("Element %d received message from worker %d\n", rank, dest);
 		if (dest>size){
 			//printf("Manager shut me down %d\n", rank);
 			break;
 			      }
 		//printf("Sending element %d to set %d\n", rank, dest);
-		MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
+		//MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	}//while
 }//element
 
