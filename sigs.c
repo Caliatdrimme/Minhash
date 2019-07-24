@@ -247,7 +247,19 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	char prt[] = "Clashes ";
 	print_array(clash, num_sets-1, prt, rank);
+	
+	int best = num_sets-1;
+	int max = 0;
+	
+	for (int i = 0; i < num_sets-1; i++){
+		if (clash[i]> max){
+			max = clash[i];
+			best = i;
+		}//if
+	}//for
 		
+	printf("Best match is set %d with overlap %d\n", best, max);
+	
 	//hashes	
 	/*for (int i = 0; i<num_hash; i++){
 		int dest = num_elem + num_sets +i;
