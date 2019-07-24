@@ -217,12 +217,14 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 */
 	//sends quit command
-	data = size+1;
+	int cmd[2];
+	cmd[0] = size+1;
+	cmd[1] = size+1;
 	printf("Shutting down...\n");
 	
 	//elements
 	for (int i = 0; i<num_elem; i++){
-		MPI_Send(&data, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
+		MPI_Send(cmd, 2, MPI_INT, i, 0, MPI_COMM_WORLD);
 	}//for
 		
 	//hashes	
@@ -383,6 +385,11 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 				sig=dest;
 				//printf("Set %d found first 1\n", pair[0]);
 				printf("Worker %d has signature %d for set %d and hash %d\n", rank, sig, pair[0], pair[1]);
+				int sign[2];
+				sign[0] = pair[0];
+				sign[1] = sig;
+				//tag 1 for signature sending
+				MPI_Send(sign, 2, MPI_INT, pair[1], 1, MPI_COMM_WORLD);
 				break;
 			} else if (j == size_hash-1) {
 
@@ -419,27 +426,25 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 }//worker
 
 
-//represents a possible element of data
-//reads and stores that element
-//when prompted gives the element 
-//stores index of set if that element is present in it
+//stores signature for a specific hash
 void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
-	//the element is the index
-	//make it read an element
-	//printf("I am element %d\n", rank);
 	
-	int element = rank;
-	int dest, data;
+	int *sign;
+	sign = (int *)malloc(sizeof(int)*num_sets);
 
+	int data[2];
+	
 	while(1){
-		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		dest = data;
-		//printf("Element %d received message from worker %d\n", rank, dest);
-		if (dest>size){
+		MPI_Recv(&data, 2, MPI_INT, MPI_ANY_SOURCE, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+
+		if (data[0]>size){
 			//printf("Manager shut me down %d\n", rank);
 			break;
 			      }
-		//printf("Sending element %d to set %d\n", rank, dest);
+		sign[data[0]] = data[1];
+		printf("Hash %d received signature %d for set %d\n", rank, data[1], data[0]);
+		
+
 		//MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	}//while
 }//element
@@ -449,6 +454,8 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 
 	//printf("I am hash %d\n", rank);
+
+
 
 	int dest, data;
 
