@@ -237,9 +237,10 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		MPI_Recv(&set, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		if (set>size){
 			count++;
+			printf("New signature is done %d\n", count);
 		}else {
 			clash[set] = clash[set]+1;
-			printf("Collected new clash");
+			printf("Collected new clash\n");
 		}//else
 	
 	}//while
@@ -479,6 +480,7 @@ void element_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		}//if
 	//send done command to manager
 	int done = size+1;
+	printf("Signature %d is done\n", rank);
 	MPI_Send(&done, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 	
 	}//for
