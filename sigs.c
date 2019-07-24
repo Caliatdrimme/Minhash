@@ -665,9 +665,9 @@ mpicc sigc.c -o sigs
 to run 
 mpiexec -n  ./sigs num_elem num_sets num_hash size_hash (rest are workers)
 
-with fgmpi (2 workers):
-mpiexec -nfg 1 -n 18 ./sigs 4 4 4 4 
+with fgmpi (4 workers):
+mpiexec -nfg 1 -n 22 ./sigs 5 8 4 4 
 OR
-mpiexec -nfg 18 -n 1 ./sigs 4 4 4 4
+mpiexec -nfg 22 -n 1 ./sigs 5 8 4 4
 
 */
