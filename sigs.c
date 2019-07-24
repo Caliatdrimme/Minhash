@@ -92,8 +92,8 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 		//assign this pair i j to worker
 		//send as tuple
-		pair[0]= num_elem + j; //set first
-		pair[1]= num_elem + num_sets + i; //hash second
+		pair[0]= num_hash + j; //set first
+		pair[1]= num_hash + num_sets + i; //hash second
 
 		//printf("Assigning set %d with hash %d to worker %d\n", pair[0], pair[1], worker);
 
@@ -225,7 +225,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	int * clash;
 	clash = (int *)calloc(num_sets-1, sizeof(int));
 	
-	//elements
+	//signatures
 	for (int i = 0; i<num_hash; i++){
 		MPI_Send(cmd, 2, MPI_INT, i, 1, MPI_COMM_WORLD);
 	}//for
