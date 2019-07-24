@@ -582,7 +582,7 @@ void reader_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash
 			
 			data = data - 48;
 
-			MPI_Send(&data, 1, MPI_INT, num_elem+i, 0, MPI_COMM_WORLD);
+			MPI_Send(&data, 1, MPI_INT, num_hash+i, 0, MPI_COMM_WORLD);
 
 			//read in new character
 		}//while
