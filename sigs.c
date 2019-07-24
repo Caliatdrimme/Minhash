@@ -389,7 +389,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 				sign[0] = pair[0];
 				sign[1] = sig;
 				//tag 1 for signature sending
-				MPI_Send(sign, 2, MPI_INT, pair[1], 1, MPI_COMM_WORLD);
+				MPI_Send(sign, 2, MPI_INT, pair[1]-num_elem-num_sets, 1, MPI_COMM_WORLD);
 				break;
 			} else if (j == size_hash-1) {
 
