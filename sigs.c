@@ -283,7 +283,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	//get best match set
 	for (int j =0; j <num_elem; j++){
-		MPI_Recv(&data, 1, MPI_INT, num_elem+best, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		MPI_Recv(&data, 1, MPI_INT, num_hash+best, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		st1[j]=data;
 	}//for
 	
