@@ -21,7 +21,6 @@ GRAPH REPRESENTATION
 
 TODO: 
 
-- make it robust to sparse sets (when no signature can be created or takes a long time to get to a 1)
 - report error on best match
 - read up on: apriori search; frequency analysis; parallel prefix/scan
 
