@@ -24,10 +24,9 @@ JACCARD SIMILIARITY
 - can approximate it from the minhash but calculating the fraction of the number of minhash signature matches over the total number of minhashes we imlemented 
 
 TODO: 
-- read up on: apriori search; frequency analysis; parallel prefix/scan
-
 - implement the graph representation (for other queries?)
 - add capability to answer other queries (outliers etc - based on the graph representatation?)
+
 - refactor/improve readability and code effeciency
 - calculate complexity (order of number of messages)
 
