@@ -310,9 +310,9 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		}//if
 	}//for
 	
-	int aprx = max/num_elem;
+	double aprx = (double)max/ (double)num_elem;
 	printf("Approximate Jaccard similarity calculated by minhash is %d\n", aprx);
-	int actual = act/num_elem;
+	double actual = (double)act/ (double)num_elem;
 	printf("Actual Jaccard similarity is %d\n", actual);
 
 	//make the manager somehow find and report candidate pairs based on minhash signatures
