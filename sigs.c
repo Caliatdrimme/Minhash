@@ -260,13 +260,46 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		
 	printf("Best match is set %d with overlap %d\n", best, max);
 	
-	//hashes	
-	/*for (int i = 0; i<num_hash; i++){
-		int dest = num_elem + num_sets +i;
-		//printf("Shutting down hash %d\n", dest);
-		MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
-	*/
-	//}//for
+	//allocate 2 sets
+	int * st1;
+	st = (int *)malloc(sizeof(int)*num_elem);
+	
+	int * st2;
+	st = (int *)malloc(sizeof(int)*num_elem);
+	
+	//sets	
+	for (int i = 0; i<num_sets-1; i++){
+		int dest = num_hash +i;
+		if(i==best){
+			data = 1;
+			MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
+		}//if
+		else{
+			data = 0;
+			MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
+		}
+	
+	}//for
+	
+	//get best match set
+	for (int j =0; j <num_elem; j++){
+		MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		st1[j]=data;
+	}//for
+	
+	char prt[] = "Best Match ";
+	print_array(st1, num_elem, prt, rank);
+	
+	//get query set
+	data = 1;
+	MPI_Send(&data, 1, MPI_INT, num_hash+num_sets-1, 0, MPI_COMM_WORLD);
+	for (int j =0; j <num_elem; j++){
+		MPI_Recv(&data, 1, MPI_INT, num_hash+num_sets-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		st2[j]=data;
+	}//for
+	
+	char prt[] = "Query Set ";
+	print_array(st2, num_elem, prt, rank);
 
 	//make the manager somehow find and report candidate pairs based on minhash signatures
 }//manager
@@ -319,7 +352,18 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 	//send message to manager that we are done
 	//data = 1;
 	//MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
+	
+	
+	MPI_Recv(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
+	if (data==1){
+		for (int j =0; j <num_elem; j++){
+			data = st[j];
+			MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
+		}//for 
+	}//if
+	
+	
 	free(st);
 
 }//set
