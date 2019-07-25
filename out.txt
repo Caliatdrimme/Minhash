@@ -1,24 +1,46 @@
-Hash 8 : 3 1 0 2 
+Hash 12 : 3 1 0 2 
 
-Set 5 : 0 0 0 0 
+Hash 13 : 2 0 4 3 
 
-Hash 9 : 2 1 3 0 
+Hash 14 : 1 3 4 0 
 
-Set 4 : 1 1 0 1 
+Hash 15 : 0 4 3 2 
 
-Set 7 : 0 1 0 0 
+Set 4 : 1 1 0 0 1 
 
-Set 6 : 1 0 1 1 
+Set 5 : 0 1 0 0 1 
 
-Hash 11 : 0 2 3 1 
+Set 6 : 1 0 1 1 0 
 
-Hash 10 : 1 0 2 3 
+Set 7 : 0 1 0 1 0 
 
-Signature for set 6 : 3 2 0 0 
+Set 8 : 1 1 1 1 1 
 
-Signature for set 4 : 3 1 1 0 
+Set 9 : 0 0 0 0 0 
 
-Signature for set 5 : 5 5 5 5 
+Set 10 : 1 1 0 1 1 
 
-Signature for set 7 : 1 1 1 1 
+Set 11 : 0 1 0 0 1 
 
+Set 9 does not have signature for hash 12
+Set 9 does not have signature for hash 13
+Set 9 does not have signature for hash 14
+Set 9 does not have signature for hash 15
+Starting similarity calculation...
+Signature for hash 0 : 1 1 3 3 3 6 3 1 
+
+Signature for hash 1 : 0 4 2 3 2 6 0 4 
+
+Signature for hash 2 : 1 1 3 1 1 6 1 1 
+
+Signature for hash 3 : 0 4 0 3 0 6 0 4 
+
+Clashes 21 : 2 4 0 1 1 0 1 
+
+Best match is set 1 with overlap 4
+Best Match 21 : 0 1 0 0 1 
+
+Query Set 21 : 0 1 0 0 1 
+
+Approximate Jaccard similarity calculated by minhash is 1.000000
+Actual Jaccard similarity is 1.000000
