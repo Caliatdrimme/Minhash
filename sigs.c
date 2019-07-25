@@ -413,12 +413,14 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			//MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
 			//printf("Set %d checking presence of element %d: %d\n", pair[0], dest, st[dest]);
+			
+			int sign[2];
 
 			if (st[dest]==1){
 				sig=dest;
 				//printf("Set %d found first 1\n", pair[0]);
 				//printf("Worker %d has signature %d for set %d and hash %d\n", rank, sig, pair[0], pair[1]);
-				int sign[2];
+
 				sign[0] = pair[0];
 				sign[1] = sig;
 				//tag 1 for signature sending
@@ -428,6 +430,10 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 				sig=num_elem+1;
 				printf("Set %d does not have signature for hash %d\n", pair[0], pair[1]);
+				sign[0] = pair[0];
+				sign[1] = sig;
+				//tag 1 for signature sending
+				MPI_Send(sign, 2, MPI_INT, pair[1]-num_hash-num_sets, 1, MPI_COMM_WORLD);
 			}//else if
 
 		}//for hash length
@@ -484,7 +490,11 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 	char prt[] = "Signature for hash ";
 	print_array(sign, num_sets, prt, rank);
 	
+	
+	
 	for (int i = 0; i < num_sets-1; i++){
+		if(sign[num_sets-1]>num_elem){break;}
+		if(sign[i]>num_elem){continue;}
 		if(sign[i]==sign[num_sets-1]){
 		//printf("Query set clashes with set %d on hash %d\n", i, rank);
 		//send to manager
