@@ -300,6 +300,20 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	char prt2[] = "Query Set ";
 	print_array(st2, num_elem, prt2, rank);
+	
+	int act = 0;
+	for (int i = 0; i < num_elem; i++){
+		if (st2[i]==1){
+			if(st1[i]==1){
+				act = act+1;		
+			}//if
+		}//if
+	}//for
+	
+	int aprx = max/num_elem;
+	printf("Approximate Jaccard similarity calculated by minhash is %d\n", aprx);
+	int actual = act/num_elem;
+	printf("Actual Jaccard similarity is %d\n", actual);
 
 	//make the manager somehow find and report candidate pairs based on minhash signatures
 }//manager
