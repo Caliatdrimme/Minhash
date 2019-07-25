@@ -19,6 +19,10 @@ GRAPH REPRESENTATION
 - the number of edges of one set talks to its similarity/closeness to the rest of the data set (a well-connected set is common/similair to other sets, the least connected set is an outlier)
 - can look for clusters and connected components on the graph (in general or on a specific hash)
 
+JACCARD SIMILIARITY
+- real similiarity is teh fraction of number of elements that match in a set over the total number of elements in both sets (at least one set has that element)
+- can approximate it from the minhash but calculating the fraction of the number of minhash signature matches over the total number of minhashes we imlemented 
+
 TODO: 
 
 - report error on best match
