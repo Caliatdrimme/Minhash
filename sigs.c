@@ -262,10 +262,10 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	//allocate 2 sets
 	int * st1;
-	st = (int *)malloc(sizeof(int)*num_elem);
+	st1 = (int *)malloc(sizeof(int)*num_elem);
 	
 	int * st2;
-	st = (int *)malloc(sizeof(int)*num_elem);
+	st2 = (int *)malloc(sizeof(int)*num_elem);
 	
 	//sets	
 	for (int i = 0; i<num_sets-1; i++){
@@ -283,11 +283,11 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	//get best match set
 	for (int j =0; j <num_elem; j++){
-		MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+		MPI_Recv(&data, 1, MPI_INT, num_elem+best, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		st1[j]=data;
 	}//for
 	
-	char prt[] = "Best Match ";
+	char prt1[] = "Best Match ";
 	print_array(st1, num_elem, prt, rank);
 	
 	//get query set
@@ -298,7 +298,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		st2[j]=data;
 	}//for
 	
-	char prt[] = "Query Set ";
+	char prt2[] = "Query Set ";
 	print_array(st2, num_elem, prt, rank);
 
 	//make the manager somehow find and report candidate pairs based on minhash signatures
