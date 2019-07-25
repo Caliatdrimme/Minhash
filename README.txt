@@ -4,18 +4,37 @@ http://infolab.stanford.edu/~ullman/mmds/ch3a.pdf
 
 So far:
 - works with fgmpi
-- randomly creates binary strings to represent sets
+- reads in binary strings to represent sets from file example.txt
 - creates random hashes (orderings of elements to check)
 - creates minhash signatures for sets 
-- returns candidate pairs (that have overlap of minhash signatures > threshold)
+- treats the last listed set as a query set for which returns the best match out of the previous sets
 - robust to changes of number of elements, sets, hashes, and lenghts of hashes (provided length of hash <= number of elements)
 
+GRAPH REPRESENTATION
+
+- matches can only occur for a specific hash (so the signatures are originally grouped by hash)
+- matches are found and reported to the manager
+- the manager creates a graph where the sets are the nodes and the edges are labelled by the hash on which the two sets match (no edge if no match)
+- the number of edges between two sets indicates their similarity (take ratio of # of edges to total number of elements)
+- the number of edges of one set talks to its similarity/closeness to the rest of the data set (a well-connected set is common/similair to other sets, the least connected set is an outlier)
+- can look for clusters and connected components on the graph (in general or on a specific hash)
+
 TODO: 
-- validate on a real data set
-- http://corpus-texmex.irisa.fr/ SIFT1B (92 GB dataset - 1 billion vectors)
-- https://nlp.stanford.edu/projects/glove/ Common crawl 840B tokens (2GB dataset - 2.2 million vocab) 
-- possibly implement a banding candidate pairs finding technique for larger datasets
-- refactor/improve readability and code effeciency/make it scalable to size
+
+- make it robust to sparse sets (when no signature can be created or takes a long time to get to a 1)
+- report error on best match
+- read up on: apriori search; frequency analysis; parallel prefix/scan
+
+- implement the graph representation (for other queries?)
+- add capability to answer other queries (outliers etc - based on the graph representatation?)
+- refactor/improve readability and code effeciency
+- calculate complexity (order of number of messages)
+
+FUTURE TODO's:
+- impprove printing (dynamically allocate buffers?)
+- design data preprocessing to be able to validate on real data sets
+- improve node reusability
+- can compare performance and complexity based on num_elem, num_sets, but most importantly on size_hash, num_hash and their interaction
 
 
 to compile
@@ -25,17 +44,14 @@ or
 make 
 
 to run 
-mpiexec -n N ./sigs num_elem num_sets size_hash
+mpiexec -n N ./sigs num_elem num_sets num_hash size_hash (the other processes are workers)
 
-simple example mpi:
-mpiexec -n 13 ./sigs 4 4 4
-
-fgmpi:
-mpiexec -n 1 -nfg 13 ./sigs 4 4 4
+with fgmpi (2 workers):
+mpiexec -nfg 1 -n 22 ./sigs 5 8 4 4 
 OR
-mpiexec -n 13 -nfg 1 ./sigs 4 4 4
+mpiexec -nfg 22 -n 1 ./sigs 5 8 4 4
 
 Preconditions for command line arguments:
 size_hash <= num_elem
-num_elem + num_sets < total N of processes (the rest are assigned as hashes)
+num_sets + 2 num_hash + 2 (reader and manager) < total N of processes (the rest are assigned as workers)
 
