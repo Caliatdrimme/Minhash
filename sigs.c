@@ -705,7 +705,7 @@ int my_main(int argc, char ** argv){
 	else {worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size);}
 	
 	//clean up
-	printf("rank %d done\n", rank);
+	//printf("rank %d done\n", rank);
 	MPI_Finalize();
 	return 0;
 }
