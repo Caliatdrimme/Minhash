@@ -224,7 +224,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	
 	int index=0;
-	int min = 0;
+	int min = num_sets*num_hash;
 	for (int i=0; i<num_sets; i++){
 		if (match[i]<min){
 			index=i;
