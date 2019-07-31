@@ -226,14 +226,14 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		MPI_Send(cmd, 2, MPI_INT, i, 1, MPI_COMM_WORLD);
 	}//for
 	
-	int count = 0;
+	int cnt = 0;
 	int set;
 	
-	while(count < num_hash){
+	while(cnt < num_hash){
 		MPI_Recv(&set, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		if (set>size){
-			count++;
-			//printf("New signature is done %d\n", count);
+			cnt++;
+			//printf("New signature is done %d\n", cnt);
 		}else {
 			clash[set] = clash[set]+1;
 			//printf("Collected new clash\n");
