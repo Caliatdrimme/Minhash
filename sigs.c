@@ -161,10 +161,8 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		//index of current minhash
 		int data = 2;
 		
-		printf("Ready to call signature %d", i);
 		MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
-		
-		printf("Called signature %d", i);
+	
 
 
 		for (int j = 0; j < num_sets; j++){
