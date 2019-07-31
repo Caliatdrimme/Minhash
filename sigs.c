@@ -72,7 +72,7 @@ void print_array(int a[], int a_size, char prt[], int rank) {
 void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 
 	//threshold for overlaps
-	int t = 2;
+	int t = num_hash/2;
 
 	int data;
 	int worker;
@@ -209,7 +209,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 	for (int i = 0; i < st_set; i++){
 
-		if (count[i] >= 0){
+		if (count[i] >= t){
 
 		printf("Candidate pair %d and %d with count %d\n\n", set1[i], set2[i], count[i]);}
 
@@ -554,7 +554,7 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 	print_array(sign, num_sets, prt, rank);
 	
 	MPI_Recv(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-	for (int i = 0; i < num_sets-1; i++){
+	for (int i = 0; i < num_sets; i++){
 		//send to manager
 			MPI_Send(&sign[i], 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 		}//for
