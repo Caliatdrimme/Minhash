@@ -63,6 +63,8 @@ void print_array(int a[], int a_size, char prt[], int rank) {
 
 }//print
 
+
+
 //allocates hash-set pairs to workers
 
 //waits for all sets to finish
@@ -147,6 +149,11 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	//malloc 3 arrays of size num_sets
 	//same index indicates candidate pair 
 	//last array stores number of clashes
+	
+	//stores number of edges for each set
+	//each edge is a minhash match to another set
+	int * match;
+	match = (int *)calloc(num_sets-, sizeof(int));
 
 	for (int i = 0; i <num_hash; i++){
 
@@ -182,6 +189,11 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 					//printf("%d\n ", cur->data);
 					
 					printf("Sets %d and %d overlap on minhash %d\n", cur->next->data, j, i);
+					
+					//store this info into the tree
+					match[cur->next->data] = match[cur->next->data]+1;
+					match[j] = match[j]+1;
+					
 
 					cur = cur->next;
 
@@ -206,6 +218,18 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 			}//while clashes 
 		}//for set
 	}//for hash
+	
+	int index=0;
+	int min = 0;
+	for (int i=0; i<num_sets; i++){
+		if (match[i]<min){
+			index=i;
+			min = match[i];
+		}//if
+	
+	}//for sets to find min
+	
+	printf("The outlier is set %d with %d edges\n", index, min);
 
 	for (int i = 0; i < st_set; i++){
 
