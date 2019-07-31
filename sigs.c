@@ -224,11 +224,14 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	int * clash;
 	clash = (int *)calloc(num_sets-1, sizeof(int));
 	
-	//signatures
-	for (int i = 0; i<num_hash; i++){
-		MPI_Send(cmd, 2, MPI_INT, i, 1, MPI_COMM_WORLD);
-	}//for
 	
+	//signatures
+	//for (int i = 0; i<num_hash; i++){
+	//	MPI_Send(cmd, 2, MPI_INT, i, 1, MPI_COMM_WORLD);
+		
+//	}//for
+	
+	printf("ready to collect clashes\n");
 	int cnt = 0;
 	int set;
 	
@@ -559,13 +562,14 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 			MPI_Send(&sign[i], 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 		}//for
 	
-	MPI_Recv(&data, 2, MPI_INT, MPI_ANY_SOURCE, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+	printf("Sending clashes\n");
+
 	
 	for (int i = 0; i < num_sets-1; i++){
 		if(sign[num_sets-1]>num_elem){break;}
 		if(sign[i]>num_elem){continue;}
 		if(sign[i]==sign[num_sets-1]){
-		//printf("Query set clashes with set %d on hash %d\n", i, rank);
+		printf("Query set clashes with set %d on hash %d\n", i, rank);
 		//send to manager
 		MPI_Send(&i, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 		}//if
