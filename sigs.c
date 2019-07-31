@@ -116,7 +116,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		//printf("messege sent\n");
 			
 	}//for
-	printf("Workers shut down");
+	//printf("Workers shut down\n");
 
 	int st_set = num_sets*num_sets;
 
@@ -559,7 +559,7 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 			MPI_Send(&sign[i], 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 		}//for
 	
-	
+	MPI_Recv(&data, 2, MPI_INT, MPI_ANY_SOURCE, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 	
 	for (int i = 0; i < num_sets-1; i++){
 		if(sign[num_sets-1]>num_elem){break;}
