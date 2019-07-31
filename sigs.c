@@ -169,7 +169,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-			if (data == num_elem+1){break;}//if empty set
+			if (data == num_elem+1){continue;}//if empty set
 
 			Node *new_node = malloc( sizeof( struct Node ) );
 			new_node->data = j;
