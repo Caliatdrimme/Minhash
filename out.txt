@@ -1,10 +1,10 @@
-Hash 12 : 3 1 0 2 
+Hash 12 : 3 2 0 
 
-Hash 13 : 2 0 4 3 
+Hash 13 : 2 1 3 
 
-Hash 14 : 1 3 4 0 
+Hash 14 : 1 0 4 
 
-Hash 15 : 0 4 3 2 
+Hash 15 : 0 4 2 
 
 Set 4 : 1 1 0 0 1 
 
@@ -12,6 +12,7 @@ Set 5 : 0 1 0 0 1
 
 Set 6 : 1 0 1 1 0 
 
+Set 5 does not have signature for hash 12
 Set 7 : 0 1 0 1 0 
 
 Set 8 : 1 1 1 1 1 
@@ -20,27 +21,101 @@ Set 9 : 0 0 0 0 0
 
 Set 10 : 1 1 0 1 1 
 
+Set 9 does not have signature for hash 12
 Set 11 : 0 1 0 0 1 
 
-Set 9 does not have signature for hash 12
+Set 11 does not have signature for hash 12
+Signature for hash 0 : 0 6 3 3 3 6 3 6 
+
 Set 9 does not have signature for hash 13
+Signature for hash 1 : 1 1 2 1 2 6 1 1 
+
 Set 9 does not have signature for hash 14
+Signature for hash 2 : 1 1 0 1 1 6 1 1 
+
+Set 7 does not have signature for hash 15
 Set 9 does not have signature for hash 15
+Signature for hash 3 : 0 4 0 6 0 6 0 4 
+
+Sets 2 and 3 overlap on minhash 0
+Sets 3 and 4 overlap on minhash 0
+Sets 2 and 4 overlap on minhash 0
+Sets 4 and 6 overlap on minhash 0
+Sets 3 and 6 overlap on minhash 0
+Sets 2 and 6 overlap on minhash 0
+Sets 0 and 1 overlap on minhash 1
+Sets 1 and 3 overlap on minhash 1
+Sets 0 and 3 overlap on minhash 1
+Sets 2 and 4 overlap on minhash 1
+Sets 3 and 6 overlap on minhash 1
+Sets 1 and 6 overlap on minhash 1
+Sets 0 and 6 overlap on minhash 1
+Sets 6 and 7 overlap on minhash 1
+Sets 3 and 7 overlap on minhash 1
+Sets 1 and 7 overlap on minhash 1
+Sets 0 and 7 overlap on minhash 1
+Sets 0 and 1 overlap on minhash 2
+Sets 1 and 3 overlap on minhash 2
+Sets 0 and 3 overlap on minhash 2
+Sets 3 and 4 overlap on minhash 2
+Sets 1 and 4 overlap on minhash 2
+Sets 0 and 4 overlap on minhash 2
+Sets 4 and 6 overlap on minhash 2
+Sets 3 and 6 overlap on minhash 2
+Sets 1 and 6 overlap on minhash 2
+Sets 0 and 6 overlap on minhash 2
+Sets 6 and 7 overlap on minhash 2
+Sets 4 and 7 overlap on minhash 2
+Sets 3 and 7 overlap on minhash 2
+Sets 1 and 7 overlap on minhash 2
+Sets 0 and 7 overlap on minhash 2
+Sets 0 and 2 overlap on minhash 3
+Sets 2 and 4 overlap on minhash 3
+Sets 0 and 4 overlap on minhash 3
+Sets 4 and 6 overlap on minhash 3
+Sets 2 and 6 overlap on minhash 3
+Sets 0 and 6 overlap on minhash 3
+Sets 1 and 7 overlap on minhash 3
+Matches 21 : 12 10 7 12 12 0 15 10 
+
+The outlier is set 5 with 0 edges
+Candidate pair 3 and 4 with count 2
+
+Candidate pair 2 and 4 with count 3
+
+Candidate pair 4 and 6 with count 3
+
+Candidate pair 3 and 6 with count 3
+
+Candidate pair 2 and 6 with count 2
+
+Candidate pair 0 and 1 with count 2
+
+Candidate pair 1 and 3 with count 2
+
+Candidate pair 0 and 3 with count 2
+
+Candidate pair 1 and 6 with count 2
+
+Candidate pair 0 and 6 with count 3
+
+Candidate pair 6 and 7 with count 2
+
+Candidate pair 3 and 7 with count 2
+
+Candidate pair 1 and 7 with count 3
+
+Candidate pair 0 and 7 with count 2
+
+Candidate pair 0 and 4 with count 2
+
 Starting similarity calculation...
-Signature for hash 0 : 1 1 3 3 3 6 3 1 
+Clashes 21 : 2 3 0 2 1 0 2 
 
-Signature for hash 1 : 0 4 2 3 2 6 0 4 
-
-Signature for hash 2 : 1 1 3 1 1 6 1 1 
-
-Signature for hash 3 : 0 4 0 3 0 6 0 4 
-
-Clashes 21 : 2 4 0 1 1 0 1 
-
-Best match is set 1 with overlap 4
+Best match is set 1 with overlap 3
 Best Match 21 : 0 1 0 0 1 
 
 Query Set 21 : 0 1 0 0 1 
 
-Approximate Jaccard similarity calculated by minhash is 1.000000
+Approximate Jaccard similarity calculated by minhash is 0.750000
 Actual Jaccard similarity is 1.000000
