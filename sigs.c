@@ -116,7 +116,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		//printf("messege sent\n");
 			
 	}//for
-	//printf("Workers shut down");
+	printf("Workers shut down");
 
 	int st_set = num_sets*num_sets;
 
