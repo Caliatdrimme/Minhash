@@ -242,7 +242,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 			//printf("New signature is done %d\n", cnt);
 		}else {
 			clash[set] = clash[set]+1;
-			//printf("Collected new clash\n");
+			printf("Collected new clash\n");
 		}//else
 	
 	}//while
@@ -569,7 +569,7 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 		if(sign[num_sets-1]>num_elem){break;}
 		if(sign[i]>num_elem){continue;}
 		if(sign[i]==sign[num_sets-1]){
-		//printf("Query set clashes with set %d on hash %d\n", i, rank);
+		printf("Query set clashes with set %d on hash %d\n", i, rank);
 		//send to manager
 		MPI_Send(&i, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 		}//if
