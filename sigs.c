@@ -155,14 +155,15 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		for (int i = 0; i < num_elem; i++){
 			minh[i] = NULL;
 		}
+		
+		//rank of set
+		int dest = i;
+		//index of current minhash
+		int data = 42;
+		MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 
 
 		for (int j = 0; j < num_sets; j++){
-			//rank of set
-			int dest = i;
-			//index of current minhash
-			int data = 42;
-			MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
