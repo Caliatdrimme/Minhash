@@ -159,7 +159,9 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		//rank of set
 		int dest = i;
 		//index of current minhash
-		int data = 42;
+		int data = 2;
+		
+		printf("Ready to call signature %d", i);
 		MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 		
 		printf("Called signature %d", i);
@@ -534,7 +536,7 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 
 	int data[2];
 	
-	while(1){
+	for(int i = 0; i < num_sets; i++){
 		MPI_Recv(&data, 2, MPI_INT, MPI_ANY_SOURCE, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
 		if (data[0]>size){
@@ -544,11 +546,11 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 		sign[data[0]-num_hash] = data[1];
 		//printf("Hash %d received signature %d for set %d\n", rank, data[1], data[0]);
 		
-		printf("Stuck");
+		
 		
 
 		//MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
-	}//while
+	}//for
 	
 	char prt[] = "Signature for hash ";
 	print_array(sign, num_sets, prt, rank);
