@@ -219,6 +219,10 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		}//for set
 	}//for hash
 	
+	text = "Matches ";
+	print_array(match, num_sets, text, rank);
+	
+	
 	int index=0;
 	int min = 0;
 	for (int i=0; i<num_sets; i++){
