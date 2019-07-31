@@ -1,8 +1,7 @@
 /*signature creation
-June 18th 2019 
+June 18th - July 30th 2019 
 Svetlana Sodol 
 UBC
-
 */
 
 
@@ -36,7 +35,8 @@ typedef struct Node  {
  	struct Node *next; 
 } Node; 
 
-//make size dynamically allocated
+//TODO make size dynamically allocated
+//function that collects array into one character buffer and prints
 void print_array(int a[], int a_size, char prt[], int rank) {
 
 	char rnk[20];
@@ -68,7 +68,9 @@ void print_array(int a[], int a_size, char prt[], int rank) {
 //allocates hash-set pairs to workers
 
 //waits for all sets to finish
+//finds outlier set
 //finds similar sets based on signatures
+//finds closest set to last set in data file
 
 //sends quit command
 void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
@@ -77,12 +79,14 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	int t = num_hash/2;
 
 	int data;
+	//worker node rank
 	int worker;
+	//to hold the hash-set pair ranks
 	int pair[2];
 
 	int candidates = 0;
 
-	//figure out a way to stagger set-hash assigntment
+	//TODO figure out a way to stagger set-hash assigntment
 
 	for (int i = 0; i < num_hash; i++){
 		for (int j = 0; j < num_sets; j++){
@@ -112,6 +116,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		//printf("i is %d\n", i);
 		MPI_Recv(&data, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 		//printf("worker %d\n", data);
+		//size+1 is used as indicator for shutting down
 		pair[0]= size+1; 
 		pair[1]= size+1;
 		MPI_Send(&pair, 2, MPI_INT, data, 0, MPI_COMM_WORLD);
@@ -119,6 +124,8 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 			
 	}//for
 	//printf("Workers shut down\n");
+
+	//begin candidate pairs and outlier processing
 
 	int st_set = num_sets*num_sets;
 
@@ -143,18 +150,17 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 		count[i] = 0;
 	}
 
-	//malloc 1 array of size num_elem 
-	//elem keeps current hashes clashes - stores rank of set that has that hash
-
-	//malloc 3 arrays of size num_sets
+	//malloc 3 arrays of size num_sets*num_sets
 	//same index indicates candidate pair 
-	//last array stores number of clashes
+	//last array stores number of matches/clashes between the two sets
 	
 	//stores number of edges for each set
 	//each edge is a minhash match to another set
 	int * match;
 	match = (int *)calloc(num_sets, sizeof(int));
 
+	//process signatures as they come in
+	//create linked list for each hash to store all matches on that hash
 	for (int i = 0; i <num_hash; i++){
 
 		Node ** minh = calloc(num_elem, sizeof(struct Node*));
@@ -163,9 +169,9 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 			minh[i] = NULL;
 		}
 		
-		//rank of set
+		//rank of signature (hash)
 		int dest = i;
-		//index of current minhash
+		//send something to synchronize
 		int data = 2;
 		
 		MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
@@ -190,7 +196,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 					
 					printf("Sets %d and %d overlap on minhash %d\n", cur->next->data, j, i);
 					
-					//store this info into the tree
+					//store this info into the tree for outlier
 					match[cur->next->data] = match[cur->next->data]+1;
 					match[j] = match[j]+1;
 					
@@ -222,7 +228,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	char text[] = "Matches ";
 	print_array(match, num_sets, text, rank);
 	
-	
+	//find the outlier
 	int index=0;
 	int min = num_sets*num_hash;
 	for (int i=0; i<num_sets; i++){
@@ -235,6 +241,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	printf("The outlier is set %d with %d edges\n", index, min);
 
+	//find candidate pairs
 	for (int i = 0; i < st_set; i++){
 
 		if (count[i] >= t){
@@ -251,13 +258,6 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	
 	int * clash;
 	clash = (int *)calloc(num_sets-1, sizeof(int));
-	
-	
-	//signatures
-	//for (int i = 0; i<num_hash; i++){
-	//	MPI_Send(cmd, 2, MPI_INT, i, 1, MPI_COMM_WORLD);
-		
-//	}//for
 	
 	//printf("ready to collect clashes\n");
 	int cnt = 0;
@@ -348,8 +348,6 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	printf("Approximate Jaccard similarity calculated by minhash is %f\n", aprx);
 	float actual = (float) act/un;
 	printf("Actual Jaccard similarity is %f\n", actual);
-
-	//make the manager somehow find and report candidate pairs based on minhash signatures
 }//manager
 
 
@@ -357,7 +355,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 //reads off and stores a set 
 //sends off the set when prompted
 void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
-	//change the following to read in a set
+	
 	//set is a binary string - 1 if element of that index is present in the set
 	//size of set is num_elements
 
@@ -374,10 +372,8 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 		st[i] = data;
 	}
 
-
 	char prt[] = "Set ";
 	print_array(st, num_elem, prt, rank);
-
 
 	//send our set to whoever needs
 	for (int i = 0; i<num_hash; i++){
@@ -390,18 +386,8 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 			data = st[j];
 			MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 		}//for 
-
-		//receive the signature back and store it 
 	} //for
 
-	//send signature to manager
-
-
-	//send message to manager that we are done
-	//data = 1;
-	//MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
-	
-	
 	MPI_Recv(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
 	if (data==1){
@@ -410,7 +396,6 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 			MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 		}//for 
 	}//if
-	
 	
 	free(st);
 
@@ -423,11 +408,8 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 //calls set to get a copy of the set
 //calls hash to get the order of elements to check
 //creates signature for that hash-set pair by visiting elements in the hash order
-//gives signature to manager when done?
+//gives signature to manager when done
 void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
-	//change the following to read in a set
-	//set is a binary string - 1 if element of that index is present in the set
-	//size of set is num_elements
 
 	//printf("I am worker %d\n", rank);
 
@@ -446,10 +428,6 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 	hash = (int *)malloc(sizeof(int)*size_hash);
 
 	//size of signature is num_hash
-	//malloc signature array
-
-	//	int *sig;
-	//	sig = (int *)malloc(sizeof(int)*num_hash);
 
 	int sig;
 
@@ -481,7 +459,6 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 		}//for
 		//printf("Worker %d received hash %d: %d %d %d %d\n", rank, dest, hash[0], hash[1], hash[2], hash[3]); 
 
-
 		//get the set
 		dest = pair[0];
 		//printf("Calling set %d from worker %d\n", dest, rank);
@@ -498,14 +475,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 
 		for (int j =0; j <size_hash; j++){
 			dest = hash[j];
-			//printf("Worker %d calling element %d\n", rank, dest);
-			//MPI_Send(&rank, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
-			//printf("Worker %d sent message to element %d\n", rank, dest);
-
-			//MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-			//printf("Set %d checking presence of element %d: %d\n", pair[0], dest, st[dest]);
-			
+		
 			int sign[2];
 
 			if (st[dest]==1){
@@ -533,31 +503,15 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 		
 	}//while
 
-	//printf("Set %d sending signature to manager\n", rank);
-/*
-	char str[] = "Signature for set ";
-	print_array(sig, num_hash, str, rank);
-
-	//dont need to let manager know we are done
-	data = 1;
-	MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
-	//int dest, data;
-
-	while(1){
-		MPI_Recv(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		if (data>size){break;}
-		data =sig[data];
-		MPI_Send(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
-	}//while
-*/
 	free(st);
-	//free(sig);
 	free(hash);
 
 }//worker
 
 
 //stores signature for a specific hash
+//works with manager to first send all in order to create graph
+//then calculates own clashes with the last query set
 void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 	
 	int *sign;
@@ -575,10 +529,6 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 		sign[data[0]-num_hash] = data[1];
 		//printf("Hash %d received signature %d for set %d\n", rank, data[1], data[0]);
 		
-		
-		
-
-		//MPI_Send(&element, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 	}//for
 	
 	char prt[] = "Signature for hash ";
@@ -592,7 +542,6 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 	
 	//printf("Sending clashes\n");
 
-	
 	for (int i = 0; i < num_sets-1; i++){
 		if(sign[num_sets-1]>num_elem){break;}
 		if(sign[i]>num_elem){continue;}
@@ -606,9 +555,7 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 	int done = size+1;
 	//printf("Signature %d is done\n", rank);
 	MPI_Send(&done, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
-	
-	
-	
+
 	free(sign);
 }//signature
 
@@ -617,8 +564,6 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, int num_worker, int size){
 
 	//printf("I am hash %d\n", rank);
-
-
 
 	int dest, data;
 
@@ -681,7 +626,6 @@ void reader_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash
 	int data;
 	//open file for reading
 	
-
 	FILE *fp;
 	fp = fopen("example.txt", "r");
 
@@ -701,8 +645,6 @@ void reader_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash
 	}//for
 
 	fclose(fp);
-
-
 
 }//reader
 
@@ -758,7 +700,6 @@ MPI_Send(
     int destination,
     int tag,
     MPI_Comm communicator)
-
 MPI_Recv(
     void* data,
     int count,
@@ -772,13 +713,10 @@ MPI_Recv(
 
 /* to compile
 mpicc sigc.c -o sigs
-
 to run 
 mpiexec -n  ./sigs num_elem num_sets num_hash size_hash (rest are workers)
-
 with fgmpi (4 workers):
 mpiexec -nfg 1 -n 22 ./sigs 5 8 4 4 
 OR
 mpiexec -nfg 22 -n 1 ./sigs 5 8 4 4
-
 */
