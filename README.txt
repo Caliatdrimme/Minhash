@@ -8,6 +8,8 @@ So far:
 - creates random hashes (orderings of elements to check)
 - creates minhash signatures for sets 
 - treats the last listed set as a query set for which returns the best match out of the previous sets
+- reports candidate pairs (pairs of sets that overlap on more than half of their minhash signature)
+- reports the outlier of the data set (set with the least number of overlap on minhash signature with the other sets in the data set)
 - robust to changes of number of elements, sets, hashes, and lenghts of hashes (provided length of hash <= number of elements)
 
 GRAPH REPRESENTATION
@@ -20,38 +22,35 @@ GRAPH REPRESENTATION
 - can look for clusters and connected components on the graph (in general or on a specific hash)
 
 JACCARD SIMILIARITY
-- real similiarity is teh fraction of number of elements that match in a set over the total number of elements in both sets (at least one set has that element)
+- real similiarity is the fraction of number of elements that match in a set over the total number of elements in both sets (at least one set has that element)
 - can approximate it from the minhash but calculating the fraction of the number of minhash signature matches over the total number of minhashes we imlemented 
 
 TODO: 
-- implement the graph representation (for other queries?)
-- add capability to answer other queries (outliers etc - based on the graph representatation?)
-
 - refactor/improve readability and code effeciency
 - calculate complexity (order of number of messages)
 
 FUTURE TODO's:
-- impprove printing (dynamically allocate buffers?)
+- improve printing (dynamically allocate buffers?)
+- implement a more general graph representation
 - design data preprocessing to be able to validate on real data sets
 - improve node reusability
 - can compare performance and complexity based on num_elem, num_sets, but most importantly on size_hash, num_hash and their interaction
 
 
 to compile
-mpicc sigc.c -o sigs
-
-or
 make 
 
 to run 
 mpiexec -n N ./sigs num_elem num_sets num_hash size_hash (the other processes are workers)
 
 with fgmpi (2 workers):
-mpiexec -nfg 1 -n 22 ./sigs 5 8 4 4 
+mpiexec -nfg 1 -n 22 ./sigs 5 8 4 3 
 OR
-mpiexec -nfg 22 -n 1 ./sigs 5 8 4 4
+mpiexec -nfg 22 -n 1 ./sigs 5 8 4 3
 
 Preconditions for command line arguments:
 size_hash <= num_elem
 num_sets + 2 num_hash + 2 (reader and manager) < total N of processes (the rest are assigned as workers)
+
+the example.txt file has 8 sets in total with 5 elements each
 
