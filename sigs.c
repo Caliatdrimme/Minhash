@@ -562,7 +562,7 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 			MPI_Send(&sign[i], 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
 		}//for
 	
-	//printf("Sending clashes\n");
+	printf("Sending clashes\n");
 
 	
 	for (int i = 0; i < num_sets-1; i++){
