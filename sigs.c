@@ -153,7 +153,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	//stores number of edges for each set
 	//each edge is a minhash match to another set
 	int * match;
-	match = (int *)calloc(num_sets-, sizeof(int));
+	match = (int *)calloc(num_sets, sizeof(int));
 
 	for (int i = 0; i <num_hash; i++){
 
