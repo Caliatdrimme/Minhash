@@ -118,7 +118,6 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	}//for
 	//printf("Workers shut down");
 
-/*
 	int st_set = num_sets*num_sets;
 
 	int *set1;
@@ -160,9 +159,9 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 		for (int j = 0; j < num_sets; j++){
 			//rank of set
-			int dest = num_elem+j;
+			int dest = i;
 			//index of current minhash
-			int data = i;
+			int data = 42;
 			MPI_Send(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD);
 
 			MPI_Recv(&data, 1, MPI_INT, dest, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
@@ -170,7 +169,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 			if (data == num_elem+1){break;}//if empty set
 
 			Node *new_node = malloc( sizeof( struct Node ) );
-			new_node->data = dest;
+			new_node->data = j;
 			new_node->next = minh[data];
 			minh[data] = new_node;
 
@@ -179,23 +178,23 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 				while (cur->next != NULL){
 					//printf("%d\n ", cur->data);
 					
-					//printf("Sets %d and %d overlap on minhash %d\n", cur->next->data, dest, i);
+					printf("Sets %d and %d overlap on minhash %d\n", cur->next->data, j, i);
 
 					cur = cur->next;
 
 					for (int i = 0; i < st_set; i++){
-						if ((set1[i]==cur->data)&&(set2[i]==dest)){
+						if ((set1[i]==cur->data)&&(set2[i]==j)){
 							count[i]++;
 							break;
 						}
-						if ((set1[i]==dest)&&(set2[i]==cur->data)){
+						if ((set1[i]==j)&&(set2[i]==cur->data)){
 							count[i]++;
 							break;
 						}
 
 						if ((set1[i]==0)&&(set2[i]==0)){
 							set1[i]=cur->data;
-							set2[i]=dest;
+							set2[i]=j;
 							count[i]=1;
 							candidates++;
 							break;
@@ -207,15 +206,12 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 	for (int i = 0; i < st_set; i++){
 
-		if (count[i] >= t){
+		if (count[i] >= 0){
 
 		printf("Candidate pair %d and %d with count %d\n\n", set1[i], set2[i], count[i]);}
 
 	}//for printing candidate pairs
 
-	data = size+1;
-
-*/
 	//sends ready to collect clashes command
 	int cmd[2];
 	cmd[0] = size+1;
@@ -551,6 +547,12 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 	
 	char prt[] = "Signature for hash ";
 	print_array(sign, num_sets, prt, rank);
+	
+	MPI_Recv(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+	for (int i = 0; i < num_sets-1; i++){
+		//send to manager
+			MPI_Send(&sign[i], 1, MPI_INT, size-1, 0, MPI_COMM_WORLD);
+		}//for
 	
 	
 	
