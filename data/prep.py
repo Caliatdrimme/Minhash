@@ -130,7 +130,7 @@ print(data[1,:])
 #each row as line
 #no symbols
 
-f_out = open("result.txt","w+")
+f_out = open("data-valid.txt","w+")
 
 for i in range(200):
 	for j in range(200):
