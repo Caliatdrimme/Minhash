@@ -91,29 +91,33 @@ while line:
 	#print(dt)
 	id = int(dt[0])
 
-	if ((id >= start[0]) and (id <= (start[0]+49))):
+	if ((id >= (start[0]+1)) and (id <= (start[0]+50))):
 		#store this line's data
 		word = int(dt[1])
-		row = id - start[0]
-		data[row,word] = 1
+		if (word <= 200):
+			row = id - start[0] + 1
+			data[row,word] = 1
 
-	if ((id >= start[1]) and (id <= (start[1]+49))):
+	if ((id >= (start[1]+1)) and (id <= (start[1]+50))):
 		#store this line's data
 		word = int(dt[1])
-		row = id - start[1] + 50
-		data[row,word] = 1
+		if (word <= 200):
+			row = id - start[1] + 51
+			data[row,word] = 1
 
-	if ((id >= start[2]) and (id <= (start[2]+49))):
+	if ((id >= (start[2]+1)) and (id <= (start[2]+50))):
 		#store this line's data
 		word = int(dt[1])
-		row = id - start[2] + 100
-		data[row,word] = 1
+		if (word <= 200):
+			row = id - start[2] + 101
+			data[row,word] = 1
 
-	if ((id >= start[3]) and (id <= (start[3]+49))):
+	if ((id >= (start[3]+1)) and (id <= (start[3]+50))):
 		#store this line's data
 		word = int(dt[1])
-		row = id - start[3] + 150
-		data[row,word] = 1
+		if (word <= 200):
+			row = id - start[3] + 151
+			data[row,word] = 1
 
 	line = f_test_data.readline()
 
