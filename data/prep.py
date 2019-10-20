@@ -96,28 +96,28 @@ while line:
 		word = int(dt[1])
 		if (word <= 200):
 			row = id - start[0] + 1
-			data[row,word] = 1
+			data[row,word-1] = 1
 
 	if ((id >= (start[1]+1)) and (id <= (start[1]+50))):
 		#store this line's data
 		word = int(dt[1])
 		if (word <= 200):
 			row = id - start[1] + 51
-			data[row,word] = 1
+			data[row,word-1] = 1
 
 	if ((id >= (start[2]+1)) and (id <= (start[2]+50))):
 		#store this line's data
 		word = int(dt[1])
 		if (word <= 200):
 			row = id - start[2] + 101
-			data[row,word] = 1
+			data[row,word-1] = 1
 
 	if ((id >= (start[3]+1)) and (id <= (start[3]+50))):
 		#store this line's data
 		word = int(dt[1])
 		if (word <= 200):
 			row = id - start[3] + 151
-			data[row,word] = 1
+			data[row,word-1] = 1
 
 	line = f_test_data.readline()
 
