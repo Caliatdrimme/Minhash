@@ -5,12 +5,12 @@ import numpy as np
 
 f_test = open("test.label", "r")
 
-f_train = open("train.label", "r")
+#f_train = open("train.label", "r")
 
 
-#count number of examples in each of the 4 subgroups i chose
+#count number of examples in each of the 4 subgroups 
 
-train = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+#train = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 test = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 #start indeces for document ids for groups 2,9,15,20
@@ -25,29 +25,29 @@ while line:
 
 	line = f_test.readline()
 
-print("Test data")
-print(test)
+#print("Test data")
+#print(test)
 
 
-line = f_train.readline()
+#line = f_train.readline()
 
-while line:
-	for i in range(20):
+#while line:
+#	for i in range(20):
 
-		if int(line) == i+1:
-			train[i] += 1
+#		if int(line) == i+1:
+#			train[i] += 1
 
-	line = f_train.readline()
+#	line = f_train.readline()
 
 
 f_test.close()
-f_train.close()
+#f_train.close()
 	
-print("Train data")
-print(train)
+#print("Train data")
+#print(train)
 
-print(sum(test))
-print(sum(train))
+#print(sum(test))
+#print(sum(train))
 
 
 
@@ -62,33 +62,64 @@ print(start)
 
 
 #how long is vocabulary
-f_vocab = open("vocabulary.txt", "r")
+#f_vocab = open("vocabulary.txt", "r")
 
-line = f_vocab.readline()
+#line = f_vocab.readline()
 
-size_vocab = 0
+#size_vocab = 0
 
-while line:
-	size_vocab += 1
-	line = f_vocab.readline()
+#while line:
+#	size_vocab += 1
+#	line = f_vocab.readline()
 
-print(size_vocab)
+#print(size_vocab)
+
+#f_vocab.close()
+
+#initialize data matrix
+data = np.zeros((200,200))
 
 f_test_data = open("test.data","r")
 
 line = f_test_data.readline()
-print(line)
-print(type(line))
+#print(line)
+#print(type(line))
 
-data = line.split(' ')	
+while line:
+
+	dt = line.split(' ')	
+	#print(dt)
+	id = int(dt[0])
+
+	if ((id >= start[0]) and (id <= (start[0]+49))):
+		#store this line's data
+		word = int(dt[1])
+		row = id - start[0]
+		data[row,word] = 1
+
+	if ((id >= start[1]) and (id <= (start[1]+49))):
+		#store this line's data
+		word = int(dt[1])
+		row = id - start[1] + 50
+		data[row,word] = 1
+
+	if ((id >= start[2]) and (id <= (start[2]+49))):
+		#store this line's data
+		word = int(dt[1])
+		row = id - start[2] + 100
+		data[row,word] = 1
+
+	if ((id >= start[3]) and (id <= (start[3]+49))):
+		#store this line's data
+		word = int(dt[1])
+		row = id - start[3] + 150
+		data[row,word] = 1
+
+	line = f_test_data.readline()
+
+f_test_data.close()
+
 print(data)
-print(int(data[2]))
-
-
-f_vocab.close()
-
-
-	
-	
-
-
+#print data matrix into file 
+#each row as line
+#no symbols
