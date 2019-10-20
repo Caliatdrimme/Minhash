@@ -1,0 +1,75 @@
+dataset from http://qwone.com/~jason/20Newsgroups/
+the bydate one
+
+The .data files are formatted "docIdx wordIdx count". The .label files are simply a list of label id's. The .map files map from label id's to label names. 
+
+GROUPS
+take samples from 4 groups 
+
+comp.graphics 2
+rec.motorcycles 9
+sci.space 15
+talk.religion.misc 20
+
+DATA SET
+
+use from test data - less examples 
+2 - 389 total
+9 - 397
+15 - 392
+20 - 251
+
+DOCUMENTS
+
+take first 50 of each group = 400 examples total
+
+
+find the range of the document ID's of the first 50 of each of the 4 groups
+from label file
+
+319 
+3041
+5415
+7255
+
+get those doc IDs from the data file 
+
+WORDS
+
+total vocab is 61188
+
+size of vocab does not impact # of proccesses
+- will i be able to store strings of this size?
+- probably will not be printing any strings of this size anyway
+- try with first 200 words
+- 100 hashes
+- of size 100
+
+
+
+Separate processes for 
+1 manager
+1 reader
+num_hash hashes (to store orderings of elements to check)
+num_set sets (to store data)
+num_hash signatures - stores all sets' signatures for a specific hash
+rest are workers (takes a set through a hash)
+
+rename last_elem to last_sig????
+
+number of processes is num_sets + 2 num_hash + 2 < N total
+
+num_sets = 200 (last is treated as query)
+num_elem = 200
+num_hash = 100
+size_hash = 100
+
+should i preprocess into binary string?
+- start with preprocess now
+- then rewrite reader and set representation to be better suited for sparse sets
+- signatures probably also should be rewritten to be able to use sparse sets
+
+
+
+
+
