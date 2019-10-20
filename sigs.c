@@ -627,7 +627,7 @@ void reader_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash
 	//open file for reading
 	
 	FILE *fp;
-	fp = fopen("example.txt", "r");
+	fp = fopen("data-valid.txt", "r");
 
 	for (int i=0; i<num_sets; i++){
 		for(int j = 0; j < num_elem; j++){
