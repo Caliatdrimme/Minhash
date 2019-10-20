@@ -133,7 +133,8 @@ f_out = open("result.txt","w+")
 
 for i in range(200):
 	for j in range(200):
-		f_out.write(str(data[i,j]))
-	f_out.write('/n')
+		element = data[i,j]
+		f_out.write(element)
+	f_out.write('\n')
 
 f_out.close()
