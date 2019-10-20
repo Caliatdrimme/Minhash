@@ -373,7 +373,7 @@ void set_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, i
 	}
 
 	char prt[] = "Set ";
-	print_array(st, num_elem, prt, rank);
+	//print_array(st, num_elem, prt, rank);
 
 	//send our set to whoever needs
 	for (int i = 0; i<num_hash; i++){
@@ -532,7 +532,7 @@ void signature_fn(int rank, int num_elem, int num_sets, int size_hash, int num_h
 	}//for
 	
 	char prt[] = "Signature for hash ";
-	print_array(sign, num_sets, prt, rank);
+	//print_array(sign, num_sets, prt, rank);
 	
 	MPI_Recv(&data, 1, MPI_INT, size-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 	for (int i = 0; i < num_sets; i++){
@@ -595,7 +595,7 @@ void hash_fn(int rank, int num_elem, int num_sets, int size_hash, int num_hash, 
 	}
 
 	char prt[] = "Hash ";
-	print_array(hash, size_hash, prt, rank);
+	//print_array(hash, size_hash, prt, rank);
 
 	for(int i = 0; i<num_sets; i++){
 
