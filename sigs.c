@@ -318,7 +318,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	}//for
 	
 	char prt1[] = "Best Match ";
-	print_array(st1, num_elem, prt1, rank);
+	//print_array(st1, num_elem, prt1, rank);
 	
 	//get query set
 	data = 1;
@@ -329,7 +329,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	}//for
 	
 	char prt2[] = "Query Set ";
-	print_array(st2, num_elem, prt2, rank);
+	//print_array(st2, num_elem, prt2, rank);
 	
 	int act = 0;
 	int un = 0;
