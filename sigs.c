@@ -194,7 +194,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 				while (cur->next != NULL){
 					//printf("%d\n ", cur->data);
 					
-					printf("Sets %d and %d overlap on minhash %d\n", cur->next->data, j, i);
+					//printf("Sets %d and %d overlap on minhash %d\n", cur->next->data, j, i);
 					
 					//store this info into the tree for outlier
 					match[cur->next->data] = match[cur->next->data]+1;
@@ -226,7 +226,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	}//for hash
 	
 	char text[] = "Matches ";
-	print_array(match, num_sets, text, rank);
+	//print_array(match, num_sets, text, rank);
 	
 	//find the outlier
 	int index=0;
@@ -276,7 +276,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 	}//while
 	
 	char prt[] = "Clashes ";
-	print_array(clash, num_sets-1, prt, rank);
+	//print_array(clash, num_sets-1, prt, rank);
 	
 	int best = num_sets-1;
 	int max = 0;
