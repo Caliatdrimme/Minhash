@@ -124,6 +124,7 @@ while line:
 f_test_data.close()
 
 print(data)
+print(data[1,:])
 #print data matrix into file 
 #each row as line
 #no symbols
