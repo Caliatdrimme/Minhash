@@ -128,3 +128,12 @@ print(data[1,:])
 #print data matrix into file 
 #each row as line
 #no symbols
+
+f_out = open("result.txt","w+")
+
+for i in range(200):
+	for j in range(200):
+		f_out.write(data[i,j])
+	f_out.write("/n")
+
+f_out.close()
