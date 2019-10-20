@@ -123,6 +123,7 @@ while line:
 
 f_test_data.close()
 
+data.astype(int)
 print(data)
 print(data[1,:])
 #print data matrix into file 
