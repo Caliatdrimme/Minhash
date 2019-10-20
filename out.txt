@@ -1,121 +1,4056 @@
-Hash 12 : 3 2 0 
+Set 112 does not have signature for hash 300
+Set 195 does not have signature for hash 300
+Set 258 does not have signature for hash 300
+Set 112 does not have signature for hash 303
+Set 112 does not have signature for hash 301
+Set 199 does not have signature for hash 300
+Set 195 does not have signature for hash 301
+Set 112 does not have signature for hash 304
+Set 111 does not have signature for hash 302
+Set 112 does not have signature for hash 302
+Set 199 does not have signature for hash 301
+Set 145 does not have signature for hash 302
+Set 271 does not have signature for hash 301
+Set 111 does not have signature for hash 305
+Set 112 does not have signature for hash 305
+Set 199 does not have signature for hash 302
+Set 195 does not have signature for hash 302
+Set 111 does not have signature for hash 306
+Set 112 does not have signature for hash 306
+Set 271 does not have signature for hash 302
+Set 195 does not have signature for hash 303
+Set 199 does not have signature for hash 303
+Set 195 does not have signature for hash 304
+Set 199 does not have signature for hash 304
+Set 112 does not have signature for hash 307
+Set 112 does not have signature for hash 308
+Set 195 does not have signature for hash 305
+Set 199 does not have signature for hash 305
+Set 195 does not have signature for hash 306
+Set 199 does not have signature for hash 306
+Set 112 does not have signature for hash 309
+Set 271 does not have signature for hash 304
+Set 112 does not have signature for hash 310
+Set 195 does not have signature for hash 308
+Set 199 does not have signature for hash 308
+Set 195 does not have signature for hash 307
+Set 195 does not have signature for hash 310
+Set 199 does not have signature for hash 310
+Set 199 does not have signature for hash 307
+Set 271 does not have signature for hash 310
+Set 112 does not have signature for hash 311
+Set 111 does not have signature for hash 311
+Set 195 does not have signature for hash 311
+Set 199 does not have signature for hash 311
+Set 112 does not have signature for hash 312
+Set 271 does not have signature for hash 305
+Set 195 does not have signature for hash 309
+Set 271 does not have signature for hash 311
+Set 199 does not have signature for hash 309
+Set 111 does not have signature for hash 313
+Set 112 does not have signature for hash 313
+Set 119 does not have signature for hash 313
+Set 171 does not have signature for hash 312
+Set 111 does not have signature for hash 314
+Set 195 does not have signature for hash 312
+Set 112 does not have signature for hash 314
+Set 199 does not have signature for hash 312
+Set 271 does not have signature for hash 309
+Set 111 does not have signature for hash 315
+Set 112 does not have signature for hash 315
+Set 107 does not have signature for hash 316
+Set 258 does not have signature for hash 312
+Set 271 does not have signature for hash 312
+Set 112 does not have signature for hash 316
+Set 116 does not have signature for hash 316
+Set 119 does not have signature for hash 316
+Set 195 does not have signature for hash 313
+Set 199 does not have signature for hash 313
+Set 111 does not have signature for hash 317
+Set 112 does not have signature for hash 317
+Set 195 does not have signature for hash 314
+Set 195 does not have signature for hash 315
+Set 112 does not have signature for hash 318
+Set 199 does not have signature for hash 315
+Set 199 does not have signature for hash 314
+Set 195 does not have signature for hash 316
+Set 199 does not have signature for hash 316
+Set 112 does not have signature for hash 319
+Set 112 does not have signature for hash 320
+Set 195 does not have signature for hash 317
+Set 199 does not have signature for hash 317
+Set 195 does not have signature for hash 318
+Set 199 does not have signature for hash 318
+Set 195 does not have signature for hash 320
+Set 199 does not have signature for hash 320
+Set 271 does not have signature for hash 320
+Set 112 does not have signature for hash 321
+Set 271 does not have signature for hash 314
+Set 195 does not have signature for hash 321
+Set 199 does not have signature for hash 321
+Set 112 does not have signature for hash 322
+Set 195 does not have signature for hash 319
+Set 199 does not have signature for hash 319
+Set 258 does not have signature for hash 321
+Set 111 does not have signature for hash 323
+Set 112 does not have signature for hash 323
+Set 271 does not have signature for hash 317
+Set 258 does not have signature for hash 319
+Set 271 does not have signature for hash 319
+Set 112 does not have signature for hash 324
+Set 111 does not have signature for hash 325
+Set 195 does not have signature for hash 322
+Set 199 does not have signature for hash 322
+Set 112 does not have signature for hash 325
+Set 112 does not have signature for hash 326
+Set 195 does not have signature for hash 323
+Set 112 does not have signature for hash 327
+Set 199 does not have signature for hash 323
+Set 195 does not have signature for hash 324
+Set 199 does not have signature for hash 324
+Set 195 does not have signature for hash 325
+Set 111 does not have signature for hash 328
+Set 199 does not have signature for hash 325
+Set 112 does not have signature for hash 328
+Set 119 does not have signature for hash 328
+Set 195 does not have signature for hash 326
+Set 199 does not have signature for hash 326
+Set 271 does not have signature for hash 323
+Set 112 does not have signature for hash 329
+Set 119 does not have signature for hash 329
+Set 195 does not have signature for hash 327
+Set 199 does not have signature for hash 327
+Set 112 does not have signature for hash 330
+Set 195 does not have signature for hash 330
+Set 199 does not have signature for hash 330
+Set 266 does not have signature for hash 324
+Set 195 does not have signature for hash 328
+Set 199 does not have signature for hash 328
+Set 258 does not have signature for hash 330
+Set 271 does not have signature for hash 324
+Set 111 does not have signature for hash 331
+Set 112 does not have signature for hash 331
+Set 171 does not have signature for hash 329
+Set 199 does not have signature for hash 331
+Set 195 does not have signature for hash 331
+Set 195 does not have signature for hash 329
+Set 199 does not have signature for hash 329
+Set 112 does not have signature for hash 332
+Set 271 does not have signature for hash 325
+Set 108 does not have signature for hash 333
+Set 111 does not have signature for hash 333
+Set 112 does not have signature for hash 333
+Set 112 does not have signature for hash 334
+Set 271 does not have signature for hash 329
+Set 195 does not have signature for hash 332
+Set 199 does not have signature for hash 332
+Set 112 does not have signature for hash 335
+Set 132 does not have signature for hash 334
+Set 111 does not have signature for hash 336
+Set 112 does not have signature for hash 336
+Set 111 does not have signature for hash 337
+Set 112 does not have signature for hash 337
+Set 195 does not have signature for hash 333
+Set 199 does not have signature for hash 333
+Set 195 does not have signature for hash 334
+Set 195 does not have signature for hash 335
+Set 199 does not have signature for hash 334
+Set 199 does not have signature for hash 335
+Set 111 does not have signature for hash 338
+Set 112 does not have signature for hash 338
+Set 195 does not have signature for hash 336
+Set 199 does not have signature for hash 336
+Set 112 does not have signature for hash 339
+Set 195 does not have signature for hash 337
+Set 112 does not have signature for hash 340
+Set 199 does not have signature for hash 337
+Set 199 does not have signature for hash 340
+Set 195 does not have signature for hash 340
+Set 195 does not have signature for hash 338
+Set 199 does not have signature for hash 338
+Set 271 does not have signature for hash 340
+Set 266 does not have signature for hash 334
+Set 112 does not have signature for hash 341
+Set 271 does not have signature for hash 334
+Set 195 does not have signature for hash 341
+Set 199 does not have signature for hash 341
+Set 112 does not have signature for hash 342
+Set 271 does not have signature for hash 336
+Set 119 does not have signature for hash 342
+Set 195 does not have signature for hash 339
+Set 271 does not have signature for hash 341
+Set 199 does not have signature for hash 339
+Set 271 does not have signature for hash 338
+Set 112 does not have signature for hash 343
+Set 195 does not have signature for hash 342
+Set 199 does not have signature for hash 342
+Set 112 does not have signature for hash 344
+Set 112 does not have signature for hash 345
+Set 258 does not have signature for hash 342
+Set 271 does not have signature for hash 342
+Set 111 does not have signature for hash 346
+Set 112 does not have signature for hash 346
+Set 171 does not have signature for hash 343
+Set 195 does not have signature for hash 343
+Set 111 does not have signature for hash 347
+Set 199 does not have signature for hash 343
+Set 112 does not have signature for hash 347
+Set 195 does not have signature for hash 344
+Set 199 does not have signature for hash 344
+Set 195 does not have signature for hash 345
+Set 199 does not have signature for hash 345
+Set 258 does not have signature for hash 343
+Set 112 does not have signature for hash 348
+Set 266 does not have signature for hash 343
+Set 271 does not have signature for hash 343
+Set 195 does not have signature for hash 346
+Set 199 does not have signature for hash 346
+Set 111 does not have signature for hash 349
+Set 112 does not have signature for hash 349
+Set 137 does not have signature for hash 348
+Set 119 does not have signature for hash 349
+Set 195 does not have signature for hash 347
+Set 112 does not have signature for hash 350
+Set 199 does not have signature for hash 347
+Set 258 does not have signature for hash 344
+Set 195 does not have signature for hash 350
+Set 195 does not have signature for hash 348
+Set 199 does not have signature for hash 350
+Set 199 does not have signature for hash 348
+Set 271 does not have signature for hash 350
+Set 271 does not have signature for hash 344
+Set 112 does not have signature for hash 351
+Set 258 does not have signature for hash 346
+Set 195 does not have signature for hash 351
+Set 195 does not have signature for hash 349
+Set 199 does not have signature for hash 351
+Set 199 does not have signature for hash 349
+Set 111 does not have signature for hash 352
+Set 112 does not have signature for hash 352
+Set 271 does not have signature for hash 348
+Set 271 does not have signature for hash 345
+Set 271 does not have signature for hash 351
+Set 258 does not have signature for hash 347
+Set 111 does not have signature for hash 353
+Set 112 does not have signature for hash 353
+Set 271 does not have signature for hash 347
+Set 112 does not have signature for hash 354
+Set 195 does not have signature for hash 352
+Set 271 does not have signature for hash 349
+Set 199 does not have signature for hash 352
+Set 112 does not have signature for hash 355
+Set 111 does not have signature for hash 356
+Set 112 does not have signature for hash 356
+Set 195 does not have signature for hash 353
+Set 199 does not have signature for hash 353
+Set 112 does not have signature for hash 357
+Set 195 does not have signature for hash 354
+Set 199 does not have signature for hash 354
+Set 112 does not have signature for hash 358
+Set 195 does not have signature for hash 355
+Set 199 does not have signature for hash 355
+Set 119 does not have signature for hash 358
+Set 271 does not have signature for hash 353
+Set 195 does not have signature for hash 356
+Set 199 does not have signature for hash 356
+Set 112 does not have signature for hash 359
+Set 195 does not have signature for hash 357
+Set 171 does not have signature for hash 358
+Set 112 does not have signature for hash 360
+Set 199 does not have signature for hash 357
+Set 195 does not have signature for hash 360
+Set 195 does not have signature for hash 358
+Set 199 does not have signature for hash 360
+Set 199 does not have signature for hash 358
+Set 258 does not have signature for hash 354
+Set 271 does not have signature for hash 360
+Set 112 does not have signature for hash 361
+Set 258 does not have signature for hash 356
+Set 195 does not have signature for hash 361
+Set 199 does not have signature for hash 361
+Set 271 does not have signature for hash 356
+Set 195 does not have signature for hash 359
+Set 199 does not have signature for hash 359
+Set 111 does not have signature for hash 362
+Set 112 does not have signature for hash 362
+Set 271 does not have signature for hash 358
+Set 112 does not have signature for hash 363
+Set 271 does not have signature for hash 355
+Set 195 does not have signature for hash 362
+Set 199 does not have signature for hash 362
+Set 112 does not have signature for hash 364
+Set 258 does not have signature for hash 359
+Set 111 does not have signature for hash 365
+Set 112 does not have signature for hash 365
+Set 271 does not have signature for hash 362
+Set 112 does not have signature for hash 366
+Set 195 does not have signature for hash 363
+Set 199 does not have signature for hash 363
+Set 112 does not have signature for hash 367
+Set 195 does not have signature for hash 364
+Set 199 does not have signature for hash 364
+Set 112 does not have signature for hash 368
+Set 195 does not have signature for hash 365
+Set 199 does not have signature for hash 365
+Set 195 does not have signature for hash 366
+Set 271 does not have signature for hash 363
+Set 199 does not have signature for hash 366
+Set 112 does not have signature for hash 369
+Set 195 does not have signature for hash 367
+Set 199 does not have signature for hash 367
+Set 111 does not have signature for hash 370
+Set 112 does not have signature for hash 370
+Set 195 does not have signature for hash 370
+Set 199 does not have signature for hash 370
+Set 195 does not have signature for hash 368
+Set 199 does not have signature for hash 368
+Set 271 does not have signature for hash 364
+Set 271 does not have signature for hash 370
+Set 258 does not have signature for hash 366
+Set 111 does not have signature for hash 371
+Set 112 does not have signature for hash 371
+Set 119 does not have signature for hash 371
+Set 171 does not have signature for hash 371
+Set 195 does not have signature for hash 369
+Set 195 does not have signature for hash 371
+Set 111 does not have signature for hash 372
+Set 199 does not have signature for hash 369
+Set 199 does not have signature for hash 371
+Set 112 does not have signature for hash 372
+Set 258 does not have signature for hash 367
+Set 266 does not have signature for hash 365
+Set 271 does not have signature for hash 371
+Set 112 does not have signature for hash 373
+Set 111 does not have signature for hash 373
+Set 271 does not have signature for hash 365
+Set 271 does not have signature for hash 368
+Set 111 does not have signature for hash 374
+Set 112 does not have signature for hash 374
+Set 195 does not have signature for hash 372
+Set 199 does not have signature for hash 372
+Set 271 does not have signature for hash 369
+Set 112 does not have signature for hash 375
+Set 111 does not have signature for hash 376
+Set 112 does not have signature for hash 376
+Set 277 does not have signature for hash 372
+Set 195 does not have signature for hash 373
+Set 199 does not have signature for hash 373
+Set 112 does not have signature for hash 377
+Set 195 does not have signature for hash 374
+Set 199 does not have signature for hash 374
+Set 111 does not have signature for hash 378
+Set 195 does not have signature for hash 375
+Set 112 does not have signature for hash 378
+Set 258 does not have signature for hash 373
+Set 199 does not have signature for hash 375
+Set 195 does not have signature for hash 376
+Set 199 does not have signature for hash 376
+Set 111 does not have signature for hash 379
+Set 112 does not have signature for hash 379
+Set 195 does not have signature for hash 377
+Set 199 does not have signature for hash 377
+Set 131 does not have signature for hash 379
+Set 112 does not have signature for hash 380
+Set 195 does not have signature for hash 380
+Set 199 does not have signature for hash 380
+Set 195 does not have signature for hash 378
+Set 199 does not have signature for hash 378
+Set 271 does not have signature for hash 380
+Set 277 does not have signature for hash 380
+Set 111 does not have signature for hash 381
+Set 112 does not have signature for hash 381
+Set 195 does not have signature for hash 379
+Set 199 does not have signature for hash 379
+Set 271 does not have signature for hash 376
+Set 195 does not have signature for hash 381
+Set 199 does not have signature for hash 381
+Set 112 does not have signature for hash 382
+Set 271 does not have signature for hash 377
+Set 119 does not have signature for hash 382
+Set 271 does not have signature for hash 375
+Set 271 does not have signature for hash 378
+Set 112 does not have signature for hash 383
+Set 271 does not have signature for hash 379
+Set 112 does not have signature for hash 384
+Set 195 does not have signature for hash 382
+Set 199 does not have signature for hash 382
+Set 111 does not have signature for hash 385
+Set 112 does not have signature for hash 385
+Set 111 does not have signature for hash 386
+Set 112 does not have signature for hash 386
+Set 195 does not have signature for hash 383
+Set 111 does not have signature for hash 387
+Set 112 does not have signature for hash 387
+Set 199 does not have signature for hash 383
+Set 195 does not have signature for hash 384
+Set 199 does not have signature for hash 384
+Set 195 does not have signature for hash 385
+Set 112 does not have signature for hash 388
+Set 199 does not have signature for hash 385
+Set 258 does not have signature for hash 383
+Set 195 does not have signature for hash 386
+Set 199 does not have signature for hash 386
+Set 271 does not have signature for hash 383
+Set 112 does not have signature for hash 389
+Set 195 does not have signature for hash 387
+Set 199 does not have signature for hash 387
+Set 112 does not have signature for hash 390
+Set 195 does not have signature for hash 390
+Set 195 does not have signature for hash 388
+Set 199 does not have signature for hash 388
+Set 199 does not have signature for hash 390
+Set 271 does not have signature for hash 390
+Set 111 does not have signature for hash 391
+Set 112 does not have signature for hash 391
+Set 258 does not have signature for hash 387
+Set 195 does not have signature for hash 391
+Set 199 does not have signature for hash 391
+Set 111 does not have signature for hash 392
+Set 112 does not have signature for hash 392
+Set 195 does not have signature for hash 389
+Set 271 does not have signature for hash 387
+Set 199 does not have signature for hash 389
+Set 132 does not have signature for hash 392
+Set 100 does not have signature for hash 394
+Set 271 does not have signature for hash 391
+Set 112 does not have signature for hash 393
+Set 119 does not have signature for hash 393
+Set 161 does not have signature for hash 392
+Set 168 does not have signature for hash 392
+Set 112 does not have signature for hash 394
+Set 111 does not have signature for hash 394
+Set 271 does not have signature for hash 389
+Set 195 does not have signature for hash 392
+Set 199 does not have signature for hash 392
+Set 112 does not have signature for hash 395
+Set 266 does not have signature for hash 392
+Set 271 does not have signature for hash 392
+Set 111 does not have signature for hash 396
+Set 112 does not have signature for hash 396
+Set 159 does not have signature for hash 394
+Set 195 does not have signature for hash 393
+Set 199 does not have signature for hash 393
+Set 111 does not have signature for hash 397
+Set 112 does not have signature for hash 397
+Set 119 does not have signature for hash 397
+Set 195 does not have signature for hash 394
+Set 112 does not have signature for hash 398
+Set 199 does not have signature for hash 394
+Set 195 does not have signature for hash 395
+Set 199 does not have signature for hash 395
+Set 195 does not have signature for hash 396
+Set 199 does not have signature for hash 396
+Set 111 does not have signature for hash 399
+Set 112 does not have signature for hash 399
+Set 195 does not have signature for hash 397
+Set 199 does not have signature for hash 397
+Set 195 does not have signature for hash 398
+Set 199 does not have signature for hash 398
+Set 271 does not have signature for hash 395
+Set 271 does not have signature for hash 398
+Set 195 does not have signature for hash 399
+Set 199 does not have signature for hash 399
+Set 271 does not have signature for hash 396
+Set 271 does not have signature for hash 397
+Set 271 does not have signature for hash 399
+The outlier is set 12 with 0 edges
+Candidate pair 0 and 15 with count 54
 
-Hash 13 : 2 1 3 
+Candidate pair 7 and 16 with count 71
 
-Hash 14 : 1 0 4 
+Candidate pair 10 and 24 with count 51
 
-Hash 15 : 0 4 2 
+Candidate pair 20 and 25 with count 53
 
-Set 4 : 1 1 0 0 1 
+Candidate pair 25 and 28 with count 54
 
-Set 5 : 0 1 0 0 1 
+Candidate pair 20 and 28 with count 52
 
-Set 6 : 1 0 1 1 0 
+Candidate pair 15 and 28 with count 67
 
-Set 5 does not have signature for hash 12
-Set 7 : 0 1 0 1 0 
+Candidate pair 22 and 36 with count 57
 
-Set 8 : 1 1 1 1 1 
+Candidate pair 17 and 36 with count 58
 
-Set 9 : 0 0 0 0 0 
+Candidate pair 28 and 38 with count 52
 
-Set 10 : 1 1 0 1 1 
+Candidate pair 25 and 38 with count 54
 
-Set 9 does not have signature for hash 12
-Set 11 : 0 1 0 0 1 
+Candidate pair 33 and 42 with count 51
 
-Set 11 does not have signature for hash 12
-Signature for hash 0 : 0 6 3 3 3 6 3 6 
+Candidate pair 20 and 43 with count 51
 
-Set 9 does not have signature for hash 13
-Signature for hash 1 : 1 1 2 1 2 6 1 1 
+Candidate pair 43 and 44 with count 51
 
-Set 9 does not have signature for hash 14
-Signature for hash 2 : 1 1 0 1 1 6 1 1 
+Candidate pair 0 and 44 with count 55
 
-Set 7 does not have signature for hash 15
-Set 9 does not have signature for hash 15
-Signature for hash 3 : 0 4 0 6 0 6 0 4 
+Candidate pair 44 and 46 with count 50
 
-Sets 2 and 3 overlap on minhash 0
-Sets 3 and 4 overlap on minhash 0
-Sets 2 and 4 overlap on minhash 0
-Sets 4 and 6 overlap on minhash 0
-Sets 3 and 6 overlap on minhash 0
-Sets 2 and 6 overlap on minhash 0
-Sets 0 and 1 overlap on minhash 1
-Sets 1 and 3 overlap on minhash 1
-Sets 0 and 3 overlap on minhash 1
-Sets 2 and 4 overlap on minhash 1
-Sets 3 and 6 overlap on minhash 1
-Sets 1 and 6 overlap on minhash 1
-Sets 0 and 6 overlap on minhash 1
-Sets 6 and 7 overlap on minhash 1
-Sets 3 and 7 overlap on minhash 1
-Sets 1 and 7 overlap on minhash 1
-Sets 0 and 7 overlap on minhash 1
-Sets 0 and 1 overlap on minhash 2
-Sets 1 and 3 overlap on minhash 2
-Sets 0 and 3 overlap on minhash 2
-Sets 3 and 4 overlap on minhash 2
-Sets 1 and 4 overlap on minhash 2
-Sets 0 and 4 overlap on minhash 2
-Sets 4 and 6 overlap on minhash 2
-Sets 3 and 6 overlap on minhash 2
-Sets 1 and 6 overlap on minhash 2
-Sets 0 and 6 overlap on minhash 2
-Sets 6 and 7 overlap on minhash 2
-Sets 4 and 7 overlap on minhash 2
-Sets 3 and 7 overlap on minhash 2
-Sets 1 and 7 overlap on minhash 2
-Sets 0 and 7 overlap on minhash 2
-Sets 0 and 2 overlap on minhash 3
-Sets 2 and 4 overlap on minhash 3
-Sets 0 and 4 overlap on minhash 3
-Sets 4 and 6 overlap on minhash 3
-Sets 2 and 6 overlap on minhash 3
-Sets 0 and 6 overlap on minhash 3
-Sets 1 and 7 overlap on minhash 3
-Matches 21 : 12 10 7 12 12 0 15 10 
+Candidate pair 40 and 50 with count 58
 
-The outlier is set 5 with 0 edges
-Candidate pair 3 and 4 with count 2
+Candidate pair 38 and 56 with count 50
 
-Candidate pair 2 and 4 with count 3
+Candidate pair 26 and 60 with count 60
 
-Candidate pair 4 and 6 with count 3
+Candidate pair 50 and 65 with count 59
 
-Candidate pair 3 and 6 with count 3
+Candidate pair 40 and 65 with count 57
 
-Candidate pair 2 and 6 with count 2
+Candidate pair 52 and 66 with count 58
 
-Candidate pair 0 and 1 with count 2
+Candidate pair 17 and 67 with count 58
 
-Candidate pair 1 and 3 with count 2
+Candidate pair 57 and 69 with count 66
 
-Candidate pair 0 and 3 with count 2
+Candidate pair 44 and 69 with count 58
 
-Candidate pair 1 and 6 with count 2
+Candidate pair 69 and 70 with count 50
 
-Candidate pair 0 and 6 with count 3
+Candidate pair 57 and 70 with count 50
 
-Candidate pair 6 and 7 with count 2
+Candidate pair 38 and 70 with count 51
 
-Candidate pair 3 and 7 with count 2
+Candidate pair 50 and 72 with count 61
 
-Candidate pair 1 and 7 with count 3
+Candidate pair 70 and 73 with count 58
 
-Candidate pair 0 and 7 with count 2
+Candidate pair 69 and 73 with count 54
 
-Candidate pair 0 and 4 with count 2
+Candidate pair 57 and 73 with count 52
+
+Candidate pair 65 and 74 with count 53
+
+Candidate pair 33 and 74 with count 50
+
+Candidate pair 65 and 75 with count 58
+
+Candidate pair 41 and 75 with count 50
+
+Candidate pair 40 and 75 with count 55
+
+Candidate pair 69 and 76 with count 50
+
+Candidate pair 0 and 76 with count 54
+
+Candidate pair 74 and 77 with count 72
+
+Candidate pair 65 and 77 with count 60
+
+Candidate pair 58 and 77 with count 55
+
+Candidate pair 50 and 77 with count 53
+
+Candidate pair 40 and 77 with count 57
+
+Candidate pair 17 and 77 with count 53
+
+Candidate pair 41 and 78 with count 56
+
+Candidate pair 76 and 79 with count 52
+
+Candidate pair 73 and 79 with count 53
+
+Candidate pair 70 and 79 with count 58
+
+Candidate pair 69 and 79 with count 58
+
+Candidate pair 43 and 79 with count 56
+
+Candidate pair 38 and 79 with count 52
+
+Candidate pair 28 and 79 with count 65
+
+Candidate pair 20 and 79 with count 57
+
+Candidate pair 15 and 79 with count 65
+
+Candidate pair 17 and 80 with count 51
+
+Candidate pair 79 and 81 with count 58
+
+Candidate pair 70 and 81 with count 55
+
+Candidate pair 69 and 81 with count 55
+
+Candidate pair 20 and 81 with count 61
+
+Candidate pair 65 and 83 with count 51
+
+Candidate pair 81 and 84 with count 52
+
+Candidate pair 79 and 84 with count 59
+
+Candidate pair 73 and 84 with count 62
+
+Candidate pair 70 and 84 with count 54
+
+Candidate pair 69 and 84 with count 60
+
+Candidate pair 57 and 84 with count 53
+
+Candidate pair 43 and 84 with count 58
+
+Candidate pair 38 and 84 with count 53
+
+Candidate pair 20 and 84 with count 50
+
+Candidate pair 83 and 87 with count 50
+
+Candidate pair 58 and 87 with count 50
+
+Candidate pair 60 and 88 with count 61
+
+Candidate pair 26 and 88 with count 53
+
+Candidate pair 50 and 89 with count 55
+
+Candidate pair 42 and 89 with count 56
+
+Candidate pair 41 and 89 with count 55
+
+Candidate pair 40 and 89 with count 54
+
+Candidate pair 14 and 89 with count 52
+
+Candidate pair 84 and 91 with count 55
+
+Candidate pair 81 and 91 with count 53
+
+Candidate pair 79 and 91 with count 55
+
+Candidate pair 73 and 91 with count 64
+
+Candidate pair 70 and 91 with count 60
+
+Candidate pair 69 and 91 with count 55
+
+Candidate pair 38 and 91 with count 56
+
+Candidate pair 77 and 92 with count 54
+
+Candidate pair 58 and 92 with count 50
+
+Candidate pair 36 and 92 with count 61
+
+Candidate pair 17 and 92 with count 51
+
+Candidate pair 92 and 94 with count 52
+
+Candidate pair 80 and 94 with count 56
+
+Candidate pair 77 and 94 with count 68
+
+Candidate pair 74 and 94 with count 50
+
+Candidate pair 65 and 94 with count 59
+
+Candidate pair 58 and 94 with count 51
+
+Candidate pair 50 and 94 with count 54
+
+Candidate pair 35 and 94 with count 50
+
+Candidate pair 6 and 94 with count 52
+
+Candidate pair 96 and 97 with count 54
+
+Candidate pair 32 and 103 with count 58
+
+Candidate pair 33 and 104 with count 51
+
+Candidate pair 96 and 107 with count 50
+
+Candidate pair 13 and 107 with count 61
+
+Candidate pair 25 and 108 with count 52
+
+Candidate pair 94 and 109 with count 59
+
+Candidate pair 92 and 109 with count 52
+
+Candidate pair 89 and 109 with count 67
+
+Candidate pair 80 and 109 with count 55
+
+Candidate pair 78 and 109 with count 50
+
+Candidate pair 77 and 109 with count 56
+
+Candidate pair 50 and 109 with count 57
+
+Candidate pair 41 and 109 with count 54
+
+Candidate pair 40 and 109 with count 65
+
+Candidate pair 35 and 109 with count 51
+
+Candidate pair 22 and 109 with count 55
+
+Candidate pair 94 and 110 with count 65
+
+Candidate pair 77 and 110 with count 61
+
+Candidate pair 65 and 110 with count 60
+
+Candidate pair 50 and 110 with count 57
+
+Candidate pair 40 and 110 with count 50
+
+Candidate pair 22 and 110 with count 51
+
+Candidate pair 17 and 110 with count 53
+
+Candidate pair 36 and 111 with count 51
+
+Candidate pair 35 and 111 with count 50
+
+Candidate pair 17 and 111 with count 58
+
+Candidate pair 56 and 112 with count 55
+
+Candidate pair 20 and 112 with count 51
+
+Candidate pair 105 and 113 with count 62
+
+Candidate pair 97 and 113 with count 53
+
+Candidate pair 96 and 113 with count 68
+
+Candidate pair 111 and 115 with count 50
+
+Candidate pair 109 and 115 with count 52
+
+Candidate pair 92 and 115 with count 53
+
+Candidate pair 17 and 115 with count 52
+
+Candidate pair 21 and 116 with count 60
+
+Candidate pair 76 and 119 with count 54
+
+Candidate pair 56 and 119 with count 50
+
+Candidate pair 0 and 119 with count 50
+
+Candidate pair 115 and 120 with count 53
+
+Candidate pair 41 and 120 with count 55
+
+Candidate pair 119 and 121 with count 59
+
+Candidate pair 56 and 121 with count 63
+
+Candidate pair 20 and 121 with count 52
+
+Candidate pair 113 and 123 with count 60
+
+Candidate pair 97 and 123 with count 56
+
+Candidate pair 96 and 123 with count 57
+
+Candidate pair 110 and 124 with count 50
+
+Candidate pair 104 and 124 with count 51
+
+Candidate pair 94 and 124 with count 52
+
+Candidate pair 87 and 124 with count 52
+
+Candidate pair 77 and 124 with count 56
+
+Candidate pair 74 and 124 with count 53
+
+Candidate pair 124 and 125 with count 53
+
+Candidate pair 109 and 125 with count 52
+
+Candidate pair 104 and 125 with count 61
+
+Candidate pair 33 and 125 with count 55
+
+Candidate pair 115 and 126 with count 79
+
+Candidate pair 111 and 126 with count 50
+
+Candidate pair 110 and 126 with count 51
+
+Candidate pair 109 and 126 with count 59
+
+Candidate pair 92 and 126 with count 64
+
+Candidate pair 89 and 126 with count 51
+
+Candidate pair 77 and 126 with count 59
+
+Candidate pair 65 and 126 with count 53
+
+Candidate pair 50 and 126 with count 52
+
+Candidate pair 40 and 126 with count 61
+
+Candidate pair 17 and 126 with count 61
+
+Candidate pair 0 and 127 with count 55
+
+Candidate pair 121 and 129 with count 55
+
+Candidate pair 81 and 129 with count 51
+
+Candidate pair 61 and 129 with count 53
+
+Candidate pair 39 and 129 with count 50
+
+Candidate pair 124 and 130 with count 53
+
+Candidate pair 110 and 130 with count 50
+
+Candidate pair 87 and 130 with count 53
+
+Candidate pair 77 and 130 with count 58
+
+Candidate pair 74 and 130 with count 63
+
+Candidate pair 65 and 130 with count 52
+
+Candidate pair 58 and 130 with count 53
+
+Candidate pair 117 and 131 with count 70
+
+Candidate pair 91 and 132 with count 59
+
+Candidate pair 84 and 132 with count 56
+
+Candidate pair 76 and 132 with count 51
+
+Candidate pair 73 and 132 with count 54
+
+Candidate pair 70 and 132 with count 53
+
+Candidate pair 57 and 132 with count 62
+
+Candidate pair 38 and 132 with count 64
+
+Candidate pair 28 and 132 with count 50
+
+Candidate pair 113 and 133 with count 65
+
+Candidate pair 105 and 133 with count 72
+
+Candidate pair 101 and 133 with count 51
+
+Candidate pair 97 and 133 with count 51
+
+Candidate pair 96 and 133 with count 57
+
+Candidate pair 126 and 134 with count 59
+
+Candidate pair 115 and 134 with count 53
+
+Candidate pair 109 and 134 with count 52
+
+Candidate pair 92 and 134 with count 53
+
+Candidate pair 75 and 134 with count 55
+
+Candidate pair 67 and 134 with count 50
+
+Candidate pair 65 and 134 with count 55
+
+Candidate pair 40 and 134 with count 58
+
+Candidate pair 130 and 135 with count 93
+
+Candidate pair 124 and 135 with count 57
+
+Candidate pair 87 and 135 with count 52
+
+Candidate pair 77 and 135 with count 55
+
+Candidate pair 74 and 135 with count 59
+
+Candidate pair 65 and 135 with count 50
+
+Candidate pair 58 and 135 with count 58
+
+Candidate pair 126 and 137 with count 57
+
+Candidate pair 125 and 137 with count 59
+
+Candidate pair 124 and 137 with count 60
+
+Candidate pair 111 and 137 with count 53
+
+Candidate pair 110 and 137 with count 61
+
+Candidate pair 109 and 137 with count 53
+
+Candidate pair 104 and 137 with count 52
+
+Candidate pair 89 and 137 with count 50
+
+Candidate pair 77 and 137 with count 55
+
+Candidate pair 67 and 137 with count 50
+
+Candidate pair 50 and 137 with count 50
+
+Candidate pair 36 and 137 with count 59
+
+Candidate pair 17 and 137 with count 59
+
+Candidate pair 133 and 139 with count 52
+
+Candidate pair 113 and 139 with count 53
+
+Candidate pair 105 and 139 with count 74
+
+Candidate pair 49 and 140 with count 69
+
+Candidate pair 25 and 141 with count 54
+
+Candidate pair 0 and 141 with count 52
+
+Candidate pair 137 and 142 with count 59
+
+Candidate pair 134 and 142 with count 59
+
+Candidate pair 126 and 142 with count 62
+
+Candidate pair 125 and 142 with count 51
+
+Candidate pair 124 and 142 with count 52
+
+Candidate pair 115 and 142 with count 52
+
+Candidate pair 110 and 142 with count 56
+
+Candidate pair 109 and 142 with count 56
+
+Candidate pair 92 and 142 with count 50
+
+Candidate pair 89 and 142 with count 51
+
+Candidate pair 78 and 142 with count 51
+
+Candidate pair 77 and 142 with count 50
+
+Candidate pair 65 and 142 with count 54
+
+Candidate pair 58 and 142 with count 51
+
+Candidate pair 41 and 142 with count 60
+
+Candidate pair 40 and 142 with count 54
+
+Candidate pair 17 and 142 with count 58
+
+Candidate pair 142 and 144 with count 75
+
+Candidate pair 137 and 144 with count 51
+
+Candidate pair 134 and 144 with count 62
+
+Candidate pair 126 and 144 with count 54
+
+Candidate pair 109 and 144 with count 50
+
+Candidate pair 65 and 144 with count 58
+
+Candidate pair 41 and 144 with count 52
+
+Candidate pair 40 and 144 with count 50
+
+Candidate pair 17 and 144 with count 51
+
+Candidate pair 144 and 145 with count 68
+
+Candidate pair 142 and 145 with count 69
+
+Candidate pair 137 and 145 with count 54
+
+Candidate pair 135 and 145 with count 52
+
+Candidate pair 134 and 145 with count 55
+
+Candidate pair 126 and 145 with count 63
+
+Candidate pair 124 and 145 with count 51
+
+Candidate pair 115 and 145 with count 64
+
+Candidate pair 111 and 145 with count 53
+
+Candidate pair 110 and 145 with count 52
+
+Candidate pair 17 and 145 with count 59
+
+Candidate pair 137 and 147 with count 59
+
+Candidate pair 126 and 147 with count 51
+
+Candidate pair 104 and 147 with count 54
+
+Candidate pair 92 and 147 with count 52
+
+Candidate pair 89 and 147 with count 51
+
+Candidate pair 77 and 147 with count 52
+
+Candidate pair 36 and 147 with count 52
+
+Candidate pair 14 and 147 with count 55
+
+Candidate pair 148 and 149 with count 53
+
+Candidate pair 127 and 149 with count 56
+
+Candidate pair 79 and 149 with count 60
+
+Candidate pair 69 and 149 with count 56
+
+Candidate pair 57 and 149 with count 58
+
+Candidate pair 147 and 150 with count 53
+
+Candidate pair 145 and 150 with count 66
+
+Candidate pair 144 and 150 with count 58
+
+Candidate pair 142 and 150 with count 66
+
+Candidate pair 137 and 150 with count 66
+
+Candidate pair 134 and 150 with count 52
+
+Candidate pair 126 and 150 with count 55
+
+Candidate pair 125 and 150 with count 50
+
+Candidate pair 124 and 150 with count 55
+
+Candidate pair 111 and 150 with count 51
+
+Candidate pair 110 and 150 with count 59
+
+Candidate pair 109 and 150 with count 54
+
+Candidate pair 104 and 150 with count 52
+
+Candidate pair 89 and 150 with count 52
+
+Candidate pair 77 and 150 with count 51
+
+Candidate pair 58 and 150 with count 51
+
+Candidate pair 41 and 150 with count 54
+
+Candidate pair 40 and 150 with count 50
+
+Candidate pair 150 and 151 with count 58
+
+Candidate pair 147 and 151 with count 62
+
+Candidate pair 142 and 151 with count 54
+
+Candidate pair 137 and 151 with count 61
+
+Candidate pair 126 and 151 with count 56
+
+Candidate pair 125 and 151 with count 57
+
+Candidate pair 124 and 151 with count 63
+
+Candidate pair 110 and 151 with count 54
+
+Candidate pair 109 and 151 with count 60
+
+Candidate pair 104 and 151 with count 57
+
+Candidate pair 94 and 151 with count 55
+
+Candidate pair 92 and 151 with count 59
+
+Candidate pair 89 and 151 with count 50
+
+Candidate pair 87 and 151 with count 52
+
+Candidate pair 77 and 151 with count 74
+
+Candidate pair 74 and 151 with count 58
+
+Candidate pair 36 and 151 with count 59
+
+Candidate pair 33 and 151 with count 51
+
+Candidate pair 14 and 151 with count 54
+
+Candidate pair 151 and 152 with count 67
+
+Candidate pair 150 and 152 with count 53
+
+Candidate pair 147 and 152 with count 58
+
+Candidate pair 145 and 152 with count 60
+
+Candidate pair 142 and 152 with count 59
+
+Candidate pair 137 and 152 with count 57
+
+Candidate pair 135 and 152 with count 52
+
+Candidate pair 125 and 152 with count 56
+
+Candidate pair 124 and 152 with count 61
+
+Candidate pair 115 and 152 with count 53
+
+Candidate pair 110 and 152 with count 54
+
+Candidate pair 109 and 152 with count 62
+
+Candidate pair 94 and 152 with count 66
+
+Candidate pair 92 and 152 with count 51
+
+Candidate pair 89 and 152 with count 53
+
+Candidate pair 80 and 152 with count 55
+
+Candidate pair 77 and 152 with count 57
+
+Candidate pair 58 and 152 with count 52
+
+Candidate pair 42 and 152 with count 51
+
+Candidate pair 41 and 152 with count 51
+
+Candidate pair 36 and 152 with count 60
+
+Candidate pair 35 and 152 with count 50
+
+Candidate pair 33 and 152 with count 57
+
+Candidate pair 22 and 152 with count 59
+
+Candidate pair 17 and 152 with count 51
+
+Candidate pair 14 and 152 with count 55
+
+Candidate pair 152 and 154 with count 50
+
+Candidate pair 151 and 154 with count 55
+
+Candidate pair 137 and 154 with count 51
+
+Candidate pair 135 and 154 with count 55
+
+Candidate pair 130 and 154 with count 51
+
+Candidate pair 125 and 154 with count 59
+
+Candidate pair 124 and 154 with count 59
+
+Candidate pair 110 and 154 with count 54
+
+Candidate pair 104 and 154 with count 50
+
+Candidate pair 77 and 154 with count 56
+
+Candidate pair 150 and 159 with count 55
+
+Candidate pair 147 and 159 with count 56
+
+Candidate pair 137 and 159 with count 59
+
+Candidate pair 126 and 159 with count 56
+
+Candidate pair 125 and 159 with count 51
+
+Candidate pair 111 and 159 with count 52
+
+Candidate pair 89 and 159 with count 55
+
+Candidate pair 36 and 159 with count 50
+
+Candidate pair 17 and 159 with count 51
+
+Candidate pair 159 and 161 with count 63
+
+Candidate pair 152 and 161 with count 54
+
+Candidate pair 150 and 161 with count 64
+
+Candidate pair 147 and 161 with count 52
+
+Candidate pair 137 and 161 with count 58
+
+Candidate pair 89 and 161 with count 56
+
+Candidate pair 36 and 161 with count 56
+
+Candidate pair 22 and 161 with count 50
+
+Candidate pair 115 and 162 with count 51
+
+Candidate pair 152 and 163 with count 50
+
+Candidate pair 151 and 163 with count 58
+
+Candidate pair 137 and 163 with count 54
+
+Candidate pair 77 and 163 with count 50
+
+Candidate pair 36 and 163 with count 51
+
+Candidate pair 161 and 164 with count 63
+
+Candidate pair 159 and 164 with count 53
+
+Candidate pair 152 and 164 with count 90
+
+Candidate pair 151 and 164 with count 66
+
+Candidate pair 150 and 164 with count 52
+
+Candidate pair 147 and 164 with count 59
+
+Candidate pair 145 and 164 with count 54
+
+Candidate pair 142 and 164 with count 53
+
+Candidate pair 137 and 164 with count 57
+
+Candidate pair 126 and 164 with count 52
+
+Candidate pair 125 and 164 with count 52
+
+Candidate pair 124 and 164 with count 61
+
+Candidate pair 115 and 164 with count 54
+
+Candidate pair 110 and 164 with count 50
+
+Candidate pair 109 and 164 with count 59
+
+Candidate pair 104 and 164 with count 51
+
+Candidate pair 94 and 164 with count 65
+
+Candidate pair 89 and 164 with count 58
+
+Candidate pair 80 and 164 with count 53
+
+Candidate pair 77 and 164 with count 63
+
+Candidate pair 42 and 164 with count 50
+
+Candidate pair 36 and 164 with count 58
+
+Candidate pair 35 and 164 with count 52
+
+Candidate pair 33 and 164 with count 56
+
+Candidate pair 22 and 164 with count 51
+
+Candidate pair 14 and 164 with count 55
+
+Candidate pair 103 and 166 with count 56
+
+Candidate pair 32 and 166 with count 50
+
+Candidate pair 3 and 166 with count 51
+
+Candidate pair 163 and 167 with count 68
+
+Candidate pair 161 and 167 with count 53
+
+Candidate pair 159 and 167 with count 50
+
+Candidate pair 137 and 167 with count 51
+
+Candidate pair 109 and 167 with count 50
+
+Candidate pair 89 and 167 with count 52
+
+Candidate pair 164 and 168 with count 63
+
+Candidate pair 152 and 168 with count 69
+
+Candidate pair 151 and 168 with count 59
+
+Candidate pair 150 and 168 with count 64
+
+Candidate pair 145 and 168 with count 69
+
+Candidate pair 144 and 168 with count 53
+
+Candidate pair 142 and 168 with count 62
+
+Candidate pair 137 and 168 with count 53
+
+Candidate pair 135 and 168 with count 51
+
+Candidate pair 134 and 168 with count 53
+
+Candidate pair 130 and 168 with count 54
+
+Candidate pair 126 and 168 with count 53
+
+Candidate pair 125 and 168 with count 53
+
+Candidate pair 124 and 168 with count 51
+
+Candidate pair 120 and 168 with count 53
+
+Candidate pair 115 and 168 with count 54
+
+Candidate pair 110 and 168 with count 58
+
+Candidate pair 109 and 168 with count 65
+
+Candidate pair 94 and 168 with count 54
+
+Candidate pair 87 and 168 with count 56
+
+Candidate pair 77 and 168 with count 60
+
+Candidate pair 58 and 168 with count 50
+
+Candidate pair 41 and 168 with count 54
+
+Candidate pair 40 and 168 with count 50
+
+Candidate pair 33 and 168 with count 50
+
+Candidate pair 168 and 169 with count 51
+
+Candidate pair 167 and 169 with count 53
+
+Candidate pair 164 and 169 with count 65
+
+Candidate pair 161 and 169 with count 53
+
+Candidate pair 159 and 169 with count 58
+
+Candidate pair 154 and 169 with count 54
+
+Candidate pair 152 and 169 with count 60
+
+Candidate pair 151 and 169 with count 55
+
+Candidate pair 150 and 169 with count 56
+
+Candidate pair 147 and 169 with count 51
+
+Candidate pair 142 and 169 with count 50
+
+Candidate pair 137 and 169 with count 67
+
+Candidate pair 126 and 169 with count 50
+
+Candidate pair 125 and 169 with count 60
+
+Candidate pair 124 and 169 with count 53
+
+Candidate pair 111 and 169 with count 55
+
+Candidate pair 110 and 169 with count 56
+
+Candidate pair 109 and 169 with count 62
+
+Candidate pair 104 and 169 with count 53
+
+Candidate pair 94 and 169 with count 51
+
+Candidate pair 89 and 169 with count 59
+
+Candidate pair 80 and 169 with count 51
+
+Candidate pair 36 and 169 with count 59
+
+Candidate pair 35 and 169 with count 57
+
+Candidate pair 22 and 169 with count 51
+
+Candidate pair 17 and 169 with count 63
+
+Candidate pair 168 and 170 with count 61
+
+Candidate pair 150 and 170 with count 59
+
+Candidate pair 145 and 170 with count 57
+
+Candidate pair 144 and 170 with count 57
+
+Candidate pair 142 and 170 with count 57
+
+Candidate pair 135 and 170 with count 50
+
+Candidate pair 65 and 170 with count 50
+
+Candidate pair 50 and 170 with count 50
+
+Candidate pair 17 and 170 with count 51
+
+Candidate pair 149 and 172 with count 55
+
+Candidate pair 132 and 172 with count 53
+
+Candidate pair 119 and 172 with count 52
+
+Candidate pair 76 and 172 with count 50
+
+Candidate pair 69 and 172 with count 54
+
+Candidate pair 44 and 172 with count 58
+
+Candidate pair 0 and 172 with count 75
+
+Candidate pair 164 and 173 with count 51
+
+Candidate pair 162 and 173 with count 52
+
+Candidate pair 135 and 173 with count 50
+
+Candidate pair 130 and 173 with count 53
+
+Candidate pair 94 and 173 with count 66
+
+Candidate pair 87 and 173 with count 53
+
+Candidate pair 77 and 173 with count 52
+
+Candidate pair 74 and 173 with count 50
+
+Candidate pair 35 and 173 with count 50
+
+Candidate pair 6 and 173 with count 57
+
+Candidate pair 164 and 174 with count 64
+
+Candidate pair 161 and 174 with count 51
+
+Candidate pair 152 and 174 with count 67
+
+Candidate pair 151 and 174 with count 50
+
+Candidate pair 147 and 174 with count 52
+
+Candidate pair 145 and 174 with count 52
+
+Candidate pair 142 and 174 with count 54
+
+Candidate pair 94 and 174 with count 50
+
+Candidate pair 22 and 174 with count 57
+
+Candidate pair 14 and 174 with count 61
+
+Candidate pair 169 and 175 with count 53
+
+Candidate pair 168 and 175 with count 52
+
+Candidate pair 167 and 175 with count 63
+
+Candidate pair 164 and 175 with count 51
+
+Candidate pair 152 and 175 with count 52
+
+Candidate pair 126 and 175 with count 51
+
+Candidate pair 109 and 175 with count 66
+
+Candidate pair 94 and 175 with count 56
+
+Candidate pair 89 and 175 with count 53
+
+Candidate pair 80 and 175 with count 53
+
+Candidate pair 77 and 175 with count 53
+
+Candidate pair 50 and 175 with count 52
+
+Candidate pair 35 and 175 with count 53
+
+Candidate pair 139 and 176 with count 51
+
+Candidate pair 133 and 176 with count 67
+
+Candidate pair 123 and 176 with count 51
+
+Candidate pair 113 and 176 with count 63
+
+Candidate pair 105 and 176 with count 61
+
+Candidate pair 97 and 176 with count 54
+
+Candidate pair 96 and 176 with count 50
+
+Candidate pair 172 and 178 with count 54
+
+Candidate pair 119 and 178 with count 56
+
+Candidate pair 79 and 178 with count 51
+
+Candidate pair 73 and 178 with count 51
+
+Candidate pair 69 and 178 with count 50
+
+Candidate pair 165 and 179 with count 57
+
+Candidate pair 178 and 180 with count 63
+
+Candidate pair 172 and 180 with count 63
+
+Candidate pair 149 and 180 with count 60
+
+Candidate pair 132 and 180 with count 61
+
+Candidate pair 93 and 180 with count 55
+
+Candidate pair 91 and 180 with count 52
+
+Candidate pair 73 and 180 with count 52
+
+Candidate pair 70 and 180 with count 54
+
+Candidate pair 69 and 180 with count 65
+
+Candidate pair 61 and 180 with count 59
+
+Candidate pair 57 and 180 with count 72
+
+Candidate pair 38 and 180 with count 54
+
+Candidate pair 0 and 180 with count 52
+
+Candidate pair 175 and 181 with count 54
+
+Candidate pair 174 and 181 with count 50
+
+Candidate pair 169 and 181 with count 54
+
+Candidate pair 168 and 181 with count 54
+
+Candidate pair 167 and 181 with count 57
+
+Candidate pair 164 and 181 with count 64
+
+Candidate pair 163 and 181 with count 56
+
+Candidate pair 161 and 181 with count 54
+
+Candidate pair 154 and 181 with count 55
+
+Candidate pair 152 and 181 with count 62
+
+Candidate pair 151 and 181 with count 56
+
+Candidate pair 150 and 181 with count 58
+
+Candidate pair 142 and 181 with count 51
+
+Candidate pair 137 and 181 with count 57
+
+Candidate pair 124 and 181 with count 55
+
+Candidate pair 109 and 181 with count 54
+
+Candidate pair 94 and 181 with count 55
+
+Candidate pair 77 and 181 with count 54
+
+Candidate pair 35 and 181 with count 51
+
+Candidate pair 181 and 183 with count 51
+
+Candidate pair 170 and 183 with count 51
+
+Candidate pair 169 and 183 with count 61
+
+Candidate pair 168 and 183 with count 52
+
+Candidate pair 167 and 183 with count 56
+
+Candidate pair 164 and 183 with count 58
+
+Candidate pair 163 and 183 with count 59
+
+Candidate pair 161 and 183 with count 64
+
+Candidate pair 159 and 183 with count 64
+
+Candidate pair 152 and 183 with count 51
+
+Candidate pair 151 and 183 with count 59
+
+Candidate pair 150 and 183 with count 69
+
+Candidate pair 147 and 183 with count 56
+
+Candidate pair 137 and 183 with count 61
+
+Candidate pair 125 and 183 with count 56
+
+Candidate pair 111 and 183 with count 56
+
+Candidate pair 104 and 183 with count 58
+
+Candidate pair 89 and 183 with count 52
+
+Candidate pair 77 and 183 with count 54
+
+Candidate pair 14 and 183 with count 54
+
+Candidate pair 179 and 184 with count 54
+
+Candidate pair 140 and 185 with count 66
+
+Candidate pair 49 and 185 with count 52
+
+Candidate pair 181 and 186 with count 54
+
+Candidate pair 175 and 186 with count 100
+
+Candidate pair 169 and 186 with count 53
+
+Candidate pair 168 and 186 with count 52
+
+Candidate pair 167 and 186 with count 63
+
+Candidate pair 164 and 186 with count 51
+
+Candidate pair 152 and 186 with count 52
+
+Candidate pair 126 and 186 with count 51
+
+Candidate pair 109 and 186 with count 66
+
+Candidate pair 94 and 186 with count 56
+
+Candidate pair 89 and 186 with count 53
+
+Candidate pair 80 and 186 with count 53
+
+Candidate pair 77 and 186 with count 53
+
+Candidate pair 50 and 186 with count 52
+
+Candidate pair 35 and 186 with count 53
+
+Candidate pair 186 and 187 with count 52
+
+Candidate pair 181 and 187 with count 61
+
+Candidate pair 175 and 187 with count 52
+
+Candidate pair 174 and 187 with count 52
+
+Candidate pair 173 and 187 with count 53
+
+Candidate pair 170 and 187 with count 51
+
+Candidate pair 169 and 187 with count 57
+
+Candidate pair 168 and 187 with count 70
+
+Candidate pair 164 and 187 with count 66
+
+Candidate pair 154 and 187 with count 50
+
+Candidate pair 152 and 187 with count 71
+
+Candidate pair 151 and 187 with count 65
+
+Candidate pair 150 and 187 with count 53
+
+Candidate pair 147 and 187 with count 52
+
+Candidate pair 145 and 187 with count 51
+
+Candidate pair 142 and 187 with count 59
+
+Candidate pair 130 and 187 with count 52
+
+Candidate pair 126 and 187 with count 53
+
+Candidate pair 124 and 187 with count 54
+
+Candidate pair 120 and 187 with count 55
+
+Candidate pair 115 and 187 with count 55
+
+Candidate pair 110 and 187 with count 52
+
+Candidate pair 109 and 187 with count 67
+
+Candidate pair 94 and 187 with count 63
+
+Candidate pair 92 and 187 with count 52
+
+Candidate pair 89 and 187 with count 52
+
+Candidate pair 87 and 187 with count 52
+
+Candidate pair 80 and 187 with count 55
+
+Candidate pair 77 and 187 with count 65
+
+Candidate pair 75 and 187 with count 56
+
+Candidate pair 67 and 187 with count 51
+
+Candidate pair 65 and 187 with count 51
+
+Candidate pair 58 and 187 with count 56
+
+Candidate pair 42 and 187 with count 50
+
+Candidate pair 41 and 187 with count 55
+
+Candidate pair 35 and 187 with count 53
+
+Candidate pair 170 and 188 with count 51
+
+Candidate pair 145 and 188 with count 50
+
+Candidate pair 72 and 188 with count 51
+
+Candidate pair 176 and 189 with count 91
+
+Candidate pair 133 and 189 with count 68
+
+Candidate pair 123 and 189 with count 60
+
+Candidate pair 113 and 189 with count 72
+
+Candidate pair 105 and 189 with count 56
+
+Candidate pair 101 and 189 with count 52
+
+Candidate pair 97 and 189 with count 60
+
+Candidate pair 96 and 189 with count 58
+
+Candidate pair 164 and 191 with count 50
+
+Candidate pair 152 and 191 with count 52
+
+Candidate pair 151 and 191 with count 51
+
+Candidate pair 109 and 191 with count 57
+
+Candidate pair 89 and 191 with count 51
+
+Candidate pair 78 and 191 with count 51
+
+Candidate pair 167 and 192 with count 61
+
+Candidate pair 163 and 192 with count 59
+
+Candidate pair 191 and 193 with count 58
+
+Candidate pair 186 and 193 with count 51
+
+Candidate pair 181 and 193 with count 53
+
+Candidate pair 175 and 193 with count 51
+
+Candidate pair 169 and 193 with count 51
+
+Candidate pair 164 and 193 with count 58
+
+Candidate pair 152 and 193 with count 52
+
+Candidate pair 151 and 193 with count 54
+
+Candidate pair 150 and 193 with count 51
+
+Candidate pair 142 and 193 with count 52
+
+Candidate pair 137 and 193 with count 56
+
+Candidate pair 126 and 193 with count 52
+
+Candidate pair 109 and 193 with count 53
+
+Candidate pair 89 and 193 with count 52
+
+Candidate pair 77 and 193 with count 61
+
+Candidate pair 65 and 193 with count 51
+
+Candidate pair 50 and 193 with count 60
+
+Candidate pair 189 and 194 with count 56
+
+Candidate pair 176 and 194 with count 61
+
+Candidate pair 133 and 194 with count 61
+
+Candidate pair 123 and 194 with count 54
+
+Candidate pair 113 and 194 with count 54
+
+Candidate pair 105 and 194 with count 51
+
+Candidate pair 97 and 194 with count 59
+
+Candidate pair 96 and 194 with count 51
+
+Candidate pair 187 and 195 with count 66
+
+Candidate pair 173 and 195 with count 53
+
+Candidate pair 169 and 195 with count 61
+
+Candidate pair 168 and 195 with count 60
+
+Candidate pair 164 and 195 with count 59
+
+Candidate pair 154 and 195 with count 52
+
+Candidate pair 152 and 195 with count 60
+
+Candidate pair 151 and 195 with count 61
+
+Candidate pair 142 and 195 with count 59
+
+Candidate pair 137 and 195 with count 52
+
+Candidate pair 134 and 195 with count 53
+
+Candidate pair 126 and 195 with count 60
+
+Candidate pair 124 and 195 with count 52
+
+Candidate pair 120 and 195 with count 51
+
+Candidate pair 115 and 195 with count 56
+
+Candidate pair 110 and 195 with count 55
+
+Candidate pair 109 and 195 with count 59
+
+Candidate pair 94 and 195 with count 59
+
+Candidate pair 92 and 195 with count 62
+
+Candidate pair 77 and 195 with count 59
+
+Candidate pair 40 and 195 with count 50
+
+Candidate pair 36 and 195 with count 57
+
+Candidate pair 35 and 195 with count 55
+
+Candidate pair 22 and 195 with count 51
+
+Candidate pair 17 and 195 with count 52
+
+Candidate pair 180 and 196 with count 55
+
+Candidate pair 132 and 196 with count 52
+
+Candidate pair 129 and 196 with count 53
+
+Candidate pair 69 and 196 with count 53
+
+Candidate pair 44 and 196 with count 51
+
+Candidate pair 38 and 196 with count 59
+
+Candidate pair 28 and 196 with count 50
+
+Candidate pair 25 and 196 with count 55
+
+Candidate pair 194 and 197 with count 52
+
+Candidate pair 133 and 197 with count 50
+
+Candidate pair 101 and 197 with count 50
+
+Candidate pair 97 and 197 with count 59
+
+Candidate pair 132 and 198 with count 50
+
+Candidate pair 187 and 199 with count 57
+
+Candidate pair 186 and 199 with count 72
+
+Candidate pair 183 and 199 with count 54
+
+Candidate pair 181 and 199 with count 60
+
+Candidate pair 175 and 199 with count 72
+
+Candidate pair 169 and 199 with count 51
+
+Candidate pair 168 and 199 with count 54
+
+Candidate pair 167 and 199 with count 71
+
+Candidate pair 164 and 199 with count 53
+
+Candidate pair 163 and 199 with count 54
+
+Candidate pair 161 and 199 with count 58
+
+Candidate pair 154 and 199 with count 54
+
+Candidate pair 152 and 199 with count 54
+
+Candidate pair 150 and 199 with count 55
+
+Candidate pair 137 and 199 with count 54
+
+Candidate pair 126 and 199 with count 51
+
+Candidate pair 109 and 199 with count 64
+
+Candidate pair 94 and 199 with count 50
+
+Candidate pair 89 and 199 with count 53
+
+Candidate pair 77 and 199 with count 51
+
+Candidate pair 1 and 36 with count 51
+
+Candidate pair 20 and 42 with count 53
+
+Candidate pair 33 and 43 with count 60
+
+Candidate pair 17 and 43 with count 52
+
+Candidate pair 15 and 48 with count 50
+
+Candidate pair 0 and 48 with count 52
+
+Candidate pair 42 and 49 with count 51
+
+Candidate pair 40 and 49 with count 53
+
+Candidate pair 28 and 49 with count 61
+
+Candidate pair 42 and 51 with count 50
+
+Candidate pair 15 and 52 with count 50
+
+Candidate pair 49 and 57 with count 53
+
+Candidate pair 26 and 57 with count 53
+
+Candidate pair 57 and 60 with count 63
+
+Candidate pair 49 and 60 with count 57
+
+Candidate pair 40 and 60 with count 58
+
+Candidate pair 60 and 62 with count 54
+
+Candidate pair 57 and 62 with count 50
+
+Candidate pair 49 and 62 with count 57
+
+Candidate pair 42 and 62 with count 52
+
+Candidate pair 28 and 62 with count 50
+
+Candidate pair 62 and 65 with count 66
+
+Candidate pair 60 and 65 with count 59
+
+Candidate pair 57 and 65 with count 60
+
+Candidate pair 49 and 65 with count 64
+
+Candidate pair 28 and 65 with count 62
+
+Candidate pair 25 and 68 with count 59
+
+Candidate pair 67 and 70 with count 50
+
+Candidate pair 58 and 70 with count 61
+
+Candidate pair 70 and 74 with count 53
+
+Candidate pair 60 and 75 with count 50
+
+Candidate pair 57 and 75 with count 53
+
+Candidate pair 65 and 76 with count 54
+
+Candidate pair 62 and 76 with count 52
+
+Candidate pair 60 and 76 with count 50
+
+Candidate pair 49 and 76 with count 52
+
+Candidate pair 73 and 77 with count 55
+
+Candidate pair 70 and 77 with count 66
+
+Candidate pair 69 and 77 with count 53
+
+Candidate pair 43 and 77 with count 58
+
+Candidate pair 1 and 77 with count 52
+
+Candidate pair 10 and 78 with count 53
+
+Candidate pair 58 and 79 with count 51
+
+Candidate pair 35 and 79 with count 59
+
+Candidate pair 22 and 79 with count 54
+
+Candidate pair 17 and 79 with count 57
+
+Candidate pair 69 and 80 with count 53
+
+Candidate pair 5 and 80 with count 50
+
+Candidate pair 77 and 81 with count 52
+
+Candidate pair 74 and 81 with count 55
+
+Candidate pair 58 and 81 with count 60
+
+Candidate pair 77 and 84 with count 56
+
+Candidate pair 35 and 84 with count 52
+
+Candidate pair 17 and 84 with count 51
+
+Candidate pair 6 and 84 with count 58
+
+Candidate pair 81 and 87 with count 54
+
+Candidate pair 70 and 87 with count 51
+
+Candidate pair 84 and 88 with count 57
+
+Candidate pair 81 and 88 with count 51
+
+Candidate pair 79 and 88 with count 60
+
+Candidate pair 77 and 88 with count 51
+
+Candidate pair 70 and 88 with count 54
+
+Candidate pair 69 and 88 with count 61
+
+Candidate pair 49 and 89 with count 59
+
+Candidate pair 81 and 90 with count 50
+
+Candidate pair 88 and 91 with count 57
+
+Candidate pair 77 and 91 with count 63
+
+Candidate pair 88 and 92 with count 50
+
+Candidate pair 70 and 92 with count 50
+
+Candidate pair 43 and 92 with count 50
+
+Candidate pair 1 and 92 with count 50
+
+Candidate pair 91 and 94 with count 59
+
+Candidate pair 88 and 94 with count 62
+
+Candidate pair 84 and 94 with count 63
+
+Candidate pair 81 and 94 with count 55
+
+Candidate pair 79 and 94 with count 51
+
+Candidate pair 73 and 94 with count 59
+
+Candidate pair 70 and 94 with count 58
+
+Candidate pair 69 and 94 with count 60
+
+Candidate pair 43 and 94 with count 53
+
+Candidate pair 94 and 96 with count 50
+
+Candidate pair 92 and 96 with count 56
+
+Candidate pair 87 and 96 with count 70
+
+Candidate pair 81 and 96 with count 65
+
+Candidate pair 79 and 96 with count 53
+
+Candidate pair 77 and 96 with count 52
+
+Candidate pair 74 and 96 with count 51
+
+Candidate pair 70 and 96 with count 55
+
+Candidate pair 58 and 96 with count 54
+
+Candidate pair 33 and 96 with count 51
+
+Candidate pair 94 and 97 with count 59
+
+Candidate pair 92 and 97 with count 52
+
+Candidate pair 91 and 97 with count 62
+
+Candidate pair 87 and 97 with count 50
+
+Candidate pair 84 and 97 with count 53
+
+Candidate pair 81 and 97 with count 51
+
+Candidate pair 79 and 97 with count 52
+
+Candidate pair 77 and 97 with count 71
+
+Candidate pair 73 and 97 with count 50
+
+Candidate pair 70 and 97 with count 62
+
+Candidate pair 67 and 97 with count 50
+
+Candidate pair 58 and 97 with count 56
+
+Candidate pair 73 and 98 with count 53
+
+Candidate pair 69 and 98 with count 56
+
+Candidate pair 68 and 103 with count 52
+
+Candidate pair 97 and 104 with count 50
+
+Candidate pair 96 and 104 with count 52
+
+Candidate pair 90 and 104 with count 51
+
+Candidate pair 100 and 105 with count 50
+
+Candidate pair 38 and 105 with count 57
+
+Candidate pair 9 and 106 with count 50
+
+Candidate pair 75 and 107 with count 55
+
+Candidate pair 51 and 107 with count 55
+
+Candidate pair 41 and 107 with count 50
+
+Candidate pair 97 and 109 with count 54
+
+Candidate pair 96 and 109 with count 56
+
+Candidate pair 84 and 109 with count 57
+
+Candidate pair 79 and 109 with count 55
+
+Candidate pair 73 and 109 with count 60
+
+Candidate pair 69 and 109 with count 52
+
+Candidate pair 43 and 109 with count 57
+
+Candidate pair 5 and 109 with count 51
+
+Candidate pair 76 and 110 with count 52
+
+Candidate pair 62 and 110 with count 60
+
+Candidate pair 60 and 110 with count 56
+
+Candidate pair 57 and 110 with count 51
+
+Candidate pair 49 and 110 with count 54
+
+Candidate pair 28 and 110 with count 53
+
+Candidate pair 20 and 110 with count 52
+
+Candidate pair 109 and 113 with count 64
+
+Candidate pair 94 and 113 with count 54
+
+Candidate pair 92 and 113 with count 56
+
+Candidate pair 88 and 113 with count 51
+
+Candidate pair 87 and 113 with count 56
+
+Candidate pair 84 and 113 with count 61
+
+Candidate pair 81 and 113 with count 57
+
+Candidate pair 80 and 113 with count 51
+
+Candidate pair 79 and 113 with count 53
+
+Candidate pair 77 and 113 with count 53
+
+Candidate pair 70 and 113 with count 53
+
+Candidate pair 69 and 113 with count 60
+
+Candidate pair 58 and 113 with count 54
+
+Candidate pair 43 and 113 with count 57
+
+Candidate pair 113 and 114 with count 58
+
+Candidate pair 109 and 114 with count 51
+
+Candidate pair 97 and 114 with count 63
+
+Candidate pair 96 and 114 with count 52
+
+Candidate pair 94 and 114 with count 53
+
+Candidate pair 91 and 114 with count 55
+
+Candidate pair 84 and 114 with count 50
+
+Candidate pair 81 and 114 with count 61
+
+Candidate pair 79 and 114 with count 62
+
+Candidate pair 77 and 114 with count 58
+
+Candidate pair 69 and 114 with count 57
+
+Candidate pair 58 and 114 with count 51
+
+Candidate pair 43 and 114 with count 53
+
+Candidate pair 17 and 114 with count 52
+
+Candidate pair 107 and 118 with count 51
+
+Candidate pair 105 and 122 with count 62
+
+Candidate pair 60 and 123 with count 56
+
+Candidate pair 49 and 123 with count 59
+
+Candidate pair 28 and 123 with count 52
+
+Candidate pair 114 and 124 with count 59
+
+Candidate pair 97 and 124 with count 59
+
+Candidate pair 96 and 124 with count 57
+
+Candidate pair 1 and 124 with count 50
+
+Candidate pair 96 and 125 with count 52
+
+Candidate pair 79 and 125 with count 53
+
+Candidate pair 106 and 126 with count 58
+
+Candidate pair 60 and 126 with count 60
+
+Candidate pair 57 and 126 with count 54
+
+Candidate pair 49 and 126 with count 55
+
+Candidate pair 26 and 126 with count 51
+
+Candidate pair 9 and 126 with count 50
+
+Candidate pair 96 and 130 with count 57
+
+Candidate pair 81 and 130 with count 54
+
+Candidate pair 70 and 130 with count 61
+
+Candidate pair 69 and 130 with count 50
+
+Candidate pair 126 and 132 with count 51
+
+Candidate pair 110 and 132 with count 56
+
+Candidate pair 89 and 132 with count 54
+
+Candidate pair 65 and 132 with count 62
+
+Candidate pair 62 and 132 with count 58
+
+Candidate pair 60 and 132 with count 61
+
+Candidate pair 49 and 132 with count 59
+
+Candidate pair 42 and 132 with count 51
+
+Candidate pair 40 and 132 with count 51
+
+Candidate pair 124 and 133 with count 50
+
+Candidate pair 114 and 133 with count 52
+
+Candidate pair 109 and 133 with count 79
+
+Candidate pair 94 and 133 with count 64
+
+Candidate pair 92 and 133 with count 50
+
+Candidate pair 84 and 133 with count 61
+
+Candidate pair 80 and 133 with count 58
+
+Candidate pair 79 and 133 with count 60
+
+Candidate pair 77 and 133 with count 52
+
+Candidate pair 73 and 133 with count 53
+
+Candidate pair 69 and 133 with count 56
+
+Candidate pair 43 and 133 with count 64
+
+Candidate pair 35 and 133 with count 55
+
+Candidate pair 33 and 133 with count 51
+
+Candidate pair 22 and 133 with count 50
+
+Candidate pair 6 and 133 with count 50
+
+Candidate pair 5 and 133 with count 54
+
+Candidate pair 114 and 135 with count 52
+
+Candidate pair 96 and 135 with count 55
+
+Candidate pair 81 and 135 with count 60
+
+Candidate pair 79 and 135 with count 53
+
+Candidate pair 70 and 135 with count 58
+
+Candidate pair 126 and 136 with count 50
+
+Candidate pair 49 and 136 with count 50
+
+Candidate pair 26 and 136 with count 51
+
+Candidate pair 4 and 136 with count 52
+
+Candidate pair 123 and 137 with count 56
+
+Candidate pair 62 and 137 with count 55
+
+Candidate pair 49 and 137 with count 53
+
+Candidate pair 28 and 137 with count 55
+
+Candidate pair 20 and 137 with count 52
+
+Candidate pair 132 and 138 with count 50
+
+Candidate pair 65 and 138 with count 54
+
+Candidate pair 26 and 138 with count 52
+
+Candidate pair 122 and 139 with count 51
+
+Candidate pair 0 and 139 with count 50
+
+Candidate pair 135 and 140 with count 56
+
+Candidate pair 133 and 140 with count 64
+
+Candidate pair 130 and 140 with count 52
+
+Candidate pair 125 and 140 with count 53
+
+Candidate pair 124 and 140 with count 60
+
+Candidate pair 114 and 140 with count 63
+
+Candidate pair 113 and 140 with count 65
+
+Candidate pair 109 and 140 with count 63
+
+Candidate pair 104 and 140 with count 52
+
+Candidate pair 97 and 140 with count 62
+
+Candidate pair 96 and 140 with count 66
+
+Candidate pair 94 and 140 with count 54
+
+Candidate pair 92 and 140 with count 58
+
+Candidate pair 91 and 140 with count 52
+
+Candidate pair 88 and 140 with count 57
+
+Candidate pair 87 and 140 with count 52
+
+Candidate pair 84 and 140 with count 52
+
+Candidate pair 81 and 140 with count 54
+
+Candidate pair 79 and 140 with count 76
+
+Candidate pair 77 and 140 with count 58
+
+Candidate pair 70 and 140 with count 60
+
+Candidate pair 69 and 140 with count 58
+
+Candidate pair 58 and 140 with count 54
+
+Candidate pair 43 and 140 with count 57
+
+Candidate pair 36 and 140 with count 58
+
+Candidate pair 35 and 140 with count 60
+
+Candidate pair 22 and 140 with count 59
+
+Candidate pair 17 and 140 with count 57
+
+Candidate pair 1 and 140 with count 51
+
+Candidate pair 123 and 142 with count 59
+
+Candidate pair 76 and 142 with count 59
+
+Candidate pair 62 and 142 with count 55
+
+Candidate pair 60 and 142 with count 60
+
+Candidate pair 49 and 142 with count 55
+
+Candidate pair 28 and 142 with count 58
+
+Candidate pair 20 and 142 with count 54
+
+Candidate pair 137 and 143 with count 51
+
+Candidate pair 89 and 143 with count 55
+
+Candidate pair 123 and 144 with count 56
+
+Candidate pair 76 and 144 with count 61
+
+Candidate pair 60 and 144 with count 53
+
+Candidate pair 49 and 144 with count 50
+
+Candidate pair 28 and 144 with count 52
+
+Candidate pair 20 and 144 with count 54
+
+Candidate pair 132 and 147 with count 52
+
+Candidate pair 49 and 147 with count 52
+
+Candidate pair 136 and 148 with count 54
+
+Candidate pair 142 and 149 with count 51
+
+Candidate pair 136 and 149 with count 54
+
+Candidate pair 126 and 149 with count 62
+
+Candidate pair 106 and 149 with count 54
+
+Candidate pair 65 and 149 with count 51
+
+Candidate pair 41 and 149 with count 53
+
+Candidate pair 26 and 149 with count 56
+
+Candidate pair 123 and 150 with count 55
+
+Candidate pair 60 and 150 with count 51
+
+Candidate pair 26 and 150 with count 52
+
+Candidate pair 140 and 151 with count 66
+
+Candidate pair 133 and 151 with count 53
+
+Candidate pair 114 and 151 with count 58
+
+Candidate pair 113 and 151 with count 59
+
+Candidate pair 97 and 151 with count 67
+
+Candidate pair 96 and 151 with count 60
+
+Candidate pair 79 and 151 with count 52
+
+Candidate pair 73 and 151 with count 50
+
+Candidate pair 70 and 151 with count 61
+
+Candidate pair 43 and 151 with count 53
+
+Candidate pair 1 and 151 with count 58
+
+Candidate pair 140 and 152 with count 61
+
+Candidate pair 133 and 152 with count 72
+
+Candidate pair 114 and 152 with count 63
+
+Candidate pair 113 and 152 with count 66
+
+Candidate pair 97 and 152 with count 60
+
+Candidate pair 96 and 152 with count 53
+
+Candidate pair 84 and 152 with count 53
+
+Candidate pair 79 and 152 with count 53
+
+Candidate pair 70 and 152 with count 51
+
+Candidate pair 69 and 152 with count 50
+
+Candidate pair 43 and 152 with count 59
+
+Candidate pair 113 and 153 with count 52
+
+Candidate pair 140 and 154 with count 62
+
+Candidate pair 114 and 154 with count 50
+
+Candidate pair 97 and 154 with count 58
+
+Candidate pair 96 and 154 with count 51
+
+Candidate pair 79 and 154 with count 50
+
+Candidate pair 152 and 155 with count 55
+
+Candidate pair 151 and 155 with count 51
+
+Candidate pair 140 and 155 with count 59
+
+Candidate pair 133 and 155 with count 59
+
+Candidate pair 130 and 155 with count 51
+
+Candidate pair 113 and 155 with count 57
+
+Candidate pair 109 and 155 with count 54
+
+Candidate pair 94 and 155 with count 71
+
+Candidate pair 91 and 155 with count 59
+
+Candidate pair 88 and 155 with count 55
+
+Candidate pair 84 and 155 with count 66
+
+Candidate pair 81 and 155 with count 57
+
+Candidate pair 80 and 155 with count 57
+
+Candidate pair 79 and 155 with count 62
+
+Candidate pair 77 and 155 with count 57
+
+Candidate pair 73 and 155 with count 61
+
+Candidate pair 70 and 155 with count 65
+
+Candidate pair 69 and 155 with count 63
+
+Candidate pair 133 and 160 with count 50
+
+Candidate pair 94 and 160 with count 50
+
+Candidate pair 6 and 160 with count 57
+
+Candidate pair 101 and 161 with count 55
+
+Candidate pair 155 and 164 with count 51
+
+Candidate pair 140 and 164 with count 60
+
+Candidate pair 133 and 164 with count 69
+
+Candidate pair 114 and 164 with count 57
+
+Candidate pair 113 and 164 with count 60
+
+Candidate pair 97 and 164 with count 64
+
+Candidate pair 96 and 164 with count 51
+
+Candidate pair 84 and 164 with count 50
+
+Candidate pair 43 and 164 with count 59
+
+Candidate pair 105 and 165 with count 58
+
+Candidate pair 56 and 165 with count 52
+
+Candidate pair 146 and 167 with count 59
+
+Candidate pair 155 and 168 with count 50
+
+Candidate pair 140 and 168 with count 61
+
+Candidate pair 133 and 168 with count 72
+
+Candidate pair 114 and 168 with count 61
+
+Candidate pair 113 and 168 with count 65
+
+Candidate pair 97 and 168 with count 56
+
+Candidate pair 96 and 168 with count 57
+
+Candidate pair 88 and 168 with count 50
+
+Candidate pair 84 and 168 with count 57
+
+Candidate pair 79 and 168 with count 61
+
+Candidate pair 70 and 168 with count 54
+
+Candidate pair 43 and 168 with count 64
+
+Candidate pair 155 and 169 with count 50
+
+Candidate pair 140 and 169 with count 66
+
+Candidate pair 133 and 169 with count 60
+
+Candidate pair 113 and 169 with count 53
+
+Candidate pair 97 and 169 with count 51
+
+Candidate pair 84 and 169 with count 52
+
+Candidate pair 79 and 169 with count 55
+
+Candidate pair 70 and 169 with count 50
+
+Candidate pair 43 and 169 with count 57
+
+Candidate pair 140 and 170 with count 50
+
+Candidate pair 133 and 170 with count 50
+
+Candidate pair 114 and 170 with count 54
+
+Candidate pair 79 and 170 with count 68
+
+Candidate pair 43 and 170 with count 51
+
+Candidate pair 136 and 172 with count 54
+
+Candidate pair 160 and 173 with count 62
+
+Candidate pair 155 and 173 with count 52
+
+Candidate pair 133 and 173 with count 52
+
+Candidate pair 96 and 173 with count 55
+
+Candidate pair 84 and 173 with count 50
+
+Candidate pair 81 and 173 with count 51
+
+Candidate pair 69 and 173 with count 51
+
+Candidate pair 132 and 174 with count 55
+
+Candidate pair 76 and 174 with count 51
+
+Candidate pair 60 and 174 with count 54
+
+Candidate pair 26 and 174 with count 56
+
+Candidate pair 140 and 175 with count 52
+
+Candidate pair 133 and 175 with count 64
+
+Candidate pair 84 and 175 with count 54
+
+Candidate pair 79 and 175 with count 52
+
+Candidate pair 73 and 175 with count 59
+
+Candidate pair 69 and 175 with count 53
+
+Candidate pair 43 and 175 with count 52
+
+Candidate pair 5 and 175 with count 52
+
+Candidate pair 175 and 176 with count 50
+
+Candidate pair 169 and 176 with count 58
+
+Candidate pair 168 and 176 with count 61
+
+Candidate pair 164 and 176 with count 72
+
+Candidate pair 155 and 176 with count 52
+
+Candidate pair 152 and 176 with count 65
+
+Candidate pair 151 and 176 with count 55
+
+Candidate pair 140 and 176 with count 57
+
+Candidate pair 114 and 176 with count 55
+
+Candidate pair 109 and 176 with count 55
+
+Candidate pair 94 and 176 with count 54
+
+Candidate pair 91 and 176 with count 51
+
+Candidate pair 87 and 176 with count 50
+
+Candidate pair 84 and 176 with count 53
+
+Candidate pair 77 and 176 with count 56
+
+Candidate pair 69 and 176 with count 54
+
+Candidate pair 43 and 176 with count 59
+
+Candidate pair 170 and 178 with count 55
+
+Candidate pair 138 and 180 with count 50
+
+Candidate pair 136 and 180 with count 54
+
+Candidate pair 110 and 180 with count 54
+
+Candidate pair 107 and 180 with count 51
+
+Candidate pair 75 and 180 with count 57
+
+Candidate pair 65 and 180 with count 66
+
+Candidate pair 62 and 180 with count 55
+
+Candidate pair 60 and 180 with count 52
+
+Candidate pair 49 and 180 with count 50
+
+Candidate pair 26 and 180 with count 51
+
+Candidate pair 176 and 181 with count 50
+
+Candidate pair 146 and 181 with count 52
+
+Candidate pair 140 and 181 with count 54
+
+Candidate pair 133 and 181 with count 56
+
+Candidate pair 114 and 181 with count 50
+
+Candidate pair 97 and 181 with count 59
+
+Candidate pair 140 and 183 with count 52
+
+Candidate pair 97 and 183 with count 54
+
+Candidate pair 79 and 183 with count 51
+
+Candidate pair 183 and 184 with count 59
+
+Candidate pair 181 and 184 with count 54
+
+Candidate pair 175 and 184 with count 54
+
+Candidate pair 170 and 184 with count 55
+
+Candidate pair 169 and 184 with count 53
+
+Candidate pair 168 and 184 with count 58
+
+Candidate pair 167 and 184 with count 53
+
+Candidate pair 164 and 184 with count 55
+
+Candidate pair 163 and 184 with count 52
+
+Candidate pair 154 and 184 with count 51
+
+Candidate pair 152 and 184 with count 51
+
+Candidate pair 151 and 184 with count 61
+
+Candidate pair 140 and 184 with count 59
+
+Candidate pair 133 and 184 with count 65
+
+Candidate pair 125 and 184 with count 50
+
+Candidate pair 113 and 184 with count 51
+
+Candidate pair 109 and 184 with count 66
+
+Candidate pair 97 and 184 with count 56
+
+Candidate pair 96 and 184 with count 51
+
+Candidate pair 92 and 184 with count 52
+
+Candidate pair 79 and 184 with count 54
+
+Candidate pair 77 and 184 with count 59
+
+Candidate pair 43 and 184 with count 56
+
+Candidate pair 150 and 185 with count 59
+
+Candidate pair 147 and 185 with count 52
+
+Candidate pair 142 and 185 with count 53
+
+Candidate pair 137 and 185 with count 61
+
+Candidate pair 123 and 185 with count 55
+
+Candidate pair 110 and 185 with count 51
+
+Candidate pair 60 and 185 with count 52
+
+Candidate pair 184 and 186 with count 54
+
+Candidate pair 176 and 186 with count 50
+
+Candidate pair 140 and 186 with count 52
+
+Candidate pair 133 and 186 with count 64
+
+Candidate pair 84 and 186 with count 54
+
+Candidate pair 79 and 186 with count 52
+
+Candidate pair 73 and 186 with count 59
+
+Candidate pair 69 and 186 with count 53
+
+Candidate pair 43 and 186 with count 52
+
+Candidate pair 5 and 186 with count 52
+
+Candidate pair 184 and 187 with count 53
+
+Candidate pair 176 and 187 with count 67
+
+Candidate pair 155 and 187 with count 60
+
+Candidate pair 140 and 187 with count 62
+
+Candidate pair 133 and 187 with count 64
+
+Candidate pair 114 and 187 with count 59
+
+Candidate pair 113 and 187 with count 76
+
+Candidate pair 97 and 187 with count 62
+
+Candidate pair 96 and 187 with count 58
+
+Candidate pair 91 and 187 with count 59
+
+Candidate pair 88 and 187 with count 52
+
+Candidate pair 84 and 187 with count 65
+
+Candidate pair 79 and 187 with count 52
+
+Candidate pair 73 and 187 with count 57
+
+Candidate pair 70 and 187 with count 65
+
+Candidate pair 69 and 187 with count 55
+
+Candidate pair 43 and 187 with count 56
+
+Candidate pair 187 and 189 with count 76
+
+Candidate pair 186 and 189 with count 52
+
+Candidate pair 184 and 189 with count 54
+
+Candidate pair 181 and 189 with count 55
+
+Candidate pair 175 and 189 with count 52
+
+Candidate pair 173 and 189 with count 54
+
+Candidate pair 169 and 189 with count 65
+
+Candidate pair 168 and 189 with count 61
+
+Candidate pair 164 and 189 with count 72
+
+Candidate pair 155 and 189 with count 59
+
+Candidate pair 152 and 189 with count 66
+
+Candidate pair 151 and 189 with count 62
+
+Candidate pair 140 and 189 with count 64
+
+Candidate pair 124 and 189 with count 50
+
+Candidate pair 114 and 189 with count 58
+
+Candidate pair 109 and 189 with count 63
+
+Candidate pair 94 and 189 with count 62
+
+Candidate pair 92 and 189 with count 52
+
+Candidate pair 91 and 189 with count 55
+
+Candidate pair 88 and 189 with count 51
+
+Candidate pair 87 and 189 with count 50
+
+Candidate pair 84 and 189 with count 62
+
+Candidate pair 80 and 189 with count 54
+
+Candidate pair 79 and 189 with count 53
+
+Candidate pair 77 and 189 with count 62
+
+Candidate pair 73 and 189 with count 50
+
+Candidate pair 70 and 189 with count 56
+
+Candidate pair 69 and 189 with count 57
+
+Candidate pair 43 and 189 with count 61
+
+Candidate pair 35 and 189 with count 51
+
+Candidate pair 146 and 192 with count 58
+
+Candidate pair 187 and 194 with count 54
+
+Candidate pair 186 and 194 with count 53
+
+Candidate pair 184 and 194 with count 60
+
+Candidate pair 181 and 194 with count 52
+
+Candidate pair 175 and 194 with count 53
+
+Candidate pair 170 and 194 with count 51
+
+Candidate pair 169 and 194 with count 53
+
+Candidate pair 168 and 194 with count 58
+
+Candidate pair 164 and 194 with count 61
+
+Candidate pair 154 and 194 with count 53
+
+Candidate pair 152 and 194 with count 61
+
+Candidate pair 151 and 194 with count 55
+
+Candidate pair 140 and 194 with count 62
+
+Candidate pair 135 and 194 with count 56
+
+Candidate pair 130 and 194 with count 52
+
+Candidate pair 124 and 194 with count 54
+
+Candidate pair 114 and 194 with count 56
+
+Candidate pair 109 and 194 with count 57
+
+Candidate pair 94 and 194 with count 50
+
+Candidate pair 88 and 194 with count 52
+
+Candidate pair 87 and 194 with count 54
+
+Candidate pair 77 and 194 with count 59
+
+Candidate pair 74 and 194 with count 52
+
+Candidate pair 43 and 194 with count 54
+
+Candidate pair 194 and 195 with count 54
+
+Candidate pair 189 and 195 with count 68
+
+Candidate pair 184 and 195 with count 56
+
+Candidate pair 176 and 195 with count 59
+
+Candidate pair 155 and 195 with count 51
+
+Candidate pair 140 and 195 with count 73
+
+Candidate pair 133 and 195 with count 60
+
+Candidate pair 114 and 195 with count 59
+
+Candidate pair 113 and 195 with count 61
+
+Candidate pair 97 and 195 with count 57
+
+Candidate pair 96 and 195 with count 57
+
+Candidate pair 91 and 195 with count 51
+
+Candidate pair 88 and 195 with count 59
+
+Candidate pair 84 and 195 with count 54
+
+Candidate pair 79 and 195 with count 59
+
+Candidate pair 70 and 195 with count 51
+
+Candidate pair 69 and 195 with count 54
+
+Candidate pair 43 and 195 with count 66
+
+Candidate pair 174 and 197 with count 53
+
+Candidate pair 159 and 197 with count 64
+
+Candidate pair 150 and 197 with count 70
+
+Candidate pair 147 and 197 with count 64
+
+Candidate pair 142 and 197 with count 54
+
+Candidate pair 137 and 197 with count 63
+
+Candidate pair 126 and 197 with count 57
+
+Candidate pair 110 and 197 with count 52
+
+Candidate pair 89 and 197 with count 59
+
+Candidate pair 49 and 197 with count 54
+
+Candidate pair 40 and 197 with count 51
+
+Candidate pair 9 and 197 with count 53
+
+Candidate pair 184 and 199 with count 67
+
+Candidate pair 146 and 199 with count 52
+
+Candidate pair 133 and 199 with count 61
+
+Candidate pair 113 and 199 with count 53
+
+Candidate pair 84 and 199 with count 50
+
+Candidate pair 73 and 199 with count 50
+
+Candidate pair 9 and 27 with count 55
+
+Candidate pair 37 and 48 with count 51
+
+Candidate pair 43 and 49 with count 51
+
+Candidate pair 38 and 49 with count 54
+
+Candidate pair 27 and 49 with count 50
+
+Candidate pair 17 and 49 with count 54
+
+Candidate pair 49 and 50 with count 50
+
+Candidate pair 0 and 50 with count 50
+
+Candidate pair 32 and 51 with count 54
+
+Candidate pair 17 and 55 with count 50
+
+Candidate pair 17 and 60 with count 51
+
+Candidate pair 58 and 62 with count 54
+
+Candidate pair 55 and 62 with count 54
+
+Candidate pair 50 and 62 with count 56
+
+Candidate pair 38 and 62 with count 60
+
+Candidate pair 17 and 62 with count 52
+
+Candidate pair 57 and 63 with count 58
+
+Candidate pair 63 and 65 with count 53
+
+Candidate pair 38 and 65 with count 56
+
+Candidate pair 63 and 66 with count 50
+
+Candidate pair 65 and 69 with count 58
+
+Candidate pair 63 and 69 with count 51
+
+Candidate pair 62 and 69 with count 50
+
+Candidate pair 60 and 69 with count 53
+
+Candidate pair 26 and 69 with count 54
+
+Candidate pair 65 and 70 with count 55
+
+Candidate pair 62 and 70 with count 65
+
+Candidate pair 60 and 70 with count 50
+
+Candidate pair 48 and 72 with count 51
+
+Candidate pair 65 and 73 with count 60
+
+Candidate pair 62 and 73 with count 58
+
+Candidate pair 50 and 73 with count 58
+
+Candidate pair 70 and 75 with count 50
+
+Candidate pair 69 and 75 with count 52
+
+Candidate pair 62 and 77 with count 59
+
+Candidate pair 60 and 77 with count 57
+
+Candidate pair 57 and 77 with count 53
+
+Candidate pair 55 and 77 with count 54
+
+Candidate pair 49 and 77 with count 58
+
+Candidate pair 38 and 77 with count 53
+
+Candidate pair 65 and 79 with count 54
+
+Candidate pair 62 and 79 with count 53
+
+Candidate pair 60 and 79 with count 57
+
+Candidate pair 50 and 79 with count 50
+
+Candidate pair 49 and 79 with count 54
+
+Candidate pair 62 and 80 with count 52
+
+Candidate pair 65 and 84 with count 51
+
+Candidate pair 62 and 84 with count 54
+
+Candidate pair 82 and 87 with count 51
+
+Candidate pair 65 and 88 with count 59
+
+Candidate pair 62 and 88 with count 53
+
+Candidate pair 57 and 88 with count 62
+
+Candidate pair 49 and 88 with count 50
+
+Candidate pair 28 and 88 with count 51
+
+Candidate pair 65 and 91 with count 60
+
+Candidate pair 62 and 91 with count 68
+
+Candidate pair 60 and 91 with count 55
+
+Candidate pair 50 and 91 with count 53
+
+Candidate pair 60 and 92 with count 51
+
+Candidate pair 62 and 94 with count 58
+
+Candidate pair 60 and 94 with count 53
+
+Candidate pair 57 and 94 with count 53
+
+Candidate pair 49 and 94 with count 54
+
+Candidate pair 38 and 94 with count 57
+
+Candidate pair 26 and 94 with count 58
+
+Candidate pair 78 and 96 with count 59
+
+Candidate pair 62 and 97 with count 55
+
+Candidate pair 60 and 97 with count 60
+
+Candidate pair 40 and 97 with count 51
+
+Candidate pair 79 and 101 with count 53
+
+Candidate pair 43 and 101 with count 57
+
+Candidate pair 36 and 101 with count 54
+
+Candidate pair 17 and 101 with count 53
+
+Candidate pair 89 and 105 with count 51
+
+Candidate pair 84 and 105 with count 55
+
+Candidate pair 75 and 105 with count 53
+
+Candidate pair 44 and 105 with count 59
+
+Candidate pair 41 and 105 with count 56
+
+Candidate pair 27 and 106 with count 59
+
+Candidate pair 78 and 107 with count 52
+
+Candidate pair 74 and 108 with count 58
+
+Candidate pair 105 and 109 with count 57
+
+Candidate pair 57 and 109 with count 50
+
+Candidate pair 49 and 109 with count 55
+
+Candidate pair 101 and 110 with count 55
+
+Candidate pair 91 and 110 with count 51
+
+Candidate pair 84 and 110 with count 56
+
+Candidate pair 79 and 110 with count 57
+
+Candidate pair 73 and 110 with count 52
+
+Candidate pair 70 and 110 with count 62
+
+Candidate pair 43 and 110 with count 55
+
+Candidate pair 75 and 113 with count 53
+
+Candidate pair 60 and 113 with count 52
+
+Candidate pair 57 and 113 with count 52
+
+Candidate pair 49 and 113 with count 55
+
+Candidate pair 41 and 113 with count 55
+
+Candidate pair 38 and 113 with count 52
+
+Candidate pair 26 and 113 with count 50
+
+Candidate pair 76 and 114 with count 51
+
+Candidate pair 65 and 114 with count 50
+
+Candidate pair 62 and 114 with count 50
+
+Candidate pair 60 and 114 with count 53
+
+Candidate pair 26 and 114 with count 54
+
+Candidate pair 113 and 115 with count 50
+
+Candidate pair 105 and 115 with count 64
+
+Candidate pair 84 and 115 with count 51
+
+Candidate pair 43 and 115 with count 55
+
+Candidate pair 109 and 119 with count 54
+
+Candidate pair 105 and 120 with count 54
+
+Candidate pair 115 and 122 with count 59
+
+Candidate pair 110 and 122 with count 50
+
+Candidate pair 84 and 122 with count 55
+
+Candidate pair 44 and 122 with count 52
+
+Candidate pair 114 and 123 with count 56
+
+Candidate pair 109 and 123 with count 50
+
+Candidate pair 79 and 123 with count 52
+
+Candidate pair 122 and 126 with count 50
+
+Candidate pair 114 and 126 with count 51
+
+Candidate pair 105 and 126 with count 53
+
+Candidate pair 97 and 126 with count 54
+
+Candidate pair 79 and 126 with count 52
+
+Candidate pair 55 and 126 with count 51
+
+Candidate pair 43 and 126 with count 53
+
+Candidate pair 27 and 126 with count 50
+
+Candidate pair 105 and 128 with count 50
+
+Candidate pair 79 and 128 with count 50
+
+Candidate pair 76 and 128 with count 52
+
+Candidate pair 38 and 128 with count 51
+
+Candidate pair 128 and 132 with count 51
+
+Candidate pair 113 and 132 with count 51
+
+Candidate pair 94 and 132 with count 54
+
+Candidate pair 77 and 132 with count 62
+
+Candidate pair 63 and 132 with count 55
+
+Candidate pair 14 and 132 with count 52
+
+Candidate pair 126 and 133 with count 54
+
+Candidate pair 122 and 133 with count 56
+
+Candidate pair 120 and 133 with count 50
+
+Candidate pair 119 and 133 with count 51
+
+Candidate pair 115 and 133 with count 58
+
+Candidate pair 110 and 133 with count 51
+
+Candidate pair 89 and 133 with count 59
+
+Candidate pair 72 and 133 with count 50
+
+Candidate pair 50 and 133 with count 55
+
+Candidate pair 49 and 133 with count 55
+
+Candidate pair 41 and 133 with count 54
+
+Candidate pair 40 and 133 with count 51
+
+Candidate pair 38 and 133 with count 57
+
+Candidate pair 26 and 133 with count 51
+
+Candidate pair 133 and 134 with count 53
+
+Candidate pair 113 and 134 with count 54
+
+Candidate pair 105 and 134 with count 55
+
+Candidate pair 79 and 134 with count 57
+
+Candidate pair 60 and 134 with count 51
+
+Candidate pair 133 and 136 with count 54
+
+Candidate pair 115 and 136 with count 52
+
+Candidate pair 113 and 136 with count 50
+
+Candidate pair 109 and 136 with count 51
+
+Candidate pair 105 and 136 with count 58
+
+Candidate pair 133 and 137 with count 52
+
+Candidate pair 114 and 137 with count 52
+
+Candidate pair 101 and 137 with count 65
+
+Candidate pair 97 and 137 with count 56
+
+Candidate pair 79 and 137 with count 57
+
+Candidate pair 43 and 137 with count 51
+
+Candidate pair 1 and 137 with count 51
+
+Candidate pair 94 and 138 with count 52
+
+Candidate pair 77 and 138 with count 53
+
+Candidate pair 73 and 138 with count 50
+
+Candidate pair 50 and 138 with count 51
+
+Candidate pair 115 and 139 with count 53
+
+Candidate pair 137 and 140 with count 61
+
+Candidate pair 134 and 140 with count 55
+
+Candidate pair 126 and 140 with count 58
+
+Candidate pair 123 and 140 with count 66
+
+Candidate pair 115 and 140 with count 52
+
+Candidate pair 110 and 140 with count 58
+
+Candidate pair 105 and 140 with count 51
+
+Candidate pair 101 and 140 with count 55
+
+Candidate pair 65 and 140 with count 51
+
+Candidate pair 62 and 140 with count 53
+
+Candidate pair 60 and 140 with count 69
+
+Candidate pair 57 and 140 with count 52
+
+Candidate pair 40 and 140 with count 50
+
+Candidate pair 28 and 140 with count 59
+
+Candidate pair 26 and 140 with count 58
+
+Candidate pair 15 and 140 with count 53
+
+Candidate pair 140 and 142 with count 63
+
+Candidate pair 133 and 142 with count 55
+
+Candidate pair 128 and 142 with count 51
+
+Candidate pair 114 and 142 with count 57
+
+Candidate pair 113 and 142 with count 54
+
+Candidate pair 105 and 142 with count 56
+
+Candidate pair 101 and 142 with count 60
+
+Candidate pair 97 and 142 with count 53
+
+Candidate pair 79 and 142 with count 65
+
+Candidate pair 43 and 142 with count 54
+
+Candidate pair 15 and 142 with count 56
+
+Candidate pair 140 and 144 with count 57
+
+Candidate pair 139 and 144 with count 53
+
+Candidate pair 114 and 144 with count 61
+
+Candidate pair 113 and 144 with count 50
+
+Candidate pair 105 and 144 with count 58
+
+Candidate pair 79 and 144 with count 62
+
+Candidate pair 15 and 144 with count 53
+
+Candidate pair 140 and 145 with count 54
+
+Candidate pair 133 and 145 with count 54
+
+Candidate pair 127 and 145 with count 58
+
+Candidate pair 123 and 145 with count 50
+
+Candidate pair 114 and 145 with count 61
+
+Candidate pair 105 and 145 with count 61
+
+Candidate pair 100 and 145 with count 55
+
+Candidate pair 97 and 145 with count 50
+
+Candidate pair 79 and 145 with count 53
+
+Candidate pair 76 and 145 with count 54
+
+Candidate pair 60 and 145 with count 50
+
+Candidate pair 26 and 145 with count 51
+
+Candidate pair 145 and 149 with count 55
+
+Candidate pair 133 and 149 with count 51
+
+Candidate pair 115 and 149 with count 60
+
+Candidate pair 105 and 149 with count 50
+
+Candidate pair 29 and 149 with count 52
+
+Candidate pair 17 and 149 with count 50
+
+Candidate pair 140 and 150 with count 66
+
+Candidate pair 133 and 150 with count 54
+
+Candidate pair 114 and 150 with count 54
+
+Candidate pair 101 and 150 with count 54
+
+Candidate pair 97 and 150 with count 59
+
+Candidate pair 79 and 150 with count 59
+
+Candidate pair 70 and 150 with count 54
+
+Candidate pair 15 and 150 with count 51
+
+Candidate pair 132 and 151 with count 52
+
+Candidate pair 123 and 151 with count 50
+
+Candidate pair 62 and 151 with count 50
+
+Candidate pair 49 and 151 with count 63
+
+Candidate pair 132 and 152 with count 53
+
+Candidate pair 128 and 152 with count 53
+
+Candidate pair 105 and 152 with count 55
+
+Candidate pair 100 and 152 with count 52
+
+Candidate pair 49 and 152 with count 55
+
+Candidate pair 38 and 152 with count 54
+
+Candidate pair 27 and 152 with count 52
+
+Candidate pair 26 and 152 with count 51
+
+Candidate pair 132 and 155 with count 54
+
+Candidate pair 110 and 155 with count 61
+
+Candidate pair 65 and 155 with count 57
+
+Candidate pair 62 and 155 with count 60
+
+Candidate pair 57 and 155 with count 52
+
+Candidate pair 38 and 155 with count 62
+
+Candidate pair 28 and 155 with count 50
+
+Candidate pair 156 and 157 with count 53
+
+Candidate pair 155 and 157 with count 55
+
+Candidate pair 150 and 157 with count 51
+
+Candidate pair 140 and 157 with count 53
+
+Candidate pair 133 and 157 with count 51
+
+Candidate pair 94 and 157 with count 54
+
+Candidate pair 75 and 157 with count 50
+
+Candidate pair 70 and 157 with count 53
+
+Candidate pair 63 and 157 with count 50
+
+Candidate pair 57 and 157 with count 50
+
+Candidate pair 40 and 157 with count 51
+
+Candidate pair 10 and 160 with count 53
+
+Candidate pair 132 and 164 with count 54
+
+Candidate pair 105 and 164 with count 52
+
+Candidate pair 101 and 164 with count 54
+
+Candidate pair 49 and 164 with count 55
+
+Candidate pair 38 and 164 with count 55
+
+Candidate pair 26 and 164 with count 50
+
+Candidate pair 162 and 165 with count 53
+
+Candidate pair 107 and 165 with count 52
+
+Candidate pair 96 and 165 with count 52
+
+Candidate pair 78 and 165 with count 60
+
+Candidate pair 123 and 168 with count 52
+
+Candidate pair 122 and 168 with count 51
+
+Candidate pair 105 and 168 with count 65
+
+Candidate pair 62 and 168 with count 50
+
+Candidate pair 122 and 169 with count 56
+
+Candidate pair 101 and 169 with count 65
+
+Candidate pair 49 and 169 with count 51
+
+Candidate pair 28 and 169 with count 53
+
+Candidate pair 2 and 169 with count 52
+
+Candidate pair 128 and 170 with count 52
+
+Candidate pair 76 and 170 with count 50
+
+Candidate pair 15 and 170 with count 55
+
+Candidate pair 0 and 170 with count 50
+
+Candidate pair 139 and 172 with count 52
+
+Candidate pair 48 and 172 with count 53
+
+Candidate pair 114 and 174 with count 58
+
+Candidate pair 113 and 174 with count 54
+
+Candidate pair 97 and 174 with count 51
+
+Candidate pair 136 and 175 with count 50
+
+Candidate pair 105 and 175 with count 50
+
+Candidate pair 136 and 176 with count 58
+
+Candidate pair 126 and 176 with count 51
+
+Candidate pair 122 and 176 with count 56
+
+Candidate pair 115 and 176 with count 60
+
+Candidate pair 38 and 176 with count 53
+
+Candidate pair 26 and 176 with count 50
+
+Candidate pair 48 and 178 with count 56
+
+Candidate pair 155 and 180 with count 55
+
+Candidate pair 113 and 180 with count 51
+
+Candidate pair 94 and 180 with count 55
+
+Candidate pair 88 and 180 with count 57
+
+Candidate pair 72 and 180 with count 56
+
+Candidate pair 63 and 180 with count 55
+
+Candidate pair 101 and 183 with count 50
+
+Candidate pair 9 and 183 with count 50
+
+Candidate pair 150 and 184 with count 60
+
+Candidate pair 142 and 184 with count 52
+
+Candidate pair 137 and 184 with count 59
+
+Candidate pair 134 and 184 with count 51
+
+Candidate pair 126 and 184 with count 60
+
+Candidate pair 89 and 184 with count 53
+
+Candidate pair 60 and 184 with count 51
+
+Candidate pair 50 and 184 with count 54
+
+Candidate pair 49 and 184 with count 50
+
+Candidate pair 40 and 184 with count 58
+
+Candidate pair 169 and 185 with count 58
+
+Candidate pair 164 and 185 with count 52
+
+Candidate pair 157 and 185 with count 50
+
+Candidate pair 156 and 185 with count 50
+
+Candidate pair 152 and 185 with count 55
+
+Candidate pair 151 and 185 with count 51
+
+Candidate pair 133 and 185 with count 50
+
+Candidate pair 101 and 185 with count 51
+
+Candidate pair 97 and 185 with count 51
+
+Candidate pair 80 and 185 with count 50
+
+Candidate pair 79 and 185 with count 50
+
+Candidate pair 36 and 185 with count 55
+
+Candidate pair 136 and 186 with count 50
+
+Candidate pair 105 and 186 with count 50
+
+Candidate pair 180 and 187 with count 52
+
+Candidate pair 139 and 187 with count 51
+
+Candidate pair 136 and 187 with count 50
+
+Candidate pair 132 and 187 with count 56
+
+Candidate pair 123 and 187 with count 54
+
+Candidate pair 122 and 187 with count 56
+
+Candidate pair 105 and 187 with count 59
+
+Candidate pair 62 and 187 with count 65
+
+Candidate pair 60 and 187 with count 52
+
+Candidate pair 57 and 187 with count 50
+
+Candidate pair 49 and 187 with count 54
+
+Candidate pair 38 and 187 with count 56
+
+Candidate pair 26 and 187 with count 52
+
+Candidate pair 178 and 188 with count 58
+
+Candidate pair 139 and 188 with count 52
+
+Candidate pair 119 and 188 with count 52
+
+Candidate pair 48 and 188 with count 60
+
+Candidate pair 180 and 189 with count 52
+
+Candidate pair 142 and 189 with count 52
+
+Candidate pair 136 and 189 with count 60
+
+Candidate pair 132 and 189 with count 54
+
+Candidate pair 126 and 189 with count 55
+
+Candidate pair 122 and 189 with count 55
+
+Candidate pair 115 and 189 with count 58
+
+Candidate pair 89 and 189 with count 53
+
+Candidate pair 75 and 189 with count 50
+
+Candidate pair 62 and 189 with count 53
+
+Candidate pair 57 and 189 with count 50
+
+Candidate pair 49 and 189 with count 57
+
+Candidate pair 38 and 189 with count 55
+
+Candidate pair 26 and 189 with count 52
+
+Candidate pair 165 and 191 with count 53
+
+Candidate pair 96 and 191 with count 50
+
+Candidate pair 189 and 193 with count 50
+
+Candidate pair 184 and 193 with count 68
+
+Candidate pair 157 and 193 with count 52
+
+Candidate pair 140 and 193 with count 55
+
+Candidate pair 133 and 193 with count 54
+
+Candidate pair 132 and 193 with count 51
+
+Candidate pair 123 and 193 with count 54
+
+Candidate pair 97 and 193 with count 57
+
+Candidate pair 79 and 193 with count 50
+
+Candidate pair 60 and 193 with count 54
+
+Candidate pair 57 and 193 with count 50
+
+Candidate pair 49 and 193 with count 57
+
+Candidate pair 43 and 193 with count 52
+
+Candidate pair 38 and 193 with count 52
+
+Candidate pair 28 and 193 with count 58
+
+Candidate pair 193 and 194 with count 61
+
+Candidate pair 150 and 194 with count 50
+
+Candidate pair 145 and 194 with count 56
+
+Candidate pair 142 and 194 with count 50
+
+Candidate pair 137 and 194 with count 50
+
+Candidate pair 126 and 194 with count 51
+
+Candidate pair 65 and 194 with count 53
+
+Candidate pair 60 and 194 with count 54
+
+Candidate pair 50 and 194 with count 54
+
+Candidate pair 28 and 194 with count 50
+
+Candidate pair 123 and 195 with count 56
+
+Candidate pair 122 and 195 with count 52
+
+Candidate pair 101 and 195 with count 54
+
+Candidate pair 62 and 195 with count 51
+
+Candidate pair 60 and 195 with count 60
+
+Candidate pair 49 and 195 with count 61
+
+Candidate pair 38 and 195 with count 50
+
+Candidate pair 28 and 195 with count 52
+
+Candidate pair 26 and 195 with count 52
+
+Candidate pair 157 and 196 with count 51
+
+Candidate pair 155 and 196 with count 59
+
+Candidate pair 113 and 196 with count 50
+
+Candidate pair 65 and 196 with count 55
+
+Candidate pair 63 and 196 with count 52
+
+Candidate pair 62 and 196 with count 50
+
+Candidate pair 193 and 197 with count 55
+
+Candidate pair 184 and 197 with count 65
+
+Candidate pair 183 and 197 with count 68
+
+Candidate pair 181 and 197 with count 50
+
+Candidate pair 170 and 197 with count 50
+
+Candidate pair 169 and 197 with count 53
+
+Candidate pair 168 and 197 with count 52
+
+Candidate pair 167 and 197 with count 56
+
+Candidate pair 164 and 197 with count 60
+
+Candidate pair 163 and 197 with count 58
+
+Candidate pair 161 and 197 with count 61
+
+Candidate pair 152 and 197 with count 57
+
+Candidate pair 151 and 197 with count 59
+
+Candidate pair 145 and 197 with count 51
+
+Candidate pair 109 and 197 with count 51
+
+Candidate pair 77 and 197 with count 57
+
+Candidate pair 14 and 197 with count 50
+
+Candidate pair 168 and 198 with count 50
+
+Candidate pair 164 and 198 with count 57
+
+Candidate pair 161 and 198 with count 59
+
+Candidate pair 152 and 198 with count 57
+
+Candidate pair 133 and 198 with count 55
+
+Candidate pair 128 and 198 with count 54
+
+Candidate pair 105 and 198 with count 50
+
+Candidate pair 89 and 198 with count 58
+
+Candidate pair 198 and 199 with count 50
+
+Candidate pair 197 and 199 with count 58
+
+Candidate pair 17 and 20 with count 51
+
+Candidate pair 20 and 33 with count 54
+
+Candidate pair 4 and 43 with count 54
+
+Candidate pair 25 and 49 with count 54
+
+Candidate pair 65 and 81 with count 53
+
+Candidate pair 62 and 81 with count 53
+
+Candidate pair 81 and 83 with count 61
+
+Candidate pair 51 and 94 with count 54
+
+Candidate pair 49 and 96 with count 52
+
+Candidate pair 25 and 96 with count 58
+
+Candidate pair 51 and 103 with count 57
+
+Candidate pair 6 and 107 with count 51
+
+Candidate pair 65 and 108 with count 54
+
+Candidate pair 54 and 110 with count 51
+
+Candidate pair 34 and 110 with count 50
+
+Candidate pair 33 and 112 with count 50
+
+Candidate pair 20 and 114 with count 56
+
+Candidate pair 25 and 123 with count 50
+
+Candidate pair 112 and 124 with count 51
+
+Candidate pair 101 and 124 with count 51
+
+Candidate pair 112 and 125 with count 55
+
+Candidate pair 20 and 125 with count 50
+
+Candidate pair 63 and 129 with count 50
+
+Candidate pair 25 and 130 with count 53
+
+Candidate pair 56 and 133 with count 54
+
+Candidate pair 4 and 133 with count 50
+
+Candidate pair 25 and 135 with count 51
+
+Candidate pair 59 and 136 with count 52
+
+Candidate pair 112 and 137 with count 54
+
+Candidate pair 96 and 142 with count 53
+
+Candidate pair 23 and 142 with count 54
+
+Candidate pair 145 and 148 with count 51
+
+Candidate pair 112 and 152 with count 51
+
+Candidate pair 60 and 154 with count 61
+
+Candidate pair 112 and 164 with count 51
+
+Candidate pair 142 and 165 with count 51
+
+Candidate pair 133 and 165 with count 52
+
+Candidate pair 113 and 165 with count 51
+
+Candidate pair 25 and 165 with count 52
+
+Candidate pair 165 and 168 with count 56
+
+Candidate pair 25 and 168 with count 53
+
+Candidate pair 4 and 169 with count 51
+
+Candidate pair 162 and 179 with count 51
+
+Candidate pair 124 and 185 with count 52
+
+Candidate pair 184 and 191 with count 54
+
+Candidate pair 179 and 191 with count 52
+
+Candidate pair 143 and 191 with count 51
+
+Candidate pair 133 and 191 with count 56
+
+Candidate pair 179 and 193 with count 55
+
+Candidate pair 23 and 195 with count 50
+
+Candidate pair 4 and 195 with count 51
+
+Candidate pair 125 and 197 with count 51
+
+Candidate pair 124 and 197 with count 51
+
+Candidate pair 112 and 197 with count 52
+
+Candidate pair 42 and 198 with count 52
+
+Candidate pair 143 and 199 with count 53
+
+Candidate pair 41 and 96 with count 52
+
+Candidate pair 97 and 147 with count 51
+
+Candidate pair 96 and 150 with count 52
+
+Candidate pair 101 and 159 with count 52
+
+Candidate pair 41 and 165 with count 50
+
+Candidate pair 62 and 67 with count 55
+
+Candidate pair 159 and 184 with count 54
+
+Candidate pair 140 and 147 with count 50
+
+Candidate pair 104 and 197 with count 51
 
 Starting similarity calculation...
-Clashes 21 : 2 3 0 2 1 0 2 
-
-Best match is set 1 with overlap 3
-Best Match 21 : 0 1 0 0 1 
-
-Query Set 21 : 0 1 0 0 1 
-
-Approximate Jaccard similarity calculated by minhash is 0.750000
-Actual Jaccard similarity is 1.000000
+Best match is set 175 with overlap 72
+Approximate Jaccard similarity calculated by minhash is 0.720000
+Actual Jaccard similarity is 0.785714
