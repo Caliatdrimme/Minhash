@@ -246,7 +246,8 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 		if (count[i] >= t){
 
-		//printf("Candidate pair %d and %d with count %d\n\n", set1[i], set2[i], count[i]);}
+		//printf("Candidate pair %d and %d with count %d\n\n", set1[i], set2[i], count[i]);
+}
 
 	}//for printing candidate pairs
 
