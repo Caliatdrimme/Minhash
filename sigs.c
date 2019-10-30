@@ -246,7 +246,7 @@ void manager_fn(int rank, int num_elem, int num_sets, int size_hash, int num_has
 
 		if (count[i] >= t){
 
-		printf("Candidate pair %d and %d with count %d\n\n", set1[i], set2[i], count[i]);}
+		//printf("Candidate pair %d and %d with count %d\n\n", set1[i], set2[i], count[i]);}
 
 	}//for printing candidate pairs
 
@@ -491,7 +491,7 @@ void worker_fn(rank, num_elem, num_sets, size_hash, num_hash, num_worker, size){
 			} else if (j == size_hash-1) {
 
 				sig=num_elem+1;
-				printf("Set %d does not have signature for hash %d\n", pair[0], pair[1]);
+				//printf("Set %d does not have signature for hash %d\n", pair[0], pair[1]);
 				sign[0] = pair[0];
 				sign[1] = sig;
 				//tag 1 for signature sending
