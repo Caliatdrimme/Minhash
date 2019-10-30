@@ -21,7 +21,7 @@ use from test data - less examples
 
 DOCUMENTS
 
-take first 50 of each group = 400 examples total
+take first 50 of each group = 200 examples total
 
 
 find the range of the document ID's of the first 50 of each of the 4 groups

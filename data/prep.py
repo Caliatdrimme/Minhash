@@ -5,16 +5,16 @@ import numpy as np
 
 f_test = open("test.label", "r")
 
-#f_train = open("train.label", "r")
+f_train = open("train.label", "r")
 
 
 #count number of examples in each of the 4 subgroups 
 
-#train = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+train = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 test = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 #start indeces for document ids for groups 2,9,15,20
-start = [0, 0, 0, 0]
+#start = [0, 0, 0, 0]
 
 line = f_test.readline()
 
@@ -62,22 +62,22 @@ print(start)
 
 
 #how long is vocabulary
-#f_vocab = open("vocabulary.txt", "r")
+f_vocab = open("vocabulary.txt", "r")
 
-#line = f_vocab.readline()
+line = f_vocab.readline()
 
-#size_vocab = 0
+size_vocab = 0
 
-#while line:
-#	size_vocab += 1
-#	line = f_vocab.readline()
+while line:
+	size_vocab += 1
+	line = f_vocab.readline()
 
-#print(size_vocab)
+print(size_vocab)
 
 #f_vocab.close()
 
 #initialize data matrix
-data = np.zeros((200,200))
+data = np.zeros((200,61188))
 
 f_test_data = open("test.data","r")
 
@@ -94,38 +94,34 @@ while line:
 	if ((id >= (start[0]+1)) and (id <= (start[0]+50))):
 		#store this line's data
 		word = int(dt[1])
-		if (word <= 200):
-			row = id - start[0] - 1
-			data[row,word-1] = 1
+		row = id - start[0] - 1
+		data[row,word-1] = 1
 
 	if ((id >= (start[1]+1)) and (id <= (start[1]+50))):
 		#store this line's data
 		word = int(dt[1])
-		if (word <= 200):
-			row = id - start[1] + 48
-			data[row,word-1] = 1
+		row = id - start[1] + 48
+		data[row,word-1] = 1
 
 	if ((id >= (start[2]+1)) and (id <= (start[2]+50))):
 		#store this line's data
 		word = int(dt[1])
-		if (word <= 200):
-			row = id - start[2] + 99
-			data[row,word-1] = 1
+		row = id - start[2] + 99
+		data[row,word-1] = 1
 
 	if ((id >= (start[3]+1)) and (id <= (start[3]+50))):
 		#store this line's data
 		word = int(dt[1])
-		if (word <= 200):
-			row = id - start[3] + 149
-			data[row,word-1] = 1
+		row = id - start[3] + 149
+		data[row,word-1] = 1
 
 	line = f_test_data.readline()
 
 f_test_data.close()
 
 data = data.astype(int)
-print(data)
-print(data[1,:])
+#print(data)
+#print(data[1,:])
 #print data matrix into file 
 #each row as line
 #no symbols
@@ -133,7 +129,7 @@ print(data[1,:])
 f_out = open("data-valid.txt","w+")
 
 for i in range(200):
-	for j in range(200):
+	for j in range(61188):
 		element = str(data[i,j])
 		f_out.write(element)
 	f_out.write('\n')
