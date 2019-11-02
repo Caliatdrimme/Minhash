@@ -29,7 +29,7 @@ while line:
 	#store this line's data
 	word = int(dt[1])
 	row = int(dt[0])
-	data[row,word-1] = 1
+	data[row-1,word-1] = 1
 
 	line = f_test_data.readline()
 
