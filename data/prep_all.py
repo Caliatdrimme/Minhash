@@ -10,7 +10,7 @@ cnt = 0
 
 while line:
 	cnt += 1
-	line = f_test.readline()
+	line = f_test_label.readline()
   
 print(cnt)
 
